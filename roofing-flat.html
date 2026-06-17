@@ -1,0 +1,413 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flat Roofing | Top Choice Roofing and Siding</title>
+<meta name="description" content="Reliable flat and low-slope roofing installation across the Greater Toronto Area. TPO, EPDM, and modified bitumen systems for residential and commercial properties.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="inner">
+    <div class="topbar-left"><span>&#128205; Serving the Greater Toronto Area</span></div>
+    <div class="topbar-right">
+      <a href="mailto:info@topchoiceroofing.ca">&#9993; info@topchoiceroofing.ca</a>
+      <a href="tel:+14165550100">&#128222; (416) 555-0100</a>
+    </div>
+  </div>
+</div>
+
+<header id="top">
+  <div class="header-inner">
+    <div class="logo"><img src="Media/Top Choice Roofing Logo.png" alt="Top Choice Roofing and Siding"></div>
+    <nav>
+      <a href="index.html">Home</a>
+      <div class="dropdown">
+        <a href="roofing.html" class="active">Roofing</a>
+        <div class="dropdown-menu">
+          <span class="sub-label">Residential</span>
+          <a href="roofing-asphalt-shingles.html">Asphalt Shingle Roofing</a>
+          <a href="roofing-metal.html">Metal Roofing</a>
+          <a href="roofing-cedar-shake.html">Cedar Shake Roofing</a>
+          <a href="roofing-flat.html">Flat Roofing</a>
+          <a href="roofing-synthetic-slate.html">Synthetic Slate Roofing</a>
+          <a href="roofing-repair.html">Roof Repair &amp; Emergency</a>
+          <span class="sub-label">Commercial</span>
+          <a href="roofing-commercial.html">Commercial Roofing</a>
+          <a href="roofing-commercial.html">Commercial Flat Roofing</a>
+          <a href="roofing-commercial.html">Commercial Metal Roofing</a>
+          <a href="roofing-commercial.html">Commercial Shingles</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="index.html#services">Siding</a>
+        <div class="dropdown-menu">
+          <a href="index.html#services">Vinyl Siding</a>
+          <a href="index.html#services">Engineered Wood Siding</a>
+          <a href="index.html#services">Hardie Board Siding</a>
+          <a href="index.html#services">Soffit &amp; Fascia</a>
+          <a href="index.html#services">Eavestroughs</a>
+        </div>
+      </div>
+      <a href="index.html#gallery">Gallery</a>
+      <a href="index.html#why">About</a>
+      <a href="index.html#contact">Contact</a>
+      <a href="index.html#contact" class="btn btn-yellow nav-cta">Free Estimate</a>
+    </nav>
+    <div class="hamburger" id="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+  </div>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="roofing.html">Roofing</a>
+    <a href="roofing-asphalt-shingles.html" class="mobile-sub">Asphalt Shingle Roofing</a>
+    <a href="roofing-metal.html" class="mobile-sub">Metal Roofing</a>
+    <a href="roofing-cedar-shake.html" class="mobile-sub">Cedar Shake Roofing</a>
+    <a href="roofing-flat.html" class="mobile-sub">Flat Roofing</a>
+    <a href="roofing-synthetic-slate.html" class="mobile-sub">Synthetic Slate Roofing</a>
+    <a href="roofing-commercial.html" class="mobile-sub">Commercial Roofing</a>
+    <a href="index.html#services">Siding</a>
+    <a href="index.html#gallery">Gallery</a>
+    <a href="index.html#why">About</a>
+    <a href="index.html#contact">Contact / Free Estimate</a>
+  </div>
+</header>
+
+<div class="page-hero page-hero-with-form" style="background: linear-gradient(rgba(30,55,10,.85),rgba(30,55,10,.7)), url('Media/greenMetal53.jpg') center/cover no-repeat;">
+  <div class="page-hero-inner">
+    <div class="page-hero-text">
+      <div class="hero-badge">Residential &amp; Commercial Roofing</div>
+      <h1><span>Flat Roofing</span> Systems That Perform</h1>
+      <p>Dependable low-slope and flat roofing solutions — TPO, EPDM, and modified bitumen — installed to Canadian standards and built for our climate.</p>
+      <div class="hero-actions">
+        <a href="tel:+14165550100" class="btn btn-outline">&#128222;&nbsp; (416) 555-0100</a>
+      </div>
+    </div>
+    <div class="page-hero-form-card">
+      <h3>Get Your Free Estimate</h3>
+      <p>We'll be in touch within 24 hours.</p>
+      <div class="form-steps">
+        <div class="form-step-dot active" id="s-dot-1">1</div><div class="form-step-line"></div>
+        <div class="form-step-dot" id="s-dot-2">2</div><div class="form-step-line"></div>
+        <div class="form-step-dot" id="s-dot-3">3</div><div class="form-step-line"></div>
+        <div class="form-step-dot" id="s-dot-4">4</div>
+      </div>
+      <form id="s-form" onsubmit="handleSubmit(event,'s-dot-')">
+        <div class="form-page active" id="s-p1">
+          <p style="font-size:13px;font-weight:600;color:var(--charcoal);margin-bottom:12px;">What are you looking for?</p>
+          <div class="cat-options">
+            <button type="button" class="cat-opt" data-cat="roofing" onclick="pickCategory(this,'s-form')">Roofing</button>
+            <button type="button" class="cat-opt" data-cat="siding" onclick="pickCategory(this,'s-form')">Siding</button>
+            <button type="button" class="cat-opt" data-cat="both" onclick="pickCategory(this,'s-form')">Both</button>
+          </div>
+          <div class="form-nav"><button type="button" class="btn-next cat-next-btn" onclick="goToServices('s-form','s-dot-')" disabled>Next &rarr;</button></div>
+        </div>
+        <div class="form-page" id="s-p2r">
+          <p style="font-size:13px;font-weight:600;color:var(--charcoal);margin-bottom:10px;">Which roofing service?</p>
+          <div class="svc-options">
+            <button type="button" class="svc-opt" onclick="pickSvc(this,'s-form')">Asphalt Shingles</button>
+            <button type="button" class="svc-opt" onclick="pickSvc(this,'s-form')">Metal Roofing</button>
+            <button type="button" class="svc-opt" onclick="pickSvc(this,'s-form')">Cedar Shake</button>
+            <button type="button" class="svc-opt" onclick="pickSvc(this,'s-form')">Flat Roofing</button>
+            <button type="button" class="svc-opt" onclick="pickSvc(this,'s-form')">Synthetic Slate</button>
+            <button type="button" class="svc-opt" onclick="pickSvc(this,'s-form')">Roof Repair</button>
+            <button type="button" class="svc-opt" onclick="pickSvc(this,'s-form')">Commercial Roofing</button>
+          </div>
+          <div class="form-nav">
+            <button type="button" class="btn-back" onclick="goToCategory('s-form','s-dot-')">&larr; Back</button>
+            <button type="button" class="btn-next svc-next-btn" onclick="goToContact('s-form','s-dot-')" disabled>Next &rarr;</button>
+          </div>
+        </div>
+        <div class="form-page" id="s-p2s">
+          <p style="font-size:13px;font-weight:600;color:var(--charcoal);margin-bottom:10px;">Which siding service?</p>
+          <div class="svc-options">
+            <button type="button" class="svc-opt" onclick="pickSvc(this,'s-form')">Vinyl Siding</button>
+            <button type="button" class="svc-opt" onclick="pickSvc(this,'s-form')">Engineered Wood</button>
+            <button type="button" class="svc-opt" onclick="pickSvc(this,'s-form')">Hardie Board</button>
+            <button type="button" class="svc-opt" onclick="pickSvc(this,'s-form')">Soffit &amp; Fascia</button>
+            <button type="button" class="svc-opt" onclick="pickSvc(this,'s-form')">Eavestroughs</button>
+            <button type="button" class="svc-opt" onclick="pickSvc(this,'s-form')">Siding Repair</button>
+          </div>
+          <div class="form-nav">
+            <button type="button" class="btn-back" onclick="goToCategory('s-form','s-dot-')">&larr; Back</button>
+            <button type="button" class="btn-next svc-next-btn" onclick="goToContact('s-form','s-dot-')" disabled>Next &rarr;</button>
+          </div>
+        </div>
+        <div class="form-page" id="s-p2b">
+          <p style="font-size:13px;font-weight:600;color:var(--charcoal);margin-bottom:4px;">Select all that apply:</p>
+          <p class="svc-group-label">Roofing</p>
+          <div class="svc-options" style="margin-bottom:6px;">
+            <button type="button" class="svc-opt" onclick="toggleSvc(this,'s-form')">Asphalt Shingles</button>
+            <button type="button" class="svc-opt" onclick="toggleSvc(this,'s-form')">Metal Roofing</button>
+            <button type="button" class="svc-opt" onclick="toggleSvc(this,'s-form')">Cedar Shake</button>
+            <button type="button" class="svc-opt" onclick="toggleSvc(this,'s-form')">Flat Roofing</button>
+            <button type="button" class="svc-opt" onclick="toggleSvc(this,'s-form')">Synthetic Slate</button>
+            <button type="button" class="svc-opt" onclick="toggleSvc(this,'s-form')">Roof Repair</button>
+          </div>
+          <p class="svc-group-label">Siding</p>
+          <div class="svc-options">
+            <button type="button" class="svc-opt" onclick="toggleSvc(this,'s-form')">Vinyl Siding</button>
+            <button type="button" class="svc-opt" onclick="toggleSvc(this,'s-form')">Engineered Wood</button>
+            <button type="button" class="svc-opt" onclick="toggleSvc(this,'s-form')">Hardie Board</button>
+            <button type="button" class="svc-opt" onclick="toggleSvc(this,'s-form')">Soffit &amp; Fascia</button>
+            <button type="button" class="svc-opt" onclick="toggleSvc(this,'s-form')">Eavestroughs</button>
+            <button type="button" class="svc-opt" onclick="toggleSvc(this,'s-form')">Siding Repair</button>
+          </div>
+          <div class="form-nav">
+            <button type="button" class="btn-back" onclick="goToCategory('s-form','s-dot-')">&larr; Back</button>
+            <button type="button" class="btn-next svc-next-btn" onclick="goToContact('s-form','s-dot-')" disabled>Next &rarr;</button>
+          </div>
+        </div>
+        <div class="form-page" id="s-p3">
+          <div class="form-row">
+            <div class="form-group"><label>First Name *</label><input type="text" placeholder="John" required></div>
+            <div class="form-group"><label>Last Name *</label><input type="text" placeholder="Smith" required></div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label>Phone *</label><input type="tel" placeholder="(416) 555-0100" required></div>
+            <div class="form-group"><label>Postal Code *</label><input type="text" placeholder="M5V 1A1" required></div>
+          </div>
+          <div class="form-group"><label>Email</label><input type="email" placeholder="john@email.com"></div>
+          <div class="form-nav">
+            <button type="button" class="btn-back" onclick="goToServicesBack('s-form','s-dot-')">&larr; Back</button>
+            <button type="button" class="btn-next" onclick="goToDetails('s-form','s-dot-')">Next &rarr;</button>
+          </div>
+        </div>
+        <div class="form-page" id="s-p4">
+          <div class="form-group"><label>Project Details</label><textarea placeholder="Tell us about your project — size, current condition, any specific concerns..."></textarea></div>
+          <div class="form-group">
+            <label>Preferred Timeline</label>
+            <select><option value="">Select timeline...</option><option>As soon as possible</option><option>Within 1 month</option><option>1–3 months</option><option>3–6 months</option><option>Just planning / no rush</option></select>
+          </div>
+          <div class="form-nav">
+            <button type="button" class="btn-back" onclick="goToContact('s-form','s-dot-')">&larr; Back</button>
+            <button type="submit" class="btn-next">Submit Request &rarr;</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="breadcrumb">
+  <div class="inner">
+    <a href="index.html">Home</a><span>&rsaquo;</span>
+    <a href="roofing.html">Roofing</a><span>&rsaquo;</span>
+    <span>Flat Roofing</span>
+  </div>
+</div>
+
+<section>
+  <div class="section-inner">
+    <div class="service-detail-grid">
+      <div class="service-detail-img">
+        <img src="Media/greenMetal53.jpg" alt="Flat roofing installation" loading="lazy">
+      </div>
+      <div class="service-detail-content">
+        <div class="section-label">What We Offer</div>
+        <h2>Flat &amp; Low-Slope Roofing Installation</h2>
+        <p>Flat and low-slope roofing requires a different approach than pitched roofing — proper drainage design, seam integrity, and membrane selection are critical to long-term performance. At Top Choice Roofing and Siding, we install three proven flat roofing systems, each suited to specific performance needs and budgets.</p>
+        <p><strong>TPO (Thermoplastic Polyolefin)</strong> is our most popular flat roofing membrane — highly reflective, energy-efficient, and heat-welded at the seams for a watertight bond. <strong>EPDM (Ethylene Propylene Diene Monomer)</strong> is a durable rubber membrane ideal for residential applications with excellent UV and ozone resistance. <strong>Modified Bitumen</strong> is a multi-layer asphalt-based system offering exceptional puncture resistance for high-traffic roof areas.</p>
+        <p>Every installation includes a full drainage assessment, proper insulation, and perimeter flashing sealed to manufacturer specifications — ensuring your flat roof performs reliably through freeze-thaw cycles and heavy snowfall.</p>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:24px;">
+          <a href="index.html#contact" class="btn btn-primary">Get a Free Estimate</a>
+          <a href="tel:+14165550100" class="btn btn-yellow">&#128222;&nbsp; Call Us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="benefits-section">
+  <div class="section-inner">
+    <div class="section-label">Why Choose Us</div>
+    <h2 class="section-title">Flat Roofing Done Right</h2>
+    <p class="section-sub">Flat roofing is only as good as its installation. Here's what sets our work apart.</p>
+    <div class="benefits-grid">
+      <div class="benefit-card">
+        <div class="benefit-icon">&#128260;</div>
+        <h4>Three System Options</h4>
+        <p>TPO, EPDM, and modified bitumen — we help you select the right membrane for your building, climate exposure, and budget.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">&#9889;</div>
+        <h4>Energy Efficient</h4>
+        <p>TPO and EPDM membranes reflect UV radiation and reduce cooling loads, lowering your energy bills year-round.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">&#128204;</div>
+        <h4>Proper Drainage Design</h4>
+        <p>We engineer every flat roof installation with adequate slope and drainage to prevent ponding water — the number one cause of flat roof failure.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">&#10052;</div>
+        <h4>Built for Canadian Winters</h4>
+        <p>Our membrane systems are selected and installed to handle the repeated freeze-thaw cycles that Ontario winters demand.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">&#128196;</div>
+        <h4>Manufacturer Warranty</h4>
+        <p>All membranes are installed to manufacturer specifications and backed by product warranties of up to 20 years.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">&#128296;</div>
+        <h4>Low Maintenance</h4>
+        <p>Modern flat roofing membranes are designed to perform for 15–25 years with minimal maintenance and simple annual inspections.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--white);">
+  <div class="section-inner">
+    <div class="section-label">Our Work</div>
+    <h2 class="section-title">Flat Roofing Projects</h2>
+    <p class="section-sub">Flat and low-slope roofing installations completed across the GTA.</p>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="Media/greenMetal53.jpg" alt="Flat roofing project" loading="lazy">
+        <div class="gallery-overlay"><span>Flat Roofing</span></div>
+      </div>
+      <div class="gallery-item">
+        <img src="Media/greenMetal48.jpg" alt="Commercial flat roofing" loading="lazy">
+        <div class="gallery-overlay"><span>Low-Slope Roofing</span></div>
+      </div>
+      <div class="gallery-item">
+        <img src="Media/greenMetal57.jpg" alt="Commercial roofing" loading="lazy">
+        <div class="gallery-overlay"><span>Commercial Flat Roof</span></div>
+      </div>
+      <div class="gallery-item">
+        <img src="Media/greenMetal06.jpg" alt="Aerial roofing" loading="lazy">
+        <div class="gallery-overlay"><span>Aerial View</span></div>
+      </div>
+      <div class="gallery-item">
+        <img src="Media/profileRoofing8.jpg" alt="New construction roof" loading="lazy">
+        <div class="gallery-overlay"><span>New Construction</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="faq-section">
+  <div class="section-inner">
+    <div class="section-label">Common Questions</div>
+    <h2 class="section-title">Flat Roofing FAQs</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question" onclick="faqToggle(this)">How long does a flat roof last? <span class="faq-toggle">+</span></button>
+        <div class="faq-answer">With proper installation and maintenance, TPO and EPDM flat roofs typically last 15–25 years. Modified bitumen systems average 15–20 years. Annual inspections and prompt repair of any membrane punctures or seam issues are the most important factors in maximizing lifespan.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="faqToggle(this)">What causes flat roofs to fail? <span class="faq-toggle">+</span></button>
+        <div class="faq-answer">The most common causes of flat roof failure are ponding water from inadequate drainage, seam separation, membrane punctures, and improper flashing at penetrations (vents, skylights, HVAC units). All of these are addressable through quality installation and routine inspection.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="faqToggle(this)">Which flat roofing membrane is best? <span class="faq-toggle">+</span></button>
+        <div class="faq-answer">It depends on your building and priorities. TPO is our top recommendation for most applications — it's energy-efficient, durable, and offers the best value. EPDM is ideal for smaller residential applications. Modified bitumen suits high-traffic or heavily penetrated roofs. We'll recommend the best option after inspecting your property.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="faqToggle(this)">Can a flat roof handle heavy snow loads? <span class="faq-toggle">+</span></button>
+        <div class="faq-answer">Yes — flat roofs are engineered to handle the snow loads typical for Ontario. The critical factors are proper structural design and ensuring the roof is kept clear of excessive accumulation. We assess your structure as part of every flat roofing project to ensure it meets current load requirements.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="faqToggle(this)">How do I know if my flat roof needs to be replaced? <span class="faq-toggle">+</span></button>
+        <div class="faq-answer">Signs that your flat roof may need replacement include persistent leaks after repairs, visible membrane blistering or cracking, ponding water that doesn't drain within 48 hours, and a roof age exceeding 20 years. Contact us for a free inspection — we'll give you an honest assessment.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="cta-banner">
+  <h2>Get a Free Flat Roofing Estimate</h2>
+  <p>Contact us today for a free inspection and no-obligation estimate on your flat or low-slope roof project.</p>
+  <div class="cta-actions">
+    <a href="index.html#contact" class="btn btn-yellow">Request Free Estimate</a>
+    <a href="tel:+14165550100" class="btn btn-outline">&#128222;&nbsp; (416) 555-0100</a>
+  </div>
+</div>
+
+<section class="related-section">
+  <div class="section-inner">
+    <div class="section-label">Explore More</div>
+    <h2 class="section-title">Related Roofing Services</h2>
+    <div class="related-grid">
+      <div class="related-card">
+        <div class="related-card-img"><img src="Media/greenMetal48.jpg" alt="Commercial Roofing" loading="lazy"></div>
+        <div class="related-card-body"><h4>Commercial Roofing</h4><a href="roofing-commercial.html">Learn More &rarr;</a></div>
+      </div>
+      <div class="related-card">
+        <div class="related-card-img"><img src="Media/brenoRoofing6.jpg" alt="Roof Repair" loading="lazy"></div>
+        <div class="related-card-body"><h4>Roof Repair &amp; Emergency Service</h4><a href="roofing-repair.html">Learn More &rarr;</a></div>
+      </div>
+      <div class="related-card">
+        <div class="related-card-img"><img src="Media/greenMetal09.jpg" alt="Metal Roofing" loading="lazy"></div>
+        <div class="related-card-body"><h4>Metal Roofing</h4><a href="roofing-metal.html">Learn More &rarr;</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <img src="Media/Top Choice Roofing Logo.png" alt="Top Choice Roofing and Siding">
+      <p>Protecting homes and businesses across the Greater Toronto Area with quality roofing and siding solutions since 2005.</p>
+      <div class="social-links" style="margin-top:20px;">
+        <a href="#" aria-label="Facebook">f</a>
+        <a href="#" aria-label="Instagram">in</a>
+        <a href="#" aria-label="Google">G</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h5>Residential Roofing</h5>
+      <ul>
+        <li><a href="roofing-asphalt-shingles.html">Asphalt Shingle Roofing</a></li>
+        <li><a href="roofing-metal.html">Metal Roofing</a></li>
+        <li><a href="roofing-cedar-shake.html">Cedar Shake Roofing</a></li>
+        <li><a href="roofing-flat.html">Flat Roofing</a></li>
+        <li><a href="roofing-synthetic-slate.html">Synthetic Slate Roofing</a></li>
+        <li><a href="roofing-repair.html">Roof Repair</a></li>
+        <li><a href="roofing-repair.html">Emergency Service</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Commercial Roofing</h5>
+      <ul>
+        <li><a href="roofing-commercial.html">Flat Roofing</a></li>
+        <li><a href="roofing-commercial.html">Metal Roofing</a></li>
+        <li><a href="roofing-commercial.html">Shingles</a></li>
+        <li><a href="roofing-repair.html">Roof Repair</a></li>
+        <li><a href="roofing-repair.html">Emergency Service</a></li>
+      </ul>
+      <h5 style="margin-top:20px;">Siding</h5>
+      <ul>
+        <li><a href="index.html#services">Vinyl Siding</a></li>
+        <li><a href="index.html#services">Engineered Wood Siding</a></li>
+        <li><a href="index.html#services">Hardie Board Siding</a></li>
+        <li><a href="index.html#services">Soffit &amp; Fascia</a></li>
+        <li><a href="index.html#services">Eavestroughs</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Company</h5>
+      <ul>
+        <li><a href="index.html#why">About Us</a></li>
+        <li><a href="index.html#gallery">Gallery</a></li>
+        <li><a href="index.html#testimonials">Reviews</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li><a href="index.html#contact">Free Estimate</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2026 Top Choice Roofing and Siding. All rights reserved.</span>
+    <span>Serving the Greater Toronto Area &nbsp;|&nbsp; Licensed &amp; Insured</span>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,414 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Metal Roofing | Top Choice Roofing and Siding</title>
+<meta name="description" content="Premium residential metal roofing installation across the Greater Toronto Area. Standing seam and metal tile systems that last 50+ years.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="inner">
+    <div class="topbar-left"><span>&#128205; Serving the Greater Toronto Area</span></div>
+    <div class="topbar-right">
+      <a href="mailto:info@topchoiceroofing.ca">&#9993; info@topchoiceroofing.ca</a>
+      <a href="tel:+14165550100">&#128222; (416) 555-0100</a>
+    </div>
+  </div>
+</div>
+
+<header id="top">
+  <div class="header-inner">
+    <div class="logo"><img src="Media/Top Choice Roofing Logo.png" alt="Top Choice Roofing and Siding"></div>
+    <nav>
+      <a href="index.html">Home</a>
+      <div class="dropdown">
+        <a href="roofing.html" class="active">Roofing</a>
+        <div class="dropdown-menu">
+          <span class="sub-label">Residential</span>
+          <a href="roofing-asphalt-shingles.html">Asphalt Shingle Roofing</a>
+          <a href="roofing-metal.html">Metal Roofing</a>
+          <a href="roofing-cedar-shake.html">Cedar Shake Roofing</a>
+          <a href="roofing-flat.html">Flat Roofing</a>
+          <a href="roofing-synthetic-slate.html">Synthetic Slate Roofing</a>
+          <a href="roofing-repair.html">Roof Repair &amp; Emergency</a>
+          <span class="sub-label">Commercial</span>
+          <a href="roofing-commercial.html">Commercial Roofing</a>
+          <a href="roofing-commercial.html">Commercial Flat Roofing</a>
+          <a href="roofing-commercial.html">Commercial Metal Roofing</a>
+          <a href="roofing-commercial.html">Commercial Shingles</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="index.html#services">Siding</a>
+        <div class="dropdown-menu">
+          <a href="index.html#services">Vinyl Siding</a>
+          <a href="index.html#services">Engineered Wood Siding</a>
+          <a href="index.html#services">Hardie Board Siding</a>
+          <a href="index.html#services">Soffit &amp; Fascia</a>
+          <a href="index.html#services">Eavestroughs</a>
+        </div>
+      </div>
+      <a href="index.html#gallery">Gallery</a>
+      <a href="index.html#why">About</a>
+      <a href="index.html#contact">Contact</a>
+      <a href="index.html#contact" class="btn btn-yellow nav-cta">Free Estimate</a>
+    </nav>
+    <div class="hamburger" id="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+  </div>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="roofing.html">Roofing</a>
+    <a href="roofing-asphalt-shingles.html" class="mobile-sub">Asphalt Shingle Roofing</a>
+    <a href="roofing-metal.html" class="mobile-sub">Metal Roofing</a>
+    <a href="roofing-cedar-shake.html" class="mobile-sub">Cedar Shake Roofing</a>
+    <a href="roofing-flat.html" class="mobile-sub">Flat Roofing</a>
+    <a href="roofing-synthetic-slate.html" class="mobile-sub">Synthetic Slate Roofing</a>
+    <a href="roofing-commercial.html" class="mobile-sub">Commercial Roofing</a>
+    <a href="index.html#services">Siding</a>
+    <a href="index.html#gallery">Gallery</a>
+    <a href="index.html#why">About</a>
+    <a href="index.html#contact">Contact / Free Estimate</a>
+  </div>
+</header>
+
+<div class="page-hero page-hero-with-form" style="background: linear-gradient(rgba(30,55,10,.85),rgba(30,55,10,.7)), url('Media/greenMetal09.jpg') center/cover no-repeat;">
+  <div class="page-hero-inner">
+    <div class="page-hero-text">
+      <div class="hero-badge">Residential Roofing</div>
+      <h1><span>Metal Roofing</span> Built to Last a Lifetime</h1>
+      <p>Premium standing seam and metal tile roofing systems engineered for 50+ years of performance, energy efficiency, and stunning curb appeal.</p>
+      <div class="hero-actions">
+        <a href="tel:+14165550100" class="btn btn-outline">&#128222;&nbsp; (416) 555-0100</a>
+      </div>
+    </div>
+    <div class="page-hero-form-card">
+      <h3>Get Your Free Estimate</h3>
+      <p>We'll be in touch within 24 hours.</p>
+      <div class="form-steps">
+        <div class="form-step-dot active" id="s-dot-1">1</div><div class="form-step-line"></div>
+        <div class="form-step-dot" id="s-dot-2">2</div><div class="form-step-line"></div>
+        <div class="form-step-dot" id="s-dot-3">3</div><div class="form-step-line"></div>
+        <div class="form-step-dot" id="s-dot-4">4</div>
+      </div>
+      <form id="s-form" onsubmit="handleSubmit(event,'s-dot-')">
+        <div class="form-page active" id="s-p1">
+          <p style="font-size:13px;font-weight:600;color:var(--charcoal);margin-bottom:12px;">What are you looking for?</p>
+          <div class="cat-options">
+            <button type="button" class="cat-opt" data-cat="roofing" onclick="pickCategory(this,'s-form')">Roofing</button>
+            <button type="button" class="cat-opt" data-cat="siding" onclick="pickCategory(this,'s-form')">Siding</button>
+            <button type="button" class="cat-opt" data-cat="both" onclick="pickCategory(this,'s-form')">Both</button>
+          </div>
+          <div class="form-nav"><button type="button" class="btn-next cat-next-btn" onclick="goToServices('s-form','s-dot-')" disabled>Next &rarr;</button></div>
+        </div>
+        <div class="form-page" id="s-p2r">
+          <p style="font-size:13px;font-weight:600;color:var(--charcoal);margin-bottom:10px;">Which roofing service?</p>
+          <div class="svc-options">
+            <button type="button" class="svc-opt" onclick="pickSvc(this,'s-form')">Asphalt Shingles</button>
+            <button type="button" class="svc-opt" onclick="pickSvc(this,'s-form')">Metal Roofing</button>
+            <button type="button" class="svc-opt" onclick="pickSvc(this,'s-form')">Cedar Shake</button>
+            <button type="button" class="svc-opt" onclick="pickSvc(this,'s-form')">Flat Roofing</button>
+            <button type="button" class="svc-opt" onclick="pickSvc(this,'s-form')">Synthetic Slate</button>
+            <button type="button" class="svc-opt" onclick="pickSvc(this,'s-form')">Roof Repair</button>
+            <button type="button" class="svc-opt" onclick="pickSvc(this,'s-form')">Commercial Roofing</button>
+          </div>
+          <div class="form-nav">
+            <button type="button" class="btn-back" onclick="goToCategory('s-form','s-dot-')">&larr; Back</button>
+            <button type="button" class="btn-next svc-next-btn" onclick="goToContact('s-form','s-dot-')" disabled>Next &rarr;</button>
+          </div>
+        </div>
+        <div class="form-page" id="s-p2s">
+          <p style="font-size:13px;font-weight:600;color:var(--charcoal);margin-bottom:10px;">Which siding service?</p>
+          <div class="svc-options">
+            <button type="button" class="svc-opt" onclick="pickSvc(this,'s-form')">Vinyl Siding</button>
+            <button type="button" class="svc-opt" onclick="pickSvc(this,'s-form')">Engineered Wood</button>
+            <button type="button" class="svc-opt" onclick="pickSvc(this,'s-form')">Hardie Board</button>
+            <button type="button" class="svc-opt" onclick="pickSvc(this,'s-form')">Soffit &amp; Fascia</button>
+            <button type="button" class="svc-opt" onclick="pickSvc(this,'s-form')">Eavestroughs</button>
+            <button type="button" class="svc-opt" onclick="pickSvc(this,'s-form')">Siding Repair</button>
+          </div>
+          <div class="form-nav">
+            <button type="button" class="btn-back" onclick="goToCategory('s-form','s-dot-')">&larr; Back</button>
+            <button type="button" class="btn-next svc-next-btn" onclick="goToContact('s-form','s-dot-')" disabled>Next &rarr;</button>
+          </div>
+        </div>
+        <div class="form-page" id="s-p2b">
+          <p style="font-size:13px;font-weight:600;color:var(--charcoal);margin-bottom:4px;">Select all that apply:</p>
+          <p class="svc-group-label">Roofing</p>
+          <div class="svc-options" style="margin-bottom:6px;">
+            <button type="button" class="svc-opt" onclick="toggleSvc(this,'s-form')">Asphalt Shingles</button>
+            <button type="button" class="svc-opt" onclick="toggleSvc(this,'s-form')">Metal Roofing</button>
+            <button type="button" class="svc-opt" onclick="toggleSvc(this,'s-form')">Cedar Shake</button>
+            <button type="button" class="svc-opt" onclick="toggleSvc(this,'s-form')">Flat Roofing</button>
+            <button type="button" class="svc-opt" onclick="toggleSvc(this,'s-form')">Synthetic Slate</button>
+            <button type="button" class="svc-opt" onclick="toggleSvc(this,'s-form')">Roof Repair</button>
+          </div>
+          <p class="svc-group-label">Siding</p>
+          <div class="svc-options">
+            <button type="button" class="svc-opt" onclick="toggleSvc(this,'s-form')">Vinyl Siding</button>
+            <button type="button" class="svc-opt" onclick="toggleSvc(this,'s-form')">Engineered Wood</button>
+            <button type="button" class="svc-opt" onclick="toggleSvc(this,'s-form')">Hardie Board</button>
+            <button type="button" class="svc-opt" onclick="toggleSvc(this,'s-form')">Soffit &amp; Fascia</button>
+            <button type="button" class="svc-opt" onclick="toggleSvc(this,'s-form')">Eavestroughs</button>
+            <button type="button" class="svc-opt" onclick="toggleSvc(this,'s-form')">Siding Repair</button>
+          </div>
+          <div class="form-nav">
+            <button type="button" class="btn-back" onclick="goToCategory('s-form','s-dot-')">&larr; Back</button>
+            <button type="button" class="btn-next svc-next-btn" onclick="goToContact('s-form','s-dot-')" disabled>Next &rarr;</button>
+          </div>
+        </div>
+        <div class="form-page" id="s-p3">
+          <div class="form-row">
+            <div class="form-group"><label>First Name *</label><input type="text" placeholder="John" required></div>
+            <div class="form-group"><label>Last Name *</label><input type="text" placeholder="Smith" required></div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label>Phone *</label><input type="tel" placeholder="(416) 555-0100" required></div>
+            <div class="form-group"><label>Postal Code *</label><input type="text" placeholder="M5V 1A1" required></div>
+          </div>
+          <div class="form-group"><label>Email</label><input type="email" placeholder="john@email.com"></div>
+          <div class="form-nav">
+            <button type="button" class="btn-back" onclick="goToServicesBack('s-form','s-dot-')">&larr; Back</button>
+            <button type="button" class="btn-next" onclick="goToDetails('s-form','s-dot-')">Next &rarr;</button>
+          </div>
+        </div>
+        <div class="form-page" id="s-p4">
+          <div class="form-group"><label>Project Details</label><textarea placeholder="Tell us about your project — size, current condition, any specific concerns..."></textarea></div>
+          <div class="form-group">
+            <label>Preferred Timeline</label>
+            <select><option value="">Select timeline...</option><option>As soon as possible</option><option>Within 1 month</option><option>1–3 months</option><option>3–6 months</option><option>Just planning / no rush</option></select>
+          </div>
+          <div class="form-nav">
+            <button type="button" class="btn-back" onclick="goToContact('s-form','s-dot-')">&larr; Back</button>
+            <button type="submit" class="btn-next">Submit Request &rarr;</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="breadcrumb">
+  <div class="inner">
+    <a href="index.html">Home</a><span>&rsaquo;</span>
+    <a href="roofing.html">Roofing</a><span>&rsaquo;</span>
+    <span>Metal Roofing</span>
+  </div>
+</div>
+
+<section>
+  <div class="section-inner">
+    <div class="service-detail-grid">
+      <div class="service-detail-img">
+        <img src="Media/greenMetal06.jpg" alt="Metal roofing aerial view" loading="lazy">
+      </div>
+      <div class="service-detail-content">
+        <div class="section-label">What We Offer</div>
+        <h2>Residential Metal Roofing Installation</h2>
+        <p>Metal roofing is the premium long-term investment for your home. With a lifespan of 50 years or more, a properly installed metal roof can outlast two or three asphalt roofs — making it the last roof you'll ever need.</p>
+        <p>At Top Choice Roofing and Siding, we install two primary metal roofing systems: <strong>standing seam</strong>, with its clean modern lines and concealed fasteners, and <strong>metal tile</strong>, which replicates the look of traditional clay, slate, or shake at a fraction of the weight. Both systems are engineered to shed snow, resist wind uplift, and perform through decades of freeze-thaw cycles.</p>
+        <p>Our metal roofing installations include a full assessment of your structure, proper underlayment, ventilation improvements where needed, and flashings sealed to manufacturer specifications. Every project is backed by our written workmanship warranty.</p>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:24px;">
+          <a href="index.html#contact" class="btn btn-primary">Get a Free Estimate</a>
+          <a href="tel:+14165550100" class="btn btn-yellow">&#128222;&nbsp; Call Us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="benefits-section">
+  <div class="section-inner">
+    <div class="section-label">Why Metal Roofing</div>
+    <h2 class="section-title">The Premium Roofing Investment</h2>
+    <p class="section-sub">Metal roofing outperforms every other material across durability, efficiency, and long-term value.</p>
+    <div class="benefits-grid">
+      <div class="benefit-card">
+        <div class="benefit-icon">&#9201;</div>
+        <h4>50+ Year Lifespan</h4>
+        <p>A properly installed metal roof can last the lifetime of your home, outlasting asphalt shingles by 20–30 years.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">&#9889;</div>
+        <h4>Energy Efficient</h4>
+        <p>Metal reflects solar radiation rather than absorbing it, reducing cooling costs in summer by up to 25%.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">&#10052;</div>
+        <h4>Sheds Snow Naturally</h4>
+        <p>Metal's smooth surface allows snow and ice to slide off naturally, reducing structural load and ice dam formation.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">&#128293;</div>
+        <h4>Fire Resistant</h4>
+        <p>Metal roofing carries a Class A fire resistance rating — the highest available — providing added protection for your home.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">&#9851;</div>
+        <h4>Eco-Friendly</h4>
+        <p>Metal roofing contains recycled content and is 100% recyclable at end of life — a sustainable choice for environmentally conscious homeowners.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">&#127968;</div>
+        <h4>Increases Home Value</h4>
+        <p>A metal roof is a strong selling feature that increases resale value and can lower home insurance premiums.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--white);">
+  <div class="section-inner">
+    <div class="section-label">Our Work</div>
+    <h2 class="section-title">Metal Roofing Projects</h2>
+    <p class="section-sub">A selection of residential metal roofing installations completed across the GTA.</p>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="Media/greenMetal06.jpg" alt="Aerial metal roof" loading="lazy">
+        <div class="gallery-overlay"><span>Standing Seam Metal</span></div>
+      </div>
+      <div class="gallery-item">
+        <img src="Media/greenMetal09.jpg" alt="Home with metal roof" loading="lazy">
+        <div class="gallery-overlay"><span>Residential Metal Roof</span></div>
+      </div>
+      <div class="gallery-item">
+        <img src="Media/greenMetal19.jpg" alt="Metal tile roofing" loading="lazy">
+        <div class="gallery-overlay"><span>Metal Tile Roofing</span></div>
+      </div>
+      <div class="gallery-item">
+        <img src="Media/greenMetal26.jpg" alt="Stone home metal roof" loading="lazy">
+        <div class="gallery-overlay"><span>Metal Tile — Stone Home</span></div>
+      </div>
+      <div class="gallery-item">
+        <img src="Media/greenMetal60.jpg" alt="Metal tile with siding" loading="lazy">
+        <div class="gallery-overlay"><span>Metal Tile Roofing</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="faq-section">
+  <div class="section-inner">
+    <div class="section-label">Common Questions</div>
+    <h2 class="section-title">Metal Roofing FAQs</h2>
+    <p class="section-sub">Everything you need to know before choosing metal roofing for your home.</p>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question" onclick="faqToggle(this)">Is metal roofing loud in the rain? <span class="faq-toggle">+</span></button>
+        <div class="faq-answer">No — when installed over a solid roof deck with proper underlayment, metal roofing is no louder than asphalt shingles. In most cases, homeowners notice no difference in sound at all.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="faqToggle(this)">Will metal roofing attract lightning? <span class="faq-toggle">+</span></button>
+        <div class="faq-answer">No. Metal is not a lightning attractor — lightning strikes the tallest object in an area, regardless of material. Because metal roofing is non-combustible, it actually handles a lightning strike more safely than asphalt or wood roofing.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="faqToggle(this)">What is the difference between standing seam and metal tile? <span class="faq-toggle">+</span></button>
+        <div class="faq-answer">Standing seam panels feature raised interlocking seams with fully concealed fasteners, creating a sleek modern profile. Metal tile is formed to mimic the appearance of clay, slate, or wood shake and is ideal for traditional or heritage home styles. Both offer equivalent durability and performance.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="faqToggle(this)">How much does a metal roof cost compared to asphalt? <span class="faq-toggle">+</span></button>
+        <div class="faq-answer">Metal roofing typically costs 2–3 times more than asphalt shingles upfront. However, when you factor in the 50+ year lifespan versus 20–30 years for asphalt, lower maintenance costs, energy savings, and increased home value, metal roofing often provides a superior return on investment over the life of the home.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="faqToggle(this)">Can metal roofing be installed over existing shingles? <span class="faq-toggle">+</span></button>
+        <div class="faq-answer">In some cases, metal roofing can be installed over one existing layer of shingles, which eliminates tear-off costs. However, we recommend a full inspection first — if the deck shows signs of moisture damage or rot, a tear-off is the right call to ensure a sound, long-lasting installation.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="cta-banner">
+  <h2>Ready to Invest in a Lifetime Roof?</h2>
+  <p>Get a free, no-obligation metal roofing estimate from Top Choice. We'll assess your home, walk you through your options, and provide a detailed written quote.</p>
+  <div class="cta-actions">
+    <a href="index.html#contact" class="btn btn-yellow">Request Free Estimate</a>
+    <a href="tel:+14165550100" class="btn btn-outline">&#128222;&nbsp; (416) 555-0100</a>
+  </div>
+</div>
+
+<section class="related-section">
+  <div class="section-inner">
+    <div class="section-label">Explore More</div>
+    <h2 class="section-title">Related Roofing Services</h2>
+    <div class="related-grid">
+      <div class="related-card">
+        <div class="related-card-img"><img src="Media/greenMetal19.jpg" alt="Synthetic Slate" loading="lazy"></div>
+        <div class="related-card-body"><h4>Synthetic Slate Roofing</h4><a href="roofing-synthetic-slate.html">Learn More &rarr;</a></div>
+      </div>
+      <div class="related-card">
+        <div class="related-card-img"><img src="Media/profileRoofing3.jpg" alt="Asphalt Shingles" loading="lazy"></div>
+        <div class="related-card-body"><h4>Asphalt Shingle Roofing</h4><a href="roofing-asphalt-shingles.html">Learn More &rarr;</a></div>
+      </div>
+      <div class="related-card">
+        <div class="related-card-img"><img src="Media/greenMetal57.jpg" alt="Commercial Metal Roofing" loading="lazy"></div>
+        <div class="related-card-body"><h4>Commercial Metal Roofing</h4><a href="roofing-commercial.html">Learn More &rarr;</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <img src="Media/Top Choice Roofing Logo.png" alt="Top Choice Roofing and Siding">
+      <p>Protecting homes and businesses across the Greater Toronto Area with quality roofing and siding solutions since 2005.</p>
+      <div class="social-links" style="margin-top:20px;">
+        <a href="#" aria-label="Facebook">f</a>
+        <a href="#" aria-label="Instagram">in</a>
+        <a href="#" aria-label="Google">G</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h5>Residential Roofing</h5>
+      <ul>
+        <li><a href="roofing-asphalt-shingles.html">Asphalt Shingle Roofing</a></li>
+        <li><a href="roofing-metal.html">Metal Roofing</a></li>
+        <li><a href="roofing-cedar-shake.html">Cedar Shake Roofing</a></li>
+        <li><a href="roofing-flat.html">Flat Roofing</a></li>
+        <li><a href="roofing-synthetic-slate.html">Synthetic Slate Roofing</a></li>
+        <li><a href="roofing-repair.html">Roof Repair</a></li>
+        <li><a href="roofing-repair.html">Emergency Service</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Commercial Roofing</h5>
+      <ul>
+        <li><a href="roofing-commercial.html">Flat Roofing</a></li>
+        <li><a href="roofing-commercial.html">Metal Roofing</a></li>
+        <li><a href="roofing-commercial.html">Shingles</a></li>
+        <li><a href="roofing-repair.html">Roof Repair</a></li>
+        <li><a href="roofing-repair.html">Emergency Service</a></li>
+      </ul>
+      <h5 style="margin-top:20px;">Siding</h5>
+      <ul>
+        <li><a href="index.html#services">Vinyl Siding</a></li>
+        <li><a href="index.html#services">Engineered Wood Siding</a></li>
+        <li><a href="index.html#services">Hardie Board Siding</a></li>
+        <li><a href="index.html#services">Soffit &amp; Fascia</a></li>
+        <li><a href="index.html#services">Eavestroughs</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Company</h5>
+      <ul>
+        <li><a href="index.html#why">About Us</a></li>
+        <li><a href="index.html#gallery">Gallery</a></li>
+        <li><a href="index.html#testimonials">Reviews</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li><a href="index.html#contact">Free Estimate</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2026 Top Choice Roofing and Siding. All rights reserved.</span>
+    <span>Serving the Greater Toronto Area &nbsp;|&nbsp; Licensed &amp; Insured</span>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

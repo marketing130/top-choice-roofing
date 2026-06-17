@@ -1,0 +1,414 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cedar Shake Roofing | Top Choice Roofing and Siding</title>
+<meta name="description" content="Expert cedar shake roofing installation and replacement across the Greater Toronto Area. Natural beauty, superior insulation, and expert craftsmanship.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="inner">
+    <div class="topbar-left"><span>&#128205; Serving the Greater Toronto Area</span></div>
+    <div class="topbar-right">
+      <a href="mailto:info@topchoiceroofing.ca">&#9993; info@topchoiceroofing.ca</a>
+      <a href="tel:+14165550100">&#128222; (416) 555-0100</a>
+    </div>
+  </div>
+</div>
+
+<header id="top">
+  <div class="header-inner">
+    <div class="logo"><img src="Media/Top Choice Roofing Logo.png" alt="Top Choice Roofing and Siding"></div>
+    <nav>
+      <a href="index.html">Home</a>
+      <div class="dropdown">
+        <a href="roofing.html" class="active">Roofing</a>
+        <div class="dropdown-menu">
+          <span class="sub-label">Residential</span>
+          <a href="roofing-asphalt-shingles.html">Asphalt Shingle Roofing</a>
+          <a href="roofing-metal.html">Metal Roofing</a>
+          <a href="roofing-cedar-shake.html">Cedar Shake Roofing</a>
+          <a href="roofing-flat.html">Flat Roofing</a>
+          <a href="roofing-synthetic-slate.html">Synthetic Slate Roofing</a>
+          <a href="roofing-repair.html">Roof Repair &amp; Emergency</a>
+          <span class="sub-label">Commercial</span>
+          <a href="roofing-commercial.html">Commercial Roofing</a>
+          <a href="roofing-commercial.html">Commercial Flat Roofing</a>
+          <a href="roofing-commercial.html">Commercial Metal Roofing</a>
+          <a href="roofing-commercial.html">Commercial Shingles</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="index.html#services">Siding</a>
+        <div class="dropdown-menu">
+          <a href="index.html#services">Vinyl Siding</a>
+          <a href="index.html#services">Engineered Wood Siding</a>
+          <a href="index.html#services">Hardie Board Siding</a>
+          <a href="index.html#services">Soffit &amp; Fascia</a>
+          <a href="index.html#services">Eavestroughs</a>
+        </div>
+      </div>
+      <a href="index.html#gallery">Gallery</a>
+      <a href="index.html#why">About</a>
+      <a href="index.html#contact">Contact</a>
+      <a href="index.html#contact" class="btn btn-yellow nav-cta">Free Estimate</a>
+    </nav>
+    <div class="hamburger" id="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+  </div>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="roofing.html">Roofing</a>
+    <a href="roofing-asphalt-shingles.html" class="mobile-sub">Asphalt Shingle Roofing</a>
+    <a href="roofing-metal.html" class="mobile-sub">Metal Roofing</a>
+    <a href="roofing-cedar-shake.html" class="mobile-sub">Cedar Shake Roofing</a>
+    <a href="roofing-flat.html" class="mobile-sub">Flat Roofing</a>
+    <a href="roofing-synthetic-slate.html" class="mobile-sub">Synthetic Slate Roofing</a>
+    <a href="roofing-commercial.html" class="mobile-sub">Commercial Roofing</a>
+    <a href="index.html#services">Siding</a>
+    <a href="index.html#gallery">Gallery</a>
+    <a href="index.html#why">About</a>
+    <a href="index.html#contact">Contact / Free Estimate</a>
+  </div>
+</header>
+
+<div class="page-hero page-hero-with-form" style="background: linear-gradient(rgba(30,55,10,.85),rgba(30,55,10,.7)), url('Media/profileRoofing6.jpg') center/cover no-repeat;">
+  <div class="page-hero-inner">
+    <div class="page-hero-text">
+      <div class="hero-badge">Residential Roofing</div>
+      <h1><span>Cedar Shake</span> Roofing</h1>
+      <p>Natural beauty, exceptional insulation, and a timeless aesthetic — installed by craftsmen who understand what wood roofing demands.</p>
+      <div class="hero-actions">
+        <a href="tel:+14165550100" class="btn btn-outline">&#128222;&nbsp; (416) 555-0100</a>
+      </div>
+    </div>
+    <div class="page-hero-form-card">
+      <h3>Get Your Free Estimate</h3>
+      <p>We'll be in touch within 24 hours.</p>
+      <div class="form-steps">
+        <div class="form-step-dot active" id="s-dot-1">1</div><div class="form-step-line"></div>
+        <div class="form-step-dot" id="s-dot-2">2</div><div class="form-step-line"></div>
+        <div class="form-step-dot" id="s-dot-3">3</div><div class="form-step-line"></div>
+        <div class="form-step-dot" id="s-dot-4">4</div>
+      </div>
+      <form id="s-form" onsubmit="handleSubmit(event,'s-dot-')">
+        <div class="form-page active" id="s-p1">
+          <p style="font-size:13px;font-weight:600;color:var(--charcoal);margin-bottom:12px;">What are you looking for?</p>
+          <div class="cat-options">
+            <button type="button" class="cat-opt" data-cat="roofing" onclick="pickCategory(this,'s-form')">Roofing</button>
+            <button type="button" class="cat-opt" data-cat="siding" onclick="pickCategory(this,'s-form')">Siding</button>
+            <button type="button" class="cat-opt" data-cat="both" onclick="pickCategory(this,'s-form')">Both</button>
+          </div>
+          <div class="form-nav"><button type="button" class="btn-next cat-next-btn" onclick="goToServices('s-form','s-dot-')" disabled>Next &rarr;</button></div>
+        </div>
+        <div class="form-page" id="s-p2r">
+          <p style="font-size:13px;font-weight:600;color:var(--charcoal);margin-bottom:10px;">Which roofing service?</p>
+          <div class="svc-options">
+            <button type="button" class="svc-opt" onclick="pickSvc(this,'s-form')">Asphalt Shingles</button>
+            <button type="button" class="svc-opt" onclick="pickSvc(this,'s-form')">Metal Roofing</button>
+            <button type="button" class="svc-opt" onclick="pickSvc(this,'s-form')">Cedar Shake</button>
+            <button type="button" class="svc-opt" onclick="pickSvc(this,'s-form')">Flat Roofing</button>
+            <button type="button" class="svc-opt" onclick="pickSvc(this,'s-form')">Synthetic Slate</button>
+            <button type="button" class="svc-opt" onclick="pickSvc(this,'s-form')">Roof Repair</button>
+            <button type="button" class="svc-opt" onclick="pickSvc(this,'s-form')">Commercial Roofing</button>
+          </div>
+          <div class="form-nav">
+            <button type="button" class="btn-back" onclick="goToCategory('s-form','s-dot-')">&larr; Back</button>
+            <button type="button" class="btn-next svc-next-btn" onclick="goToContact('s-form','s-dot-')" disabled>Next &rarr;</button>
+          </div>
+        </div>
+        <div class="form-page" id="s-p2s">
+          <p style="font-size:13px;font-weight:600;color:var(--charcoal);margin-bottom:10px;">Which siding service?</p>
+          <div class="svc-options">
+            <button type="button" class="svc-opt" onclick="pickSvc(this,'s-form')">Vinyl Siding</button>
+            <button type="button" class="svc-opt" onclick="pickSvc(this,'s-form')">Engineered Wood</button>
+            <button type="button" class="svc-opt" onclick="pickSvc(this,'s-form')">Hardie Board</button>
+            <button type="button" class="svc-opt" onclick="pickSvc(this,'s-form')">Soffit &amp; Fascia</button>
+            <button type="button" class="svc-opt" onclick="pickSvc(this,'s-form')">Eavestroughs</button>
+            <button type="button" class="svc-opt" onclick="pickSvc(this,'s-form')">Siding Repair</button>
+          </div>
+          <div class="form-nav">
+            <button type="button" class="btn-back" onclick="goToCategory('s-form','s-dot-')">&larr; Back</button>
+            <button type="button" class="btn-next svc-next-btn" onclick="goToContact('s-form','s-dot-')" disabled>Next &rarr;</button>
+          </div>
+        </div>
+        <div class="form-page" id="s-p2b">
+          <p style="font-size:13px;font-weight:600;color:var(--charcoal);margin-bottom:4px;">Select all that apply:</p>
+          <p class="svc-group-label">Roofing</p>
+          <div class="svc-options" style="margin-bottom:6px;">
+            <button type="button" class="svc-opt" onclick="toggleSvc(this,'s-form')">Asphalt Shingles</button>
+            <button type="button" class="svc-opt" onclick="toggleSvc(this,'s-form')">Metal Roofing</button>
+            <button type="button" class="svc-opt" onclick="toggleSvc(this,'s-form')">Cedar Shake</button>
+            <button type="button" class="svc-opt" onclick="toggleSvc(this,'s-form')">Flat Roofing</button>
+            <button type="button" class="svc-opt" onclick="toggleSvc(this,'s-form')">Synthetic Slate</button>
+            <button type="button" class="svc-opt" onclick="toggleSvc(this,'s-form')">Roof Repair</button>
+          </div>
+          <p class="svc-group-label">Siding</p>
+          <div class="svc-options">
+            <button type="button" class="svc-opt" onclick="toggleSvc(this,'s-form')">Vinyl Siding</button>
+            <button type="button" class="svc-opt" onclick="toggleSvc(this,'s-form')">Engineered Wood</button>
+            <button type="button" class="svc-opt" onclick="toggleSvc(this,'s-form')">Hardie Board</button>
+            <button type="button" class="svc-opt" onclick="toggleSvc(this,'s-form')">Soffit &amp; Fascia</button>
+            <button type="button" class="svc-opt" onclick="toggleSvc(this,'s-form')">Eavestroughs</button>
+            <button type="button" class="svc-opt" onclick="toggleSvc(this,'s-form')">Siding Repair</button>
+          </div>
+          <div class="form-nav">
+            <button type="button" class="btn-back" onclick="goToCategory('s-form','s-dot-')">&larr; Back</button>
+            <button type="button" class="btn-next svc-next-btn" onclick="goToContact('s-form','s-dot-')" disabled>Next &rarr;</button>
+          </div>
+        </div>
+        <div class="form-page" id="s-p3">
+          <div class="form-row">
+            <div class="form-group"><label>First Name *</label><input type="text" placeholder="John" required></div>
+            <div class="form-group"><label>Last Name *</label><input type="text" placeholder="Smith" required></div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label>Phone *</label><input type="tel" placeholder="(416) 555-0100" required></div>
+            <div class="form-group"><label>Postal Code *</label><input type="text" placeholder="M5V 1A1" required></div>
+          </div>
+          <div class="form-group"><label>Email</label><input type="email" placeholder="john@email.com"></div>
+          <div class="form-nav">
+            <button type="button" class="btn-back" onclick="goToServicesBack('s-form','s-dot-')">&larr; Back</button>
+            <button type="button" class="btn-next" onclick="goToDetails('s-form','s-dot-')">Next &rarr;</button>
+          </div>
+        </div>
+        <div class="form-page" id="s-p4">
+          <div class="form-group"><label>Project Details</label><textarea placeholder="Tell us about your project — size, current condition, any specific concerns..."></textarea></div>
+          <div class="form-group">
+            <label>Preferred Timeline</label>
+            <select><option value="">Select timeline...</option><option>As soon as possible</option><option>Within 1 month</option><option>1–3 months</option><option>3–6 months</option><option>Just planning / no rush</option></select>
+          </div>
+          <div class="form-nav">
+            <button type="button" class="btn-back" onclick="goToContact('s-form','s-dot-')">&larr; Back</button>
+            <button type="submit" class="btn-next">Submit Request &rarr;</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="breadcrumb">
+  <div class="inner">
+    <a href="index.html">Home</a><span>&rsaquo;</span>
+    <a href="roofing.html">Roofing</a><span>&rsaquo;</span>
+    <span>Cedar Shake Roofing</span>
+  </div>
+</div>
+
+<section>
+  <div class="section-inner">
+    <div class="service-detail-grid">
+      <div class="service-detail-img">
+        <img src="Media/profileRoofing6.jpg" alt="Cedar shake roofing" loading="lazy">
+      </div>
+      <div class="service-detail-content">
+        <div class="section-label">What We Offer</div>
+        <h2>Cedar Shake Roofing Installation &amp; Replacement</h2>
+        <p>Cedar shake roofing delivers a rich, natural look that no synthetic material can truly replicate. The rough-split texture and warm tones of western red cedar create a distinctive aesthetic that adds warmth and character to any home — from heritage properties to contemporary builds.</p>
+        <p>Cedar is naturally resistant to insects and decay, and its cellular structure provides thermal insulation superior to most other roofing materials. A well-maintained cedar shake roof lasts 25–30 years and improves with age as it weathers to a beautiful silver-grey patina.</p>
+        <p>At Top Choice Roofing and Siding, our cedar shake installations follow best practices for ventilation, spacing, and moisture management. We use pressure-treated breather strips and proper underlayment to extend the life of your shake roof and prevent moisture-related issues before they start.</p>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:24px;">
+          <a href="index.html#contact" class="btn btn-primary">Get a Free Estimate</a>
+          <a href="tel:+14165550100" class="btn btn-yellow">&#128222;&nbsp; Call Us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="benefits-section">
+  <div class="section-inner">
+    <div class="section-label">Why Cedar Shake</div>
+    <h2 class="section-title">Natural Performance, Timeless Character</h2>
+    <p class="section-sub">Cedar shake roofing offers a unique combination of beauty and performance that homeowners love.</p>
+    <div class="benefits-grid">
+      <div class="benefit-card">
+        <div class="benefit-icon">&#127795;</div>
+        <h4>Natural Beauty</h4>
+        <p>No two cedar shake roofs look the same. Each shake carries the natural grain and texture of real wood for a truly distinctive look.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">&#127777;</div>
+        <h4>Superior Insulation</h4>
+        <p>Cedar's natural cellular structure provides insulation value twice that of asphalt shingles, helping to keep your home comfortable year-round.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">&#9201;</div>
+        <h4>25–30 Year Lifespan</h4>
+        <p>With proper installation and periodic maintenance, a cedar shake roof delivers decades of reliable protection and natural beauty.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">&#127807;</div>
+        <h4>Naturally Resistant</h4>
+        <p>Western red cedar contains natural oils that resist insects, rot, and moisture — no chemical treatments required.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">&#9851;</div>
+        <h4>Sustainable Material</h4>
+        <p>Cedar is a renewable, biodegradable natural resource — an eco-conscious choice for homeowners who value sustainability.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">&#127968;</div>
+        <h4>Boosts Curb Appeal</h4>
+        <p>A cedar shake roof is a premium feature that elevates your home's visual appeal and increases resale value.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--white);">
+  <div class="section-inner">
+    <div class="section-label">Our Work</div>
+    <h2 class="section-title">Cedar Shake Projects</h2>
+    <p class="section-sub">Completed cedar shake roofing installations from our team across the Greater Toronto Area.</p>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="Media/profileRoofing6.jpg" alt="Cedar shake roof with skylight" loading="lazy">
+        <div class="gallery-overlay"><span>Cedar Shake Roofing</span></div>
+      </div>
+      <div class="gallery-item">
+        <img src="Media/profileRoofing7.jpg" alt="Cedar shake roof autumn" loading="lazy">
+        <div class="gallery-overlay"><span>Cedar Shake Replacement</span></div>
+      </div>
+      <div class="gallery-item">
+        <img src="Media/profileRoofing8.jpg" alt="New construction roofing" loading="lazy">
+        <div class="gallery-overlay"><span>New Construction</span></div>
+      </div>
+      <div class="gallery-item">
+        <img src="Media/profileRoofing3.jpg" alt="Residential roofing" loading="lazy">
+        <div class="gallery-overlay"><span>Roof Replacement</span></div>
+      </div>
+      <div class="gallery-item">
+        <img src="Media/brenoRoofing4.jpg" alt="Roofing installation" loading="lazy">
+        <div class="gallery-overlay"><span>Expert Installation</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="faq-section">
+  <div class="section-inner">
+    <div class="section-label">Common Questions</div>
+    <h2 class="section-title">Cedar Shake Roofing FAQs</h2>
+    <p class="section-sub">Answers to the most common questions about cedar shake roofing.</p>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question" onclick="faqToggle(this)">How long does a cedar shake roof last? <span class="faq-toggle">+</span></button>
+        <div class="faq-answer">A properly installed cedar shake roof typically lasts 25–30 years in Ontario's climate. Lifespan is significantly influenced by the quality of installation, ventilation, and periodic maintenance such as moss treatment and inspection after major storms.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="faqToggle(this)">Does cedar shake roofing require maintenance? <span class="faq-toggle">+</span></button>
+        <div class="faq-answer">Yes — cedar shake roofs benefit from periodic cleaning to remove moss, lichen, and debris, as well as a preservative treatment every 5–7 years to maintain the wood's natural oils and extend lifespan. We offer maintenance packages to keep your cedar roof in top condition.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="faqToggle(this)">Is cedar shake roofing a fire hazard? <span class="faq-toggle">+</span></button>
+        <div class="faq-answer">Untreated cedar has a Class C fire rating. However, pressure-treated fire-retardant cedar shakes are available that achieve a Class A or B rating — the same as asphalt shingles. We discuss all options with you upfront to ensure your installation meets local building code requirements.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="faqToggle(this)">What is the difference between cedar shakes and cedar shingles? <span class="faq-toggle">+</span></button>
+        <div class="faq-answer">Cedar shakes are split from the wood block, giving them a rough, textured face. Cedar shingles are sawn smooth on both sides and have a more refined appearance. Shakes are thicker and more rustic; shingles are more uniform and tapered. We install both — the right choice depends on your home's style and your aesthetic preferences.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="faqToggle(this)">Can I replace cedar shake with a different material? <span class="faq-toggle">+</span></button>
+        <div class="faq-answer">Absolutely. Many homeowners choose to replace aging cedar shake roofs with synthetic slate or high-end asphalt shingles that mimic the wood look with lower maintenance requirements. We can walk you through all your options and help you find the right material for your home and budget.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="cta-banner">
+  <h2>Interested in Cedar Shake Roofing?</h2>
+  <p>Get a free, no-obligation estimate from Top Choice. We'll assess your home and walk you through your cedar shake options.</p>
+  <div class="cta-actions">
+    <a href="index.html#contact" class="btn btn-yellow">Request Free Estimate</a>
+    <a href="tel:+14165550100" class="btn btn-outline">&#128222;&nbsp; (416) 555-0100</a>
+  </div>
+</div>
+
+<section class="related-section">
+  <div class="section-inner">
+    <div class="section-label">Explore More</div>
+    <h2 class="section-title">Related Roofing Services</h2>
+    <div class="related-grid">
+      <div class="related-card">
+        <div class="related-card-img"><img src="Media/greenMetal19.jpg" alt="Synthetic Slate" loading="lazy"></div>
+        <div class="related-card-body"><h4>Synthetic Slate Roofing</h4><a href="roofing-synthetic-slate.html">Learn More &rarr;</a></div>
+      </div>
+      <div class="related-card">
+        <div class="related-card-img"><img src="Media/greenMetal09.jpg" alt="Metal Roofing" loading="lazy"></div>
+        <div class="related-card-body"><h4>Metal Roofing</h4><a href="roofing-metal.html">Learn More &rarr;</a></div>
+      </div>
+      <div class="related-card">
+        <div class="related-card-img"><img src="Media/profileRoofing3.jpg" alt="Asphalt Shingles" loading="lazy"></div>
+        <div class="related-card-body"><h4>Asphalt Shingle Roofing</h4><a href="roofing-asphalt-shingles.html">Learn More &rarr;</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <img src="Media/Top Choice Roofing Logo.png" alt="Top Choice Roofing and Siding">
+      <p>Protecting homes and businesses across the Greater Toronto Area with quality roofing and siding solutions since 2005.</p>
+      <div class="social-links" style="margin-top:20px;">
+        <a href="#" aria-label="Facebook">f</a>
+        <a href="#" aria-label="Instagram">in</a>
+        <a href="#" aria-label="Google">G</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h5>Residential Roofing</h5>
+      <ul>
+        <li><a href="roofing-asphalt-shingles.html">Asphalt Shingle Roofing</a></li>
+        <li><a href="roofing-metal.html">Metal Roofing</a></li>
+        <li><a href="roofing-cedar-shake.html">Cedar Shake Roofing</a></li>
+        <li><a href="roofing-flat.html">Flat Roofing</a></li>
+        <li><a href="roofing-synthetic-slate.html">Synthetic Slate Roofing</a></li>
+        <li><a href="roofing-repair.html">Roof Repair</a></li>
+        <li><a href="roofing-repair.html">Emergency Service</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Commercial Roofing</h5>
+      <ul>
+        <li><a href="roofing-commercial.html">Flat Roofing</a></li>
+        <li><a href="roofing-commercial.html">Metal Roofing</a></li>
+        <li><a href="roofing-commercial.html">Shingles</a></li>
+        <li><a href="roofing-repair.html">Roof Repair</a></li>
+        <li><a href="roofing-repair.html">Emergency Service</a></li>
+      </ul>
+      <h5 style="margin-top:20px;">Siding</h5>
+      <ul>
+        <li><a href="index.html#services">Vinyl Siding</a></li>
+        <li><a href="index.html#services">Engineered Wood Siding</a></li>
+        <li><a href="index.html#services">Hardie Board Siding</a></li>
+        <li><a href="index.html#services">Soffit &amp; Fascia</a></li>
+        <li><a href="index.html#services">Eavestroughs</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Company</h5>
+      <ul>
+        <li><a href="index.html#why">About Us</a></li>
+        <li><a href="index.html#gallery">Gallery</a></li>
+        <li><a href="index.html#testimonials">Reviews</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li><a href="index.html#contact">Free Estimate</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2026 Top Choice Roofing and Siding. All rights reserved.</span>
+    <span>Serving the Greater Toronto Area &nbsp;|&nbsp; Licensed &amp; Insured</span>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

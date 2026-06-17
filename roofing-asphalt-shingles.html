@@ -1,0 +1,433 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Asphalt Shingle Roofing | Top Choice Roofing and Siding</title>
+<meta name="description" content="Expert asphalt shingle roofing installation and replacement across the Greater Toronto Area. Affordable, durable, and backed by manufacturer warranties.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="inner">
+    <div class="topbar-left"><span>&#128205; Serving the Greater Toronto Area</span></div>
+    <div class="topbar-right">
+      <a href="mailto:info@topchoiceroofing.ca">&#9993; info@topchoiceroofing.ca</a>
+      <a href="tel:+14165550100">&#128222; (416) 555-0100</a>
+    </div>
+  </div>
+</div>
+
+<header id="top">
+  <div class="header-inner">
+    <div class="logo"><img src="Media/Top Choice Roofing Logo.png" alt="Top Choice Roofing and Siding"></div>
+    <nav>
+      <a href="index.html">Home</a>
+      <div class="dropdown">
+        <a href="roofing.html" class="active">Roofing</a>
+        <div class="dropdown-menu">
+          <span class="sub-label">Residential</span>
+          <a href="roofing-asphalt-shingles.html">Asphalt Shingle Roofing</a>
+          <a href="roofing-metal.html">Metal Roofing</a>
+          <a href="roofing-cedar-shake.html">Cedar Shake Roofing</a>
+          <a href="roofing-flat.html">Flat Roofing</a>
+          <a href="roofing-synthetic-slate.html">Synthetic Slate Roofing</a>
+          <a href="roofing-repair.html">Roof Repair &amp; Emergency</a>
+          <span class="sub-label">Commercial</span>
+          <a href="roofing-commercial.html">Commercial Roofing</a>
+          <a href="roofing-commercial.html">Commercial Flat Roofing</a>
+          <a href="roofing-commercial.html">Commercial Metal Roofing</a>
+          <a href="roofing-commercial.html">Commercial Shingles</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="index.html#services">Siding</a>
+        <div class="dropdown-menu">
+          <a href="index.html#services">Vinyl Siding</a>
+          <a href="index.html#services">Engineered Wood Siding</a>
+          <a href="index.html#services">Hardie Board Siding</a>
+          <a href="index.html#services">Soffit &amp; Fascia</a>
+          <a href="index.html#services">Eavestroughs</a>
+        </div>
+      </div>
+      <a href="index.html#gallery">Gallery</a>
+      <a href="index.html#why">About</a>
+      <a href="index.html#contact">Contact</a>
+      <a href="index.html#contact" class="btn btn-yellow nav-cta">Free Estimate</a>
+    </nav>
+    <div class="hamburger" id="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+  </div>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="roofing.html">Roofing</a>
+    <a href="roofing-asphalt-shingles.html" class="mobile-sub">Asphalt Shingle Roofing</a>
+    <a href="roofing-metal.html" class="mobile-sub">Metal Roofing</a>
+    <a href="roofing-cedar-shake.html" class="mobile-sub">Cedar Shake Roofing</a>
+    <a href="roofing-flat.html" class="mobile-sub">Flat Roofing</a>
+    <a href="roofing-synthetic-slate.html" class="mobile-sub">Synthetic Slate Roofing</a>
+    <a href="roofing-commercial.html" class="mobile-sub">Commercial Roofing</a>
+    <a href="index.html#services">Siding</a>
+    <a href="index.html#gallery">Gallery</a>
+    <a href="index.html#why">About</a>
+    <a href="index.html#contact">Contact / Free Estimate</a>
+  </div>
+</header>
+
+<div class="page-hero page-hero-with-form" style="background: linear-gradient(rgba(30,55,10,.85),rgba(30,55,10,.7)), url('Media/profileRoofing3.jpg') center/cover no-repeat;">
+  <div class="page-hero-inner">
+    <div class="page-hero-text">
+      <div class="hero-badge">Residential Roofing</div>
+      <h1><span>Asphalt Shingle</span> Roofing</h1>
+      <p>Canada's most popular roofing system — affordable, durable, and built to protect your home through every season.</p>
+      <div class="hero-actions">
+        <a href="tel:+14165550100" class="btn btn-outline">&#128222;&nbsp; (416) 555-0100</a>
+      </div>
+    </div>
+    <div class="page-hero-form-card">
+      <h3>Get Your Free Estimate</h3>
+      <p>We'll be in touch within 24 hours.</p>
+      <div class="form-steps">
+        <div class="form-step-dot active" id="s-dot-1">1</div><div class="form-step-line"></div>
+        <div class="form-step-dot" id="s-dot-2">2</div><div class="form-step-line"></div>
+        <div class="form-step-dot" id="s-dot-3">3</div><div class="form-step-line"></div>
+        <div class="form-step-dot" id="s-dot-4">4</div>
+      </div>
+      <form id="s-form" onsubmit="handleSubmit(event,'s-dot-')">
+        <div class="form-page active" id="s-p1">
+          <p style="font-size:13px;font-weight:600;color:var(--charcoal);margin-bottom:12px;">What are you looking for?</p>
+          <div class="cat-options">
+            <button type="button" class="cat-opt" data-cat="roofing" onclick="pickCategory(this,'s-form')">Roofing</button>
+            <button type="button" class="cat-opt" data-cat="siding" onclick="pickCategory(this,'s-form')">Siding</button>
+            <button type="button" class="cat-opt" data-cat="both" onclick="pickCategory(this,'s-form')">Both</button>
+          </div>
+          <div class="form-nav"><button type="button" class="btn-next cat-next-btn" onclick="goToServices('s-form','s-dot-')" disabled>Next &rarr;</button></div>
+        </div>
+        <div class="form-page" id="s-p2r">
+          <p style="font-size:13px;font-weight:600;color:var(--charcoal);margin-bottom:10px;">Which roofing service?</p>
+          <div class="svc-options">
+            <button type="button" class="svc-opt" onclick="pickSvc(this,'s-form')">Asphalt Shingles</button>
+            <button type="button" class="svc-opt" onclick="pickSvc(this,'s-form')">Metal Roofing</button>
+            <button type="button" class="svc-opt" onclick="pickSvc(this,'s-form')">Cedar Shake</button>
+            <button type="button" class="svc-opt" onclick="pickSvc(this,'s-form')">Flat Roofing</button>
+            <button type="button" class="svc-opt" onclick="pickSvc(this,'s-form')">Synthetic Slate</button>
+            <button type="button" class="svc-opt" onclick="pickSvc(this,'s-form')">Roof Repair</button>
+            <button type="button" class="svc-opt" onclick="pickSvc(this,'s-form')">Commercial Roofing</button>
+          </div>
+          <div class="form-nav">
+            <button type="button" class="btn-back" onclick="goToCategory('s-form','s-dot-')">&larr; Back</button>
+            <button type="button" class="btn-next svc-next-btn" onclick="goToContact('s-form','s-dot-')" disabled>Next &rarr;</button>
+          </div>
+        </div>
+        <div class="form-page" id="s-p2s">
+          <p style="font-size:13px;font-weight:600;color:var(--charcoal);margin-bottom:10px;">Which siding service?</p>
+          <div class="svc-options">
+            <button type="button" class="svc-opt" onclick="pickSvc(this,'s-form')">Vinyl Siding</button>
+            <button type="button" class="svc-opt" onclick="pickSvc(this,'s-form')">Engineered Wood</button>
+            <button type="button" class="svc-opt" onclick="pickSvc(this,'s-form')">Hardie Board</button>
+            <button type="button" class="svc-opt" onclick="pickSvc(this,'s-form')">Soffit &amp; Fascia</button>
+            <button type="button" class="svc-opt" onclick="pickSvc(this,'s-form')">Eavestroughs</button>
+            <button type="button" class="svc-opt" onclick="pickSvc(this,'s-form')">Siding Repair</button>
+          </div>
+          <div class="form-nav">
+            <button type="button" class="btn-back" onclick="goToCategory('s-form','s-dot-')">&larr; Back</button>
+            <button type="button" class="btn-next svc-next-btn" onclick="goToContact('s-form','s-dot-')" disabled>Next &rarr;</button>
+          </div>
+        </div>
+        <div class="form-page" id="s-p2b">
+          <p style="font-size:13px;font-weight:600;color:var(--charcoal);margin-bottom:4px;">Select all that apply:</p>
+          <p class="svc-group-label">Roofing</p>
+          <div class="svc-options" style="margin-bottom:6px;">
+            <button type="button" class="svc-opt" onclick="toggleSvc(this,'s-form')">Asphalt Shingles</button>
+            <button type="button" class="svc-opt" onclick="toggleSvc(this,'s-form')">Metal Roofing</button>
+            <button type="button" class="svc-opt" onclick="toggleSvc(this,'s-form')">Cedar Shake</button>
+            <button type="button" class="svc-opt" onclick="toggleSvc(this,'s-form')">Flat Roofing</button>
+            <button type="button" class="svc-opt" onclick="toggleSvc(this,'s-form')">Synthetic Slate</button>
+            <button type="button" class="svc-opt" onclick="toggleSvc(this,'s-form')">Roof Repair</button>
+          </div>
+          <p class="svc-group-label">Siding</p>
+          <div class="svc-options">
+            <button type="button" class="svc-opt" onclick="toggleSvc(this,'s-form')">Vinyl Siding</button>
+            <button type="button" class="svc-opt" onclick="toggleSvc(this,'s-form')">Engineered Wood</button>
+            <button type="button" class="svc-opt" onclick="toggleSvc(this,'s-form')">Hardie Board</button>
+            <button type="button" class="svc-opt" onclick="toggleSvc(this,'s-form')">Soffit &amp; Fascia</button>
+            <button type="button" class="svc-opt" onclick="toggleSvc(this,'s-form')">Eavestroughs</button>
+            <button type="button" class="svc-opt" onclick="toggleSvc(this,'s-form')">Siding Repair</button>
+          </div>
+          <div class="form-nav">
+            <button type="button" class="btn-back" onclick="goToCategory('s-form','s-dot-')">&larr; Back</button>
+            <button type="button" class="btn-next svc-next-btn" onclick="goToContact('s-form','s-dot-')" disabled>Next &rarr;</button>
+          </div>
+        </div>
+        <div class="form-page" id="s-p3">
+          <div class="form-row">
+            <div class="form-group"><label>First Name *</label><input type="text" placeholder="John" required></div>
+            <div class="form-group"><label>Last Name *</label><input type="text" placeholder="Smith" required></div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label>Phone *</label><input type="tel" placeholder="(416) 555-0100" required></div>
+            <div class="form-group"><label>Postal Code *</label><input type="text" placeholder="M5V 1A1" required></div>
+          </div>
+          <div class="form-group"><label>Email</label><input type="email" placeholder="john@email.com"></div>
+          <div class="form-nav">
+            <button type="button" class="btn-back" onclick="goToServicesBack('s-form','s-dot-')">&larr; Back</button>
+            <button type="button" class="btn-next" onclick="goToDetails('s-form','s-dot-')">Next &rarr;</button>
+          </div>
+        </div>
+        <div class="form-page" id="s-p4">
+          <div class="form-group"><label>Project Details</label><textarea placeholder="Tell us about your project — size, current condition, any specific concerns..."></textarea></div>
+          <div class="form-group">
+            <label>Preferred Timeline</label>
+            <select><option value="">Select timeline...</option><option>As soon as possible</option><option>Within 1 month</option><option>1–3 months</option><option>3–6 months</option><option>Just planning / no rush</option></select>
+          </div>
+          <div class="form-nav">
+            <button type="button" class="btn-back" onclick="goToContact('s-form','s-dot-')">&larr; Back</button>
+            <button type="submit" class="btn-next">Submit Request &rarr;</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="breadcrumb">
+  <div class="inner">
+    <a href="index.html">Home</a><span>&rsaquo;</span>
+    <a href="roofing.html">Roofing</a><span>&rsaquo;</span>
+    <span>Asphalt Shingle Roofing</span>
+  </div>
+</div>
+
+<!-- SERVICE DETAIL -->
+<section>
+  <div class="section-inner">
+    <div class="service-detail-grid">
+      <div class="service-detail-img">
+        <img src="Media/profileRoofing3.jpg" alt="Asphalt shingle roofing installation" loading="lazy">
+      </div>
+      <div class="service-detail-content">
+        <div class="section-label">What We Offer</div>
+        <h2>Quality Asphalt Shingle Installation &amp; Replacement</h2>
+        <p>Asphalt shingles are the most widely used roofing material in Canada for good reason — they strike the perfect balance between performance, affordability, and visual appeal. At Top Choice Roofing and Siding, we install architectural (laminate) and three-tab shingles from industry-leading manufacturers including GAF, Owens Corning, and IKO.</p>
+        <p>Every installation begins with a thorough inspection of your existing roof deck, ventilation, and drainage. We use quality underlayment, ice-and-water shield at all vulnerable areas, and proper flashing to ensure a watertight, long-lasting result.</p>
+        <p>Whether you're replacing an aging roof or installing on a new build, our certified team delivers a clean, professional installation — on time and within budget — backed by both manufacturer product warranties and our own workmanship guarantee.</p>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:24px;">
+          <a href="index.html#contact" class="btn btn-primary">Get a Free Estimate</a>
+          <a href="tel:+14165550100" class="btn btn-yellow">&#128222;&nbsp; Call Us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BENEFITS -->
+<section class="benefits-section">
+  <div class="section-inner">
+    <div class="section-label">Why Choose Asphalt Shingles</div>
+    <h2 class="section-title">Built for Canadian Homes &amp; Climates</h2>
+    <p class="section-sub">Asphalt shingles offer exceptional value for homeowners — here's why they remain the top choice across the GTA.</p>
+    <div class="benefits-grid">
+      <div class="benefit-card">
+        <div class="benefit-icon">&#128176;</div>
+        <h4>Affordable</h4>
+        <p>Asphalt shingles offer the lowest installed cost of any roofing system, making quality protection accessible for every budget.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">&#127775;</div>
+        <h4>25–50 Year Lifespan</h4>
+        <p>Modern architectural shingles are engineered to last 25–50 years, offering decades of reliable protection with minimal maintenance.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">&#127775;</div>
+        <h4>Wide Style Selection</h4>
+        <p>Available in hundreds of colours and profiles — from classic three-tab to dimensional architectural — to complement any home style.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">&#10052;</div>
+        <h4>Weather Resistant</h4>
+        <p>Engineered to handle Canadian winters, heavy rain, and wind. Many shingles carry Class 4 impact resistance ratings.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">&#128196;</div>
+        <h4>Manufacturer Warranty</h4>
+        <p>We install shingles from top manufacturers with transferable warranties of up to 50 years, protecting your investment long term.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">&#128296;</div>
+        <h4>Easy to Repair</h4>
+        <p>Unlike other roofing materials, individual asphalt shingles can be replaced if damaged, keeping long-term repair costs low.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section style="background:var(--white);">
+  <div class="section-inner">
+    <div class="section-label">Our Work</div>
+    <h2 class="section-title">Asphalt Shingle Projects</h2>
+    <p class="section-sub">A selection of completed asphalt shingle roofing projects across the Greater Toronto Area.</p>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="Media/profileRoofing3.jpg" alt="Asphalt shingle roof — large building" loading="lazy">
+        <div class="gallery-overlay"><span>Architectural Shingles</span></div>
+      </div>
+      <div class="gallery-item">
+        <img src="Media/profileRoofing7.jpg" alt="Residential asphalt shingle roof" loading="lazy">
+        <div class="gallery-overlay"><span>Roof Replacement</span></div>
+      </div>
+      <div class="gallery-item">
+        <img src="Media/brenoRoofing5.jpg" alt="Aerial view of asphalt shingles" loading="lazy">
+        <div class="gallery-overlay"><span>New Installation</span></div>
+      </div>
+      <div class="gallery-item">
+        <img src="Media/profileRoofing6.jpg" alt="Dark asphalt shingle roof" loading="lazy">
+        <div class="gallery-overlay"><span>Architectural Shingles</span></div>
+      </div>
+      <div class="gallery-item">
+        <img src="Media/profileRoofing8.jpg" alt="New construction shingle roof" loading="lazy">
+        <div class="gallery-overlay"><span>New Construction</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section">
+  <div class="section-inner">
+    <div class="section-label">Common Questions</div>
+    <h2 class="section-title">Asphalt Shingle FAQs</h2>
+    <p class="section-sub">Answers to the questions we hear most often about asphalt shingle roofing.</p>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question" onclick="faqToggle(this)">How long do asphalt shingles last in Ontario? <span class="faq-toggle">+</span></button>
+        <div class="faq-answer">Quality architectural asphalt shingles typically last 25–40 years in Ontario's climate. Three-tab shingles average 15–25 years. Proper installation, ventilation, and routine maintenance are the biggest factors in maximizing the lifespan of your roof.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="faqToggle(this)">What is the difference between 3-tab and architectural shingles? <span class="faq-toggle">+</span></button>
+        <div class="faq-answer">Three-tab shingles are thinner, lighter, and have a flat, uniform appearance. Architectural (laminate) shingles are thicker, heavier, and have a dimensional, textured look that resembles wood shake or slate. Architectural shingles are more durable and carry longer warranties. We recommend architectural shingles for most residential projects.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="faqToggle(this)">How much does a new asphalt shingle roof cost? <span class="faq-toggle">+</span></button>
+        <div class="faq-answer">The cost depends on your roof's size, pitch, complexity, and the shingle product selected. Contact us for a free, no-obligation estimate — we'll inspect your roof and provide a detailed written quote with no surprises.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="faqToggle(this)">Do you remove the old shingles before installing new ones? <span class="faq-toggle">+</span></button>
+        <div class="faq-answer">We recommend a full tear-off in most cases. Installing over existing shingles (re-roofing) can trap moisture and hide deck damage, which shortens the life of the new roof and voids many manufacturer warranties. We inspect the deck, replace any damaged sheathing, and start fresh for the best long-term result.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="faqToggle(this)">What warranties come with a new shingle roof? <span class="faq-toggle">+</span></button>
+        <div class="faq-answer">You receive two warranties: a manufacturer product warranty (typically 30–50 years depending on the shingle line) and our workmanship warranty covering the installation itself. We'll walk you through both warranties before your project begins.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="faqToggle(this)">How long does a shingle roof replacement take? <span class="faq-toggle">+</span></button>
+        <div class="faq-answer">Most residential shingle roof replacements are completed in one to two days, depending on roof size and complexity. We clean up completely at the end of each day and leave your property tidy throughout the project.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<div class="cta-banner">
+  <h2>Get a Free Asphalt Shingle Roofing Estimate</h2>
+  <p>Contact us today — we'll inspect your roof, walk you through your options, and provide a detailed written quote at no cost.</p>
+  <div class="cta-actions">
+    <a href="index.html#contact" class="btn btn-yellow">Request Free Estimate</a>
+    <a href="tel:+14165550100" class="btn btn-outline">&#128222;&nbsp; (416) 555-0100</a>
+  </div>
+</div>
+
+<!-- RELATED SERVICES -->
+<section class="related-section">
+  <div class="section-inner">
+    <div class="section-label">Explore More</div>
+    <h2 class="section-title">Related Roofing Services</h2>
+    <div class="related-grid">
+      <div class="related-card">
+        <div class="related-card-img"><img src="Media/greenMetal09.jpg" alt="Metal Roofing" loading="lazy"></div>
+        <div class="related-card-body">
+          <h4>Metal Roofing</h4>
+          <a href="roofing-metal.html">Learn More &rarr;</a>
+        </div>
+      </div>
+      <div class="related-card">
+        <div class="related-card-img"><img src="Media/greenMetal19.jpg" alt="Synthetic Slate Roofing" loading="lazy"></div>
+        <div class="related-card-body">
+          <h4>Synthetic Slate Roofing</h4>
+          <a href="roofing-synthetic-slate.html">Learn More &rarr;</a>
+        </div>
+      </div>
+      <div class="related-card">
+        <div class="related-card-img"><img src="Media/brenoRoofing6.jpg" alt="Roof Repair" loading="lazy"></div>
+        <div class="related-card-body">
+          <h4>Roof Repair &amp; Emergency Service</h4>
+          <a href="roofing-repair.html">Learn More &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <img src="Media/Top Choice Roofing Logo.png" alt="Top Choice Roofing and Siding">
+      <p>Protecting homes and businesses across the Greater Toronto Area with quality roofing and siding solutions since 2005.</p>
+      <div class="social-links" style="margin-top:20px;">
+        <a href="#" aria-label="Facebook">f</a>
+        <a href="#" aria-label="Instagram">in</a>
+        <a href="#" aria-label="Google">G</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h5>Residential Roofing</h5>
+      <ul>
+        <li><a href="roofing-asphalt-shingles.html">Asphalt Shingle Roofing</a></li>
+        <li><a href="roofing-metal.html">Metal Roofing</a></li>
+        <li><a href="roofing-cedar-shake.html">Cedar Shake Roofing</a></li>
+        <li><a href="roofing-flat.html">Flat Roofing</a></li>
+        <li><a href="roofing-synthetic-slate.html">Synthetic Slate Roofing</a></li>
+        <li><a href="roofing-repair.html">Roof Repair</a></li>
+        <li><a href="roofing-repair.html">Emergency Service</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Commercial Roofing</h5>
+      <ul>
+        <li><a href="roofing-commercial.html">Flat Roofing</a></li>
+        <li><a href="roofing-commercial.html">Metal Roofing</a></li>
+        <li><a href="roofing-commercial.html">Shingles</a></li>
+        <li><a href="roofing-repair.html">Roof Repair</a></li>
+        <li><a href="roofing-repair.html">Emergency Service</a></li>
+      </ul>
+      <h5 style="margin-top:20px;">Siding</h5>
+      <ul>
+        <li><a href="index.html#services">Vinyl Siding</a></li>
+        <li><a href="index.html#services">Engineered Wood Siding</a></li>
+        <li><a href="index.html#services">Hardie Board Siding</a></li>
+        <li><a href="index.html#services">Soffit &amp; Fascia</a></li>
+        <li><a href="index.html#services">Eavestroughs</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Company</h5>
+      <ul>
+        <li><a href="index.html#why">About Us</a></li>
+        <li><a href="index.html#gallery">Gallery</a></li>
+        <li><a href="index.html#testimonials">Reviews</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li><a href="index.html#contact">Free Estimate</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2026 Top Choice Roofing and Siding. All rights reserved.</span>
+    <span>Serving the Greater Toronto Area &nbsp;|&nbsp; Licensed &amp; Insured</span>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,882 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Top Choice Roofing and Siding | Residential & Commercial Roofing</title>
+<meta name="description" content="Top Choice Roofing and Siding offers residential and commercial roofing and siding services including installation, repair, and replacement.">
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+<!-- TOPBAR -->
+<div class="topbar">
+  <div class="inner">
+    <div class="topbar-left">
+      <span>&#128205; Serving the Greater Toronto Area</span>
+    </div>
+    <div class="topbar-right">
+      <a href="mailto:info@topchoiceroofing.ca">&#9993; info@topchoiceroofing.ca</a>
+      <a href="tel:+14165550100">&#128222; (416) 555-0100</a>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header id="top">
+  <div class="header-inner">
+    <div class="logo">
+      <img src="Media/Top Choice Roofing Logo.png" alt="Top Choice Roofing and Siding">
+    </div>
+    <nav>
+      <a href="#top">Home</a>
+      <div class="dropdown">
+        <a href="roofing.html">Roofing</a>
+        <div class="dropdown-menu">
+          <span class="sub-label">Residential</span>
+          <a href="roofing-asphalt-shingles.html">Asphalt Shingle Roofing</a>
+          <a href="roofing-metal.html">Metal Roofing</a>
+          <a href="roofing-cedar-shake.html">Cedar Shake Roofing</a>
+          <a href="roofing-flat.html">Flat Roofing</a>
+          <a href="roofing-synthetic-slate.html">Synthetic Slate Roofing</a>
+          <a href="roofing-repair.html">Roof Repair &amp; Emergency</a>
+          <span class="sub-label">Commercial</span>
+          <a href="roofing-commercial.html">Commercial Roofing</a>
+          <a href="roofing-commercial.html">Commercial Flat Roofing</a>
+          <a href="roofing-commercial.html">Commercial Metal Roofing</a>
+          <a href="roofing-commercial.html">Commercial Shingles</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="#services">Siding</a>
+        <div class="dropdown-menu">
+          <a href="#services">Vinyl Siding</a>
+          <a href="#services">Engineered Wood Siding</a>
+          <a href="#services">Hardie Board Siding</a>
+          <a href="#services">Soffit &amp; Fascia</a>
+          <a href="#services">Eavestroughs</a>
+        </div>
+      </div>
+      <a href="#gallery">Gallery</a>
+      <a href="#why">About</a>
+      <a href="#contact">Contact</a>
+      <a href="#contact" class="btn btn-yellow nav-cta">Free Estimate</a>
+    </nav>
+    <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#top">Home</a>
+    <a href="roofing.html">Roofing</a>
+    <a href="roofing-asphalt-shingles.html" class="mobile-sub">Asphalt Shingle Roofing</a>
+    <a href="roofing-metal.html" class="mobile-sub">Metal Roofing</a>
+    <a href="roofing-cedar-shake.html" class="mobile-sub">Cedar Shake Roofing</a>
+    <a href="roofing-flat.html" class="mobile-sub">Flat Roofing</a>
+    <a href="roofing-synthetic-slate.html" class="mobile-sub">Synthetic Slate Roofing</a>
+    <a href="roofing-repair.html" class="mobile-sub">Roof Repair &amp; Emergency</a>
+    <a href="roofing-commercial.html" class="mobile-sub">Commercial Roofing</a>
+    <a href="#services">Siding</a>
+    <a href="#services" class="mobile-sub">Vinyl Siding</a>
+    <a href="#services" class="mobile-sub">Engineered Wood Siding</a>
+    <a href="#services" class="mobile-sub">Hardie Board Siding</a>
+    <a href="#services" class="mobile-sub">Soffit &amp; Fascia</a>
+    <a href="#services" class="mobile-sub">Eavestroughs</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#why">About</a>
+    <a href="#contact">Contact / Free Estimate</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <div class="hero-badge">Trusted Since 2005 &bull; Greater Toronto Area</div>
+      <h1>Your Home Deserves <span>Top Choice</span> Protection</h1>
+      <p>Expert residential and commercial roofing and siding services. Quality materials, certified installers, and workmanship you can count on for decades.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-yellow">Get a Free Estimate</a>
+        <a href="tel:+14165550100" class="btn btn-outline">&#128222;&nbsp; Call Now</a>
+      </div>
+    </div>
+    <div class="hero-form-card">
+      <h3>Get Your Free Estimate</h3>
+      <p>Fill out the form and we'll be in touch within 24 hours.</p>
+      <div class="form-steps">
+        <div class="form-step-dot active" id="h-dot-1">1</div>
+        <div class="form-step-line"></div>
+        <div class="form-step-dot" id="h-dot-2">2</div>
+        <div class="form-step-line"></div>
+        <div class="form-step-dot" id="h-dot-3">3</div>
+        <div class="form-step-line"></div>
+        <div class="form-step-dot" id="h-dot-4">4</div>
+      </div>
+      <form id="hero-form" onsubmit="handleSubmit(event,'h-dot-')">
+
+        <!-- Step 1: Category -->
+        <div class="form-page active" id="h-p1">
+          <p style="font-size:14px;font-weight:600;color:var(--charcoal);margin-bottom:12px;">What are you looking for?</p>
+          <div class="cat-options">
+            <button type="button" class="cat-opt" data-cat="roofing" onclick="pickCategory(this,'hero-form')">
+              Roofing
+            </button>
+            <button type="button" class="cat-opt" data-cat="siding" onclick="pickCategory(this,'hero-form')">
+              Siding
+            </button>
+            <button type="button" class="cat-opt" data-cat="both" onclick="pickCategory(this,'hero-form')">
+              Both
+            </button>
+          </div>
+          <div class="form-nav">
+            <button type="button" class="btn-next cat-next-btn" onclick="goToServices('hero-form','h-dot-')" disabled>Next &rarr;</button>
+          </div>
+        </div>
+
+        <!-- Step 2R: Roofing services -->
+        <div class="form-page" id="h-p2r">
+          <p style="font-size:14px;font-weight:600;color:var(--charcoal);margin-bottom:10px;">Which roofing service?</p>
+          <div class="svc-options">
+            <button type="button" class="svc-opt" onclick="pickSvc(this,'hero-form')">Asphalt Shingles</button>
+            <button type="button" class="svc-opt" onclick="pickSvc(this,'hero-form')">Metal Roofing</button>
+            <button type="button" class="svc-opt" onclick="pickSvc(this,'hero-form')">Cedar Shake</button>
+            <button type="button" class="svc-opt" onclick="pickSvc(this,'hero-form')">Flat Roofing</button>
+            <button type="button" class="svc-opt" onclick="pickSvc(this,'hero-form')">Synthetic Slate</button>
+            <button type="button" class="svc-opt" onclick="pickSvc(this,'hero-form')">Roof Repair</button>
+            <button type="button" class="svc-opt" onclick="pickSvc(this,'hero-form')">Commercial Roofing</button>
+          </div>
+          <div class="form-nav">
+            <button type="button" class="btn-back" onclick="goToCategory('hero-form','h-dot-')">&larr; Back</button>
+            <button type="button" class="btn-next svc-next-btn" onclick="goToContact('hero-form','h-dot-')" disabled>Next &rarr;</button>
+          </div>
+        </div>
+
+        <!-- Step 2S: Siding services -->
+        <div class="form-page" id="h-p2s">
+          <p style="font-size:14px;font-weight:600;color:var(--charcoal);margin-bottom:10px;">Which siding service?</p>
+          <div class="svc-options">
+            <button type="button" class="svc-opt" onclick="pickSvc(this,'hero-form')">Vinyl Siding</button>
+            <button type="button" class="svc-opt" onclick="pickSvc(this,'hero-form')">Engineered Wood</button>
+            <button type="button" class="svc-opt" onclick="pickSvc(this,'hero-form')">Hardie Board</button>
+            <button type="button" class="svc-opt" onclick="pickSvc(this,'hero-form')">Soffit &amp; Fascia</button>
+            <button type="button" class="svc-opt" onclick="pickSvc(this,'hero-form')">Eavestroughs</button>
+            <button type="button" class="svc-opt" onclick="pickSvc(this,'hero-form')">Siding Repair</button>
+          </div>
+          <div class="form-nav">
+            <button type="button" class="btn-back" onclick="goToCategory('hero-form','h-dot-')">&larr; Back</button>
+            <button type="button" class="btn-next svc-next-btn" onclick="goToContact('hero-form','h-dot-')" disabled>Next &rarr;</button>
+          </div>
+        </div>
+
+        <!-- Step 2B: Both -->
+        <div class="form-page" id="h-p2b">
+          <p style="font-size:13px;font-weight:600;color:var(--charcoal);margin-bottom:4px;">Select all that apply:</p>
+          <p class="svc-group-label">Roofing</p>
+          <div class="svc-options" style="margin-bottom:6px;">
+            <button type="button" class="svc-opt" onclick="toggleSvc(this,'hero-form')">Asphalt Shingles</button>
+            <button type="button" class="svc-opt" onclick="toggleSvc(this,'hero-form')">Metal Roofing</button>
+            <button type="button" class="svc-opt" onclick="toggleSvc(this,'hero-form')">Cedar Shake</button>
+            <button type="button" class="svc-opt" onclick="toggleSvc(this,'hero-form')">Flat Roofing</button>
+            <button type="button" class="svc-opt" onclick="toggleSvc(this,'hero-form')">Synthetic Slate</button>
+            <button type="button" class="svc-opt" onclick="toggleSvc(this,'hero-form')">Roof Repair</button>
+          </div>
+          <p class="svc-group-label">Siding</p>
+          <div class="svc-options">
+            <button type="button" class="svc-opt" onclick="toggleSvc(this,'hero-form')">Vinyl Siding</button>
+            <button type="button" class="svc-opt" onclick="toggleSvc(this,'hero-form')">Engineered Wood</button>
+            <button type="button" class="svc-opt" onclick="toggleSvc(this,'hero-form')">Hardie Board</button>
+            <button type="button" class="svc-opt" onclick="toggleSvc(this,'hero-form')">Soffit &amp; Fascia</button>
+            <button type="button" class="svc-opt" onclick="toggleSvc(this,'hero-form')">Eavestroughs</button>
+            <button type="button" class="svc-opt" onclick="toggleSvc(this,'hero-form')">Siding Repair</button>
+          </div>
+          <div class="form-nav">
+            <button type="button" class="btn-back" onclick="goToCategory('hero-form','h-dot-')">&larr; Back</button>
+            <button type="button" class="btn-next svc-next-btn" onclick="goToContact('hero-form','h-dot-')" disabled>Next &rarr;</button>
+          </div>
+        </div>
+
+        <!-- Step 3: Contact info -->
+        <div class="form-page" id="h-p3">
+          <div class="form-row">
+            <div class="form-group">
+              <label>First Name *</label>
+              <input type="text" placeholder="John" required>
+            </div>
+            <div class="form-group">
+              <label>Last Name *</label>
+              <input type="text" placeholder="Smith" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Phone *</label>
+              <input type="tel" placeholder="(416) 555-0100" required>
+            </div>
+            <div class="form-group">
+              <label>Postal Code *</label>
+              <input type="text" placeholder="M5V 1A1" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" placeholder="john@email.com">
+          </div>
+          <div class="form-nav">
+            <button type="button" class="btn-back" onclick="goToServicesBack('hero-form','h-dot-')">&larr; Back</button>
+            <button type="button" class="btn-next" onclick="goToDetails('hero-form','h-dot-')">Next &rarr;</button>
+          </div>
+        </div>
+
+        <!-- Step 4: Project details -->
+        <div class="form-page" id="h-p4">
+          <div class="form-group">
+            <label>Project Details</label>
+            <textarea placeholder="Tell us about your project — size, current condition, any specific concerns..."></textarea>
+          </div>
+          <div class="form-group">
+            <label>Preferred Timeline</label>
+            <select>
+              <option value="">Select timeline...</option>
+              <option>As soon as possible</option>
+              <option>Within 1 month</option>
+              <option>1–3 months</option>
+              <option>3–6 months</option>
+              <option>Just planning / no rush</option>
+            </select>
+          </div>
+          <div class="form-nav">
+            <button type="button" class="btn-back" onclick="goToContact('hero-form','h-dot-')">&larr; Back</button>
+            <button type="submit" class="btn-next">Submit Request &rarr;</button>
+          </div>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="inner">
+    <div class="trust-item"><div class="num">20+</div><div class="label">Years in Business</div></div>
+    <div class="trust-item"><div class="num">5,000+</div><div class="label">Projects Completed</div></div>
+    <div class="trust-item"><div class="num">100%</div><div class="label">Licensed &amp; Insured</div></div>
+    <div class="trust-item"><div class="num">4.9★</div><div class="label">Average Google Rating</div></div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="section-inner">
+    <div class="section-label">What We Do</div>
+    <h2 class="section-title">Roofing &amp; Siding Services</h2>
+    <p class="section-sub">From new installations to emergency repairs, we cover every aspect of your home's exterior with quality materials and expert craftsmanship.</p>
+
+    <div class="services-tabs">
+      <button class="tab-btn active" onclick="switchTab('residential', this)">Residential Roofing</button>
+      <button class="tab-btn" onclick="switchTab('commercial', this)">Commercial Roofing</button>
+      <button class="tab-btn" onclick="switchTab('siding', this)">Siding</button>
+    </div>
+
+    <!-- RESIDENTIAL ROOFING -->
+    <div class="service-panel active" id="panel-residential">
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-card-img">
+            <img src="Media/profileRoofing3.jpg" alt="Asphalt Shingle Roofing" loading="lazy">
+          </div>
+          <div class="service-card-body">
+            <h4>Asphalt Shingle Roofing</h4>
+            <p>The most popular roofing choice — affordable, durable, and available in dozens of styles. Expert installation with manufacturer-backed warranties.</p>
+            <a href="roofing-asphalt-shingles.html">Learn More &rarr;</a>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-card-img">
+            <img src="Media/greenMetal09.jpg" alt="Metal Roofing" loading="lazy">
+          </div>
+          <div class="service-card-body">
+            <h4>Metal Roofing</h4>
+            <p>Long-lasting, energy-efficient metal roofing systems designed to last 50+ years with minimal maintenance and excellent weather resistance.</p>
+            <a href="roofing-metal.html">Learn More &rarr;</a>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-card-img">
+            <img src="Media/profileRoofing6.jpg" alt="Cedar Shake Roofing" loading="lazy">
+          </div>
+          <div class="service-card-body">
+            <h4>Cedar Shake Roofing</h4>
+            <p>Natural beauty and timeless appeal. Cedar shake roofing installed by experienced craftsmen who understand the unique demands of wood roofing.</p>
+            <a href="roofing-cedar-shake.html">Learn More &rarr;</a>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-card-img">
+            <img src="Media/greenMetal53.jpg" alt="Flat Roofing" loading="lazy">
+          </div>
+          <div class="service-card-body">
+            <h4>Flat Roofing</h4>
+            <p>Reliable flat roofing systems for residential additions and low-slope applications. TPO, EPDM, and modified bitumen options available.</p>
+            <a href="roofing-flat.html">Learn More &rarr;</a>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-card-img">
+            <img src="Media/greenMetal19.jpg" alt="Synthetic Slate Roofing" loading="lazy">
+          </div>
+          <div class="service-card-body">
+            <h4>Synthetic Slate Roofing</h4>
+            <p>The elegance of natural slate without the weight or cost. Synthetic slate offers superior durability and stunning curb appeal for any home.</p>
+            <a href="roofing-synthetic-slate.html">Learn More &rarr;</a>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-card-img">
+            <img src="Media/brenoRoofing6.jpg" alt="Roof Repair" loading="lazy">
+          </div>
+          <div class="service-card-body">
+            <h4>Roof Repair &amp; Emergency Service</h4>
+            <p>Storm damage, leaks, or missing shingles — our team responds fast to protect your home. 24/7 emergency roofing service available.</p>
+            <a href="roofing-repair.html">Learn More &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- COMMERCIAL ROOFING -->
+    <div class="service-panel" id="panel-commercial">
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-card-img">
+            <img src="Media/greenMetal48.jpg" alt="Commercial Flat Roofing" loading="lazy">
+          </div>
+          <div class="service-card-body">
+            <h4>Flat Roofing</h4>
+            <p>The go-to solution for commercial buildings. We install TPO, EPDM, and modified bitumen systems built for durability and long-term performance.</p>
+            <a href="roofing-commercial.html">Learn More &rarr;</a>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-card-img">
+            <img src="Media/greenMetal57.jpg" alt="Commercial Metal Roofing" loading="lazy">
+          </div>
+          <div class="service-card-body">
+            <h4>Metal Roofing</h4>
+            <p>Energy-efficient and low-maintenance metal roofing for commercial properties. Designed to withstand heavy Canadian winters with minimal upkeep.</p>
+            <a href="roofing-commercial.html">Learn More &rarr;</a>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-card-img">
+            <img src="Media/brenoRoofing5.jpg" alt="Commercial Shingles" loading="lazy">
+          </div>
+          <div class="service-card-body">
+            <h4>Shingles</h4>
+            <p>Commercial-grade asphalt shingles for sloped commercial roofs. Durable, cost-effective, and available in a range of profiles and colours.</p>
+            <a href="roofing-commercial.html">Learn More &rarr;</a>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-card-img">
+            <img src="Media/brenoRoofing4.jpg" alt="Commercial Roof Repair" loading="lazy">
+          </div>
+          <div class="service-card-body">
+            <h4>Roof Repair &amp; Emergency Service</h4>
+            <p>Minimize downtime with our fast commercial roof repair service. We respond quickly to leaks, storm damage, and urgent roofing needs — 24/7.</p>
+            <a href="roofing-repair.html">Learn More &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SIDING -->
+    <div class="service-panel" id="panel-siding">
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-card-img">
+            <img src="Media/greenMetal43.jpg" alt="Vinyl Siding" loading="lazy">
+          </div>
+          <div class="service-card-body">
+            <h4>Vinyl Siding</h4>
+            <p>Low-maintenance, weather-resistant vinyl siding available in a wide range of colours and profiles to beautifully complement any home style.</p>
+            <a href="#contact">Learn More &rarr;</a>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-card-img">
+            <img src="Media/greenMetal26.jpg" alt="Engineered Wood Siding" loading="lazy">
+          </div>
+          <div class="service-card-body">
+            <h4>Engineered Wood Siding</h4>
+            <p>The natural look of wood with enhanced performance. Engineered wood siding resists moisture, impact, and fading far better than traditional wood.</p>
+            <a href="#contact">Learn More &rarr;</a>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-card-img">
+            <img src="Media/greenMetal09.jpg" alt="Hardie Board Siding" loading="lazy">
+          </div>
+          <div class="service-card-body">
+            <h4>Hardie Board Siding</h4>
+            <p>James Hardie fibre cement siding — the gold standard for durability and curb appeal. Resistant to rot, pests, fire, and extreme Canadian weather.</p>
+            <a href="#contact">Learn More &rarr;</a>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-card-img">
+            <img src="Media/greenMetal60.jpg" alt="Soffit and Fascia" loading="lazy">
+          </div>
+          <div class="service-card-body">
+            <h4>Soffit &amp; Fascia</h4>
+            <p>Protect the underside of your roof and eaves with properly installed soffit and fascia. Improves ventilation and prevents moisture and pest damage.</p>
+            <a href="#contact">Learn More &rarr;</a>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-card-img">
+            <img src="Media/greenMetal47.jpg" alt="Eavestroughs" loading="lazy">
+          </div>
+          <div class="service-card-body">
+            <h4>Eavestroughs</h4>
+            <p>Properly installed eavestroughs direct water away from your foundation. We supply and install seamless aluminum and custom eavestrough systems.</p>
+            <a href="#contact">Learn More &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROMO CTA BAR -->
+<div style="background: var(--yellow); padding: 24px;">
+  <div style="max-width:1200px; margin:auto; display:flex; align-items:center; justify-content:space-between; gap:20px; flex-wrap:wrap;">
+    <div>
+      <div style="font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:.08em; color:var(--green-dark); margin-bottom:4px;">Limited Time Offer</div>
+      <div style="font-size:20px; font-weight:800; color:var(--charcoal);">Promotional offers available on select roofing &amp; siding projects.</div>
+      <div style="font-size:14px; color:var(--green-dark); margin-top:4px;">Contact us today to ask about current deals &mdash; financing options also available.</div>
+    </div>
+    <a href="#contact" class="btn btn-primary" style="white-space:nowrap; font-size:15px; padding:14px 28px;">Get a Free Estimate &rarr;</a>
+  </div>
+</div>
+
+<!-- WHY CHOOSE US -->
+<section id="why">
+  <div class="section-inner">
+    <div class="why-grid">
+      <div class="why-img">
+        <img src="Media/brenoRoofing4.jpg" alt="Roofers working on a home" loading="lazy">
+      </div>
+      <div>
+        <div class="section-label">Why Top Choice Roofing and Siding?</div>
+        <h2 class="section-title">The Top Choice Difference</h2>
+        <div class="why-list">
+          <div class="why-item">
+            <div class="why-icon">&#11088;</div>
+            <div>
+              <h4>Unmatched Customer Experience</h4>
+              <p>Top Choice has the experience and expertise to guide you every step of the way while providing personalized service tailored to meet all your needs — from start to finish, our team is here for you.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="why-icon">&#127968;</div>
+            <div>
+              <h4>Full Range of Options</h4>
+              <p>We offer a wide variety of roofing and siding options to choose from. Your home should be an extension of you — choose the perfect material, design, and colours to meet your style and needs.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="why-icon">&#128296;</div>
+            <div>
+              <h4>Professional Installation Team</h4>
+              <p>Our installation team is comprised of experienced roofers and exterior finishing specialists. The quality of any renovation project goes beyond just the materials — the installation process and knowhow make a real difference.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="why-icon">&#128176;</div>
+            <div>
+              <h4>Financing Solutions</h4>
+              <p>You shouldn't need to sacrifice safety, comfort, and affordability. That's why we offer financing options for most roof replacement projects. <em style="font-size:12px; color:var(--text-muted);">*Some conditions apply.</em></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process">
+  <div class="section-inner">
+    <div class="section-label">How It Works</div>
+    <h2 class="section-title">Simple Process, Zero Surprises</h2>
+    <p class="section-sub">From first call to final cleanup, we keep you informed every step of the way.</p>
+    <div class="process-steps">
+      <div class="process-step">
+        <div class="step-num">1</div>
+        <h4>Free Estimate</h4>
+        <p>Contact us and we'll schedule a free on-site inspection and detailed quote — no obligation, no pressure.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-num">2</div>
+        <h4>Review &amp; Approve</h4>
+        <p>We walk you through your options, materials, and timelines. You choose what fits your budget and goals.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-num">3</div>
+        <h4>Expert Installation</h4>
+        <p>Our certified crew arrives on time and completes the work to the highest standards — protecting your home.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-num">4</div>
+        <h4>Final Walkthrough</h4>
+        <p>We inspect every detail with you, clean up completely, and hand over your written warranty documentation.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <div class="section-inner">
+    <div class="section-label">Our Work</div>
+    <h2 class="section-title">Recent Projects</h2>
+    <p class="section-sub">A look at some of the roofing and siding projects we've completed across the Greater Toronto Area.</p>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="Media/greenMetal06.jpg" alt="Metal roof aerial view" loading="lazy">
+        <div class="gallery-overlay"><span>Metal Roofing</span></div>
+      </div>
+      <div class="gallery-item">
+        <img src="Media/greenMetal09.jpg" alt="Residential metal roof" loading="lazy">
+        <div class="gallery-overlay"><span>Standing Seam Metal</span></div>
+      </div>
+      <div class="gallery-item">
+        <img src="Media/greenMetal26.jpg" alt="Stone home with metal tile roof" loading="lazy">
+        <div class="gallery-overlay"><span>Metal Tile Roofing</span></div>
+      </div>
+      <div class="gallery-item">
+        <img src="Media/greenMetal13.jpg" alt="Home with dark metal tile roof" loading="lazy">
+        <div class="gallery-overlay"><span>Metal Tile Roofing</span></div>
+      </div>
+      <div class="gallery-item">
+        <img src="Media/profileRoofing8.jpg" alt="New roof installation" loading="lazy">
+        <div class="gallery-overlay"><span>New Installation</span></div>
+      </div>
+    </div>
+    <div class="gallery-cta">
+      <a href="#contact" class="btn btn-primary" style="padding:13px 32px;font-size:15px;">View Full Gallery</a>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="section-inner">
+    <div class="section-label">What Clients Say</div>
+    <h2 class="section-title">Trusted by Homeowners Across the GTA</h2>
+    <p class="section-sub">Don't take our word for it — here's what our customers have to say.</p>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>Top Choice replaced our 25-year-old roof in two days. The crew was professional, fast, and left the yard spotless. The quality of the shingles is outstanding. Highly recommend!</p>
+        <div class="reviewer">
+          <div class="reviewer-avatar">MK</div>
+          <div>
+            <div class="reviewer-name">Michael K.</div>
+            <div class="reviewer-loc">Mississauga, ON</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>We had storm damage and called Top Choice for an emergency repair. They were there the next morning, assessed the damage, and had it fixed within 48 hours. Incredible service.</p>
+        <div class="reviewer">
+          <div class="reviewer-avatar">SR</div>
+          <div>
+            <div class="reviewer-name">Sandra R.</div>
+            <div class="reviewer-loc">Brampton, ON</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>Had our siding and eavestroughs replaced at the same time. One crew, one invoice, no hassle. The Hardie board looks amazing and the whole process was seamless. Will use again.</p>
+        <div class="reviewer">
+          <div class="reviewer-avatar">DT</div>
+          <div>
+            <div class="reviewer-name">David T.</div>
+            <div class="reviewer-loc">Oakville, ON</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-inner">
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="section-label">Get in Touch</div>
+        <h2 class="section-title">Request Your Free Estimate</h2>
+        <p>Ready to protect your home? Contact us today for a free, no-obligation estimate. We typically respond within a few hours.</p>
+        <div class="contact-detail">
+          <div class="contact-detail-icon">
+            <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.01 2.18 2 2 0 012 .01h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/></svg>
+          </div>
+          <div>
+            <h5>Phone</h5>
+            <p><a href="tel:+14165550100">(416) 555-0100</a></p>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon">
+            <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <div>
+            <h5>Email</h5>
+            <p><a href="mailto:info@topchoiceroofing.ca">info@topchoiceroofing.ca</a></p>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon">
+            <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div>
+            <h5>Service Area</h5>
+            <p>Greater Toronto Area — Mississauga, Brampton, Oakville, Burlington &amp; surrounding regions</p>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>
+          </div>
+          <div>
+            <h5>Hours</h5>
+            <p>Mon–Fri: 7am–7pm &nbsp;|&nbsp; Sat: 8am–4pm<br>24/7 Emergency Line Available</p>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form-card">
+        <h3>Tell Us About Your Project</h3>
+        <div class="form-steps">
+          <div class="form-step-dot active" id="c-dot-1">1</div>
+          <div class="form-step-line"></div>
+          <div class="form-step-dot" id="c-dot-2">2</div>
+          <div class="form-step-line"></div>
+          <div class="form-step-dot" id="c-dot-3">3</div>
+          <div class="form-step-line"></div>
+          <div class="form-step-dot" id="c-dot-4">4</div>
+        </div>
+        <form id="contact-form" onsubmit="handleSubmit(event,'c-dot-')">
+
+          <!-- Step 1: Category -->
+          <div class="form-page active" id="c-p1">
+            <p style="font-size:14px;font-weight:600;color:var(--charcoal);margin-bottom:12px;">What are you looking for?</p>
+            <div class="cat-options">
+              <button type="button" class="cat-opt" data-cat="roofing" onclick="pickCategory(this,'contact-form')">
+                Roofing
+              </button>
+              <button type="button" class="cat-opt" data-cat="siding" onclick="pickCategory(this,'contact-form')">
+                Siding
+              </button>
+              <button type="button" class="cat-opt" data-cat="both" onclick="pickCategory(this,'contact-form')">
+                Both
+              </button>
+            </div>
+            <div class="form-nav">
+              <button type="button" class="btn-next cat-next-btn" onclick="goToServices('contact-form','c-dot-')" disabled>Next &rarr;</button>
+            </div>
+          </div>
+
+          <!-- Step 2R: Roofing services -->
+          <div class="form-page" id="c-p2r">
+            <p style="font-size:14px;font-weight:600;color:var(--charcoal);margin-bottom:10px;">Which roofing service?</p>
+            <div class="svc-options">
+              <button type="button" class="svc-opt" onclick="pickSvc(this,'contact-form')">Asphalt Shingles</button>
+              <button type="button" class="svc-opt" onclick="pickSvc(this,'contact-form')">Metal Roofing</button>
+              <button type="button" class="svc-opt" onclick="pickSvc(this,'contact-form')">Cedar Shake</button>
+              <button type="button" class="svc-opt" onclick="pickSvc(this,'contact-form')">Flat Roofing</button>
+              <button type="button" class="svc-opt" onclick="pickSvc(this,'contact-form')">Synthetic Slate</button>
+              <button type="button" class="svc-opt" onclick="pickSvc(this,'contact-form')">Roof Repair</button>
+              <button type="button" class="svc-opt" onclick="pickSvc(this,'contact-form')">Commercial Roofing</button>
+            </div>
+            <div class="form-nav">
+              <button type="button" class="btn-back" onclick="goToCategory('contact-form','c-dot-')">&larr; Back</button>
+              <button type="button" class="btn-next svc-next-btn" onclick="goToContact('contact-form','c-dot-')" disabled>Next &rarr;</button>
+            </div>
+          </div>
+
+          <!-- Step 2S: Siding services -->
+          <div class="form-page" id="c-p2s">
+            <p style="font-size:14px;font-weight:600;color:var(--charcoal);margin-bottom:10px;">Which siding service?</p>
+            <div class="svc-options">
+              <button type="button" class="svc-opt" onclick="pickSvc(this,'contact-form')">Vinyl Siding</button>
+              <button type="button" class="svc-opt" onclick="pickSvc(this,'contact-form')">Engineered Wood</button>
+              <button type="button" class="svc-opt" onclick="pickSvc(this,'contact-form')">Hardie Board</button>
+              <button type="button" class="svc-opt" onclick="pickSvc(this,'contact-form')">Soffit &amp; Fascia</button>
+              <button type="button" class="svc-opt" onclick="pickSvc(this,'contact-form')">Eavestroughs</button>
+              <button type="button" class="svc-opt" onclick="pickSvc(this,'contact-form')">Siding Repair</button>
+            </div>
+            <div class="form-nav">
+              <button type="button" class="btn-back" onclick="goToCategory('contact-form','c-dot-')">&larr; Back</button>
+              <button type="button" class="btn-next svc-next-btn" onclick="goToContact('contact-form','c-dot-')" disabled>Next &rarr;</button>
+            </div>
+          </div>
+
+          <!-- Step 2B: Both -->
+          <div class="form-page" id="c-p2b">
+            <p style="font-size:13px;font-weight:600;color:var(--charcoal);margin-bottom:4px;">Select all that apply:</p>
+            <p class="svc-group-label">Roofing</p>
+            <div class="svc-options" style="margin-bottom:6px;">
+              <button type="button" class="svc-opt" onclick="toggleSvc(this,'contact-form')">Asphalt Shingles</button>
+              <button type="button" class="svc-opt" onclick="toggleSvc(this,'contact-form')">Metal Roofing</button>
+              <button type="button" class="svc-opt" onclick="toggleSvc(this,'contact-form')">Cedar Shake</button>
+              <button type="button" class="svc-opt" onclick="toggleSvc(this,'contact-form')">Flat Roofing</button>
+              <button type="button" class="svc-opt" onclick="toggleSvc(this,'contact-form')">Synthetic Slate</button>
+              <button type="button" class="svc-opt" onclick="toggleSvc(this,'contact-form')">Roof Repair</button>
+            </div>
+            <p class="svc-group-label">Siding</p>
+            <div class="svc-options">
+              <button type="button" class="svc-opt" onclick="toggleSvc(this,'contact-form')">Vinyl Siding</button>
+              <button type="button" class="svc-opt" onclick="toggleSvc(this,'contact-form')">Engineered Wood</button>
+              <button type="button" class="svc-opt" onclick="toggleSvc(this,'contact-form')">Hardie Board</button>
+              <button type="button" class="svc-opt" onclick="toggleSvc(this,'contact-form')">Soffit &amp; Fascia</button>
+              <button type="button" class="svc-opt" onclick="toggleSvc(this,'contact-form')">Eavestroughs</button>
+              <button type="button" class="svc-opt" onclick="toggleSvc(this,'contact-form')">Siding Repair</button>
+            </div>
+            <div class="form-nav">
+              <button type="button" class="btn-back" onclick="goToCategory('contact-form','c-dot-')">&larr; Back</button>
+              <button type="button" class="btn-next svc-next-btn" onclick="goToContact('contact-form','c-dot-')" disabled>Next &rarr;</button>
+            </div>
+          </div>
+
+          <!-- Step 3: Contact info -->
+          <div class="form-page" id="c-p3">
+            <div class="form-row">
+              <div class="form-group">
+                <label>First Name *</label>
+                <input type="text" placeholder="John" required>
+              </div>
+              <div class="form-group">
+                <label>Last Name *</label>
+                <input type="text" placeholder="Smith" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Phone *</label>
+                <input type="tel" placeholder="(416) 555-0100" required>
+              </div>
+              <div class="form-group">
+                <label>Postal Code *</label>
+                <input type="text" placeholder="M5V 1A1" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Email</label>
+              <input type="email" placeholder="john@email.com">
+            </div>
+            <div class="form-nav">
+              <button type="button" class="btn-back" onclick="goToServicesBack('contact-form','c-dot-')">&larr; Back</button>
+              <button type="button" class="btn-next" onclick="goToDetails('contact-form','c-dot-')">Next &rarr;</button>
+            </div>
+          </div>
+
+          <!-- Step 4: Project details -->
+          <div class="form-page" id="c-p4">
+            <div class="form-group">
+              <label>Project Details</label>
+              <textarea placeholder="Describe your project — size, current condition, any specific concerns..."></textarea>
+            </div>
+            <div class="form-group">
+              <label>Preferred Timeline</label>
+              <select>
+                <option value="">Select timeline...</option>
+                <option>As soon as possible</option>
+                <option>Within 1 month</option>
+                <option>1–3 months</option>
+                <option>3–6 months</option>
+                <option>Just planning / no rush</option>
+              </select>
+            </div>
+            <div class="form-nav">
+              <button type="button" class="btn-back" onclick="goToContact('contact-form','c-dot-')">&larr; Back</button>
+              <button type="submit" class="btn-next">Submit Request &rarr;</button>
+            </div>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <img src="Media/Top Choice Roofing Logo.png" alt="Top Choice Roofing and Siding" style="height:52px;margin-bottom:16px;">
+      <p>Protecting homes across the Greater Toronto Area with quality roofing and siding solutions since 2005.</p>
+      <div class="social-links" style="margin-top:20px;">
+        <a href="#" aria-label="Facebook">f</a>
+        <a href="#" aria-label="Instagram">in</a>
+        <a href="#" aria-label="Google">G</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h5>Residential Roofing</h5>
+      <ul>
+        <li><a href="#services">Asphalt Shingle Roofing</a></li>
+        <li><a href="#services">Metal Roofing</a></li>
+        <li><a href="#services">Cedar Shake Roofing</a></li>
+        <li><a href="#services">Flat Roofing</a></li>
+        <li><a href="#services">Synthetic Slate Roofing</a></li>
+        <li><a href="#services">Roof Repair</a></li>
+        <li><a href="#services">Emergency Service</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Commercial Roofing</h5>
+      <ul>
+        <li><a href="#services">Flat Roofing</a></li>
+        <li><a href="#services">Metal Roofing</a></li>
+        <li><a href="#services">Shingles</a></li>
+        <li><a href="#services">Roof Repair</a></li>
+        <li><a href="#services">Emergency Service</a></li>
+      </ul>
+      <h5 style="margin-top:20px;">Siding</h5>
+      <ul>
+        <li><a href="#services">Vinyl Siding</a></li>
+        <li><a href="#services">Engineered Wood Siding</a></li>
+        <li><a href="#services">Hardie Board Siding</a></li>
+        <li><a href="#services">Soffit &amp; Fascia</a></li>
+        <li><a href="#services">Eavestroughs</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Company</h5>
+      <ul>
+        <li><a href="#why">About Us</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#contact">Free Estimate</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Resources</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2026 Top Choice Roofing and Siding. All rights reserved.</span>
+    <span>Serving the Greater Toronto Area &nbsp;|&nbsp; Licensed &amp; Insured</span>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
