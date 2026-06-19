@@ -4,88 +4,81 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Blog &mdash; Top Choice Roofing and Siding</title>
-  <meta name="description" content="Roofing tips, project spotlights, and industry news from Top Choice Roofing and Siding — serving the Greater Toronto Area since 2005." />
+  <meta name="description" content="" />
   <link rel="stylesheet" href="styles.css" />
   <style>
-    .blog-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 28px;
-    }
-    .blog-card {
-      background: var(--white);
-      border-radius: 10px;
-      overflow: hidden;
-      border: 1px solid var(--gray-mid);
-      transition: box-shadow .2s, transform .2s;
-      display: flex;
-      flex-direction: column;
-    }
-    .blog-card:hover {
-      box-shadow: 0 8px 28px rgba(58,107,26,.15);
-      transform: translateY(-3px);
-    }
-    .blog-card-img {
-      height: 200px;
-      overflow: hidden;
-      background: linear-gradient(135deg, var(--green-dark) 0%, var(--green-light) 100%);
-    }
-    .blog-card-img img {
+    .post-hero {
       width: 100%;
-      height: 100%;
+      max-height: 460px;
+      overflow: hidden;
+    }
+    .post-hero img {
+      width: 100%;
+      height: 460px;
       object-fit: cover;
-      transition: transform .4s;
     }
-    .blog-card:hover .blog-card-img img { transform: scale(1.05); }
-    .blog-card-body {
-      padding: 22px;
+    .post-body-wrap {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 56px 24px 80px;
+    }
+    .post-meta {
       display: flex;
-      flex-direction: column;
-      flex: 1;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
     }
-    .blog-card-date {
-      font-size: 12px;
+    .post-date {
+      font-size: 13px;
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: .06em;
       color: var(--green);
-      margin-bottom: 8px;
-      display: block;
     }
-    .blog-card-title {
-      font-size: 18px;
-      font-weight: 700;
+    .post-title {
+      font-size: 38px;
+      font-weight: 800;
       color: var(--charcoal);
-      line-height: 1.3;
-      margin-bottom: 10px;
+      line-height: 1.15;
+      margin-bottom: 28px;
     }
-    .blog-card-title a { color: inherit; }
-    .blog-card-title a:hover { color: var(--green); }
-    .blog-card-excerpt {
-      font-size: 14px;
+    .post-excerpt {
+      font-size: 18px;
       color: var(--text-muted);
       line-height: 1.7;
-      margin-bottom: 16px;
-      flex: 1;
+      margin-bottom: 36px;
+      padding-bottom: 36px;
+      border-bottom: 2px solid var(--gray-mid);
     }
-    .blog-read-more {
+    .post-content {
+      font-size: 16px;
+      color: var(--text);
+      line-height: 1.85;
+    }
+    .post-content h2 { font-size: 26px; font-weight: 800; color: var(--charcoal); margin: 40px 0 14px; }
+    .post-content h3 { font-size: 20px; font-weight: 700; color: var(--charcoal); margin: 32px 0 10px; }
+    .post-content p { margin-bottom: 20px; }
+    .post-content ul, .post-content ol { margin: 0 0 20px 24px; }
+    .post-content li { margin-bottom: 8px; }
+    .post-content img { border-radius: 8px; margin: 28px 0; }
+    .post-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
       font-size: 13px;
       font-weight: 700;
       color: var(--green);
-      margin-top: auto;
+      margin-bottom: 32px;
     }
-    .blog-read-more:hover { color: var(--yellow-dark); }
-    .blog-state {
-      grid-column: 1 / -1;
+    .post-back:hover { color: var(--yellow-dark); }
+    .post-state {
       text-align: center;
-      padding: 60px 24px;
-      background: var(--white);
-      border-radius: 10px;
-      border: 1px solid var(--gray-mid);
+      padding: 80px 24px;
       font-size: 16px;
       color: var(--text-muted);
     }
-    .blog-state .spinner {
+    .post-state .spinner {
       width: 36px; height: 36px;
       border: 3px solid var(--gray-mid);
       border-top-color: var(--green);
@@ -94,8 +87,10 @@
       animation: spin .7s linear infinite;
     }
     @keyframes spin { to { transform: rotate(360deg); } }
-    @media (max-width: 960px) { .blog-grid { grid-template-columns: 1fr 1fr; } }
-    @media (max-width: 600px) { .blog-grid { grid-template-columns: 1fr; } }
+    @media (max-width: 600px) {
+      .post-title { font-size: 26px; }
+      .post-excerpt { font-size: 16px; }
+    }
   </style>
 </head>
 <body>
@@ -167,38 +162,24 @@
   </div>
 </header>
 
-<!-- PAGE HERO -->
-<div class="page-hero" style="background: linear-gradient(rgba(30,55,10,.88),rgba(30,55,10,.65)), url('Media/greenMetal09.jpg') center/cover no-repeat;">
-  <div class="page-hero-inner">
-    <div class="hero-badge">Tips &amp; Insights</div>
-    <h1>The Top Choice <span>Roofing Blog</span></h1>
-    <p>Expert advice, project spotlights, and seasonal tips to help Greater Toronto Area homeowners protect their biggest investment.</p>
-  </div>
-</div>
-
 <!-- BREADCRUMB -->
 <div class="breadcrumb">
   <div class="inner">
     <a href="index.html">Home</a>
     <span>&rsaquo;</span>
-    <span>Blog</span>
+    <a href="blog.html">Blog</a>
+    <span>&rsaquo;</span>
+    <span id="breadcrumb-title">Article</span>
   </div>
 </div>
 
-<!-- BLOG LISTING -->
-<section style="background: var(--gray);">
-  <div class="section-inner">
-    <div class="section-label">Latest Articles</div>
-    <h2 class="section-title">Roofing Tips &amp; News</h2>
-    <p class="section-sub">Stay informed with guides, seasonal advice, and behind-the-scenes looks at our work across the GTA.</p>
-    <div class="blog-grid" id="blog-grid">
-      <div class="blog-state">
-        <div class="spinner"></div>
-        <p>Loading posts&hellip;</p>
-      </div>
-    </div>
+<!-- POST CONTENT -->
+<div id="post-wrap">
+  <div class="post-state">
+    <div class="spinner"></div>
+    <p>Loading article&hellip;</p>
   </div>
-</section>
+</div>
 
 <!-- CTA BANNER -->
 <div class="cta-banner">
@@ -274,59 +255,59 @@
 <script>
   const API = 'https://usxheeuynoyifyczejfy.supabase.co/functions/v1/blog-posts-api';
 
-  async function loadPosts() {
-    const grid = document.getElementById('blog-grid');
-    try {
-      const res = await fetch(API + '?published=true');
-
-      if (!res.ok) throw new Error('API returned ' + res.status);
-
-      const payload = await res.json();
-      // Handle both array response and {data:[...]} wrapper
-      const posts = Array.isArray(payload) ? payload : (payload.data || []);
-
-      if (!posts.length) {
-        grid.innerHTML = '<div class="blog-state"><p>No posts yet. Check back soon for tips, project spotlights, and roofing guides.</p></div>';
-        return;
-      }
-
-      // Sort newest first
-      posts.sort((a, b) => new Date(b.published_at) - new Date(a.published_at));
-
-      grid.innerHTML = posts.map(p => {
-        const date = p.published_at
-          ? new Date(p.published_at).toLocaleDateString('en-CA', { year: 'numeric', month: 'long', day: 'numeric' })
-          : '';
-        const imgHtml = p.cover_image_url
-          ? `<img src="${p.cover_image_url}" alt="${escHtml(p.title)}" loading="lazy">`
-          : '';
-        return `
-          <article class="blog-card">
-            <div class="blog-card-img">${imgHtml}</div>
-            <div class="blog-card-body">
-              ${date ? `<time class="blog-card-date">${date}</time>` : ''}
-              <h2 class="blog-card-title"><a href="blog-post.html?slug=${encodeURIComponent(p.slug)}">${escHtml(p.title)}</a></h2>
-              ${p.excerpt ? `<p class="blog-card-excerpt">${escHtml(p.excerpt)}</p>` : ''}
-              <a href="blog-post.html?slug=${encodeURIComponent(p.slug)}" class="blog-read-more">Read more &rarr;</a>
-            </div>
-          </article>`;
-      }).join('');
-
-    } catch (err) {
-      grid.innerHTML = '<div class="blog-state"><p>Unable to load posts right now. Please try again shortly.</p></div>';
-      console.error(err);
-    }
-  }
-
   function escHtml(str) {
-    return String(str)
+    return String(str || '')
       .replace(/&/g, '&amp;')
       .replace(/</g, '&lt;')
       .replace(/>/g, '&gt;')
       .replace(/"/g, '&quot;');
   }
 
-  loadPosts();
+  async function loadPost() {
+    const wrap = document.getElementById('post-wrap');
+    const slug = new URLSearchParams(window.location.search).get('slug');
+
+    if (!slug) {
+      wrap.innerHTML = '<div class="post-state"><p>Post not found. <a href="blog.html" style="color:var(--green)">Back to Blog</a></p></div>';
+      return;
+    }
+
+    try {
+      const res = await fetch(`${API}/${encodeURIComponent(slug)}`);
+      if (!res.ok) throw new Error('Not found');
+
+      const payload = await res.json();
+      const post = Array.isArray(payload) ? payload[0] : payload;
+
+      if (!post) throw new Error('No post');
+
+      // Update page title and meta
+      document.title = `${post.title} — Top Choice Roofing and Siding`;
+      document.querySelector('meta[name="description"]').setAttribute('content', post.excerpt || '');
+      document.getElementById('breadcrumb-title').textContent = post.title;
+
+      const date = post.published_at
+        ? new Date(post.published_at).toLocaleDateString('en-CA', { year: 'numeric', month: 'long', day: 'numeric' })
+        : '';
+
+      wrap.innerHTML = `
+        ${post.cover_image_url ? `<div class="post-hero"><img src="${escHtml(post.cover_image_url)}" alt="${escHtml(post.title)}"></div>` : ''}
+        <div class="post-body-wrap">
+          <a href="blog.html" class="post-back">&larr; Back to Blog</a>
+          <div class="post-meta">
+            ${date ? `<time class="post-date">${date}</time>` : ''}
+          </div>
+          <h1 class="post-title">${escHtml(post.title)}</h1>
+          ${post.excerpt ? `<p class="post-excerpt">${escHtml(post.excerpt)}</p>` : ''}
+          <div class="post-content">${post.body || ''}</div>
+        </div>`;
+
+    } catch (err) {
+      wrap.innerHTML = '<div class="post-state"><p>Article not found. <a href="blog.html" style="color:var(--green)">Back to Blog</a></p></div>';
+    }
+  }
+
+  loadPost();
 </script>
 </body>
 </html>
