@@ -2,7 +2,6 @@ export async function onRequest(context) {
   const SUPABASE_URL = context.env.SUPABASE_URL;
   const SUPABASE_ANON_KEY = context.env.SUPABASE_ANON_KEY;
 
-  // Fetch all published posts from Supabase, newest first
   const res = await fetch(
     `${SUPABASE_URL}/rest/v1/blog_posts?published=eq.true&order=published_at.desc&select=title,slug,excerpt,cover_image_url,published_at`,
     {
@@ -19,32 +18,289 @@ export async function onRequest(context) {
     ? posts
         .map(
           (p) => `
-      <article class="post-card">
-        ${p.cover_image_url ? `<img src="${p.cover_image_url}" alt="${p.title}" />` : ""}
-        <h2><a href="/blog/${p.slug}">${p.title}</a></h2>
-        ${p.excerpt ? `<p>${p.excerpt}</p>` : ""}
-        <a href="/blog/${p.slug}" class="read-more">Read more →</a>
+      <article class="blog-card">
+        ${p.cover_image_url ? `<div class="blog-card-img"><img src="${p.cover_image_url}" alt="${p.title}" loading="lazy"></div>` : `<div class="blog-card-img blog-card-img--placeholder"></div>`}
+        <div class="blog-card-body">
+          <time class="blog-card-date">${new Date(p.published_at).toLocaleDateString("en-CA", { year: "numeric", month: "long", day: "numeric" })}</time>
+          <h2 class="blog-card-title"><a href="/blog/${p.slug}">${p.title}</a></h2>
+          ${p.excerpt ? `<p class="blog-card-excerpt">${p.excerpt}</p>` : ""}
+          <a href="/blog/${p.slug}" class="blog-read-more">Read more &rarr;</a>
+        </div>
       </article>`
         )
         .join("")
-    : `<p>No posts yet. Check back soon.</p>`;
+    : `<div class="blog-empty"><p>No posts yet. Check back soon for tips, project spotlights, and roofing guides.</p></div>`;
 
   const html = `<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Blog — Top Choice Roofing and Siding</title>
-  <meta name="description" content="Latest news and updates from Top Choice Roofing and Siding." />
+  <title>Blog &mdash; Top Choice Roofing and Siding</title>
+  <meta name="description" content="Roofing tips, project spotlights, and industry news from Top Choice Roofing and Siding — serving the Greater Toronto Area since 2005." />
   <link rel="stylesheet" href="/styles.css" />
+  <style>
+    /* Blog listing styles */
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+    .blog-card {
+      background: var(--white);
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1px solid var(--gray-mid);
+      transition: box-shadow .2s, transform .2s;
+      display: flex;
+      flex-direction: column;
+    }
+    .blog-card:hover {
+      box-shadow: 0 8px 28px rgba(58,107,26,.15);
+      transform: translateY(-3px);
+    }
+    .blog-card-img {
+      height: 200px;
+      overflow: hidden;
+      background: var(--gray-mid);
+    }
+    .blog-card-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform .4s;
+    }
+    .blog-card:hover .blog-card-img img { transform: scale(1.05); }
+    .blog-card-img--placeholder {
+      background: linear-gradient(135deg, var(--green-dark) 0%, var(--green-light) 100%);
+    }
+    .blog-card-body {
+      padding: 22px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+    .blog-card-date {
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      color: var(--green);
+      margin-bottom: 8px;
+      display: block;
+    }
+    .blog-card-title {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--charcoal);
+      line-height: 1.3;
+      margin-bottom: 10px;
+    }
+    .blog-card-title a { color: inherit; }
+    .blog-card-title a:hover { color: var(--green); }
+    .blog-card-excerpt {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.7;
+      margin-bottom: 16px;
+      flex: 1;
+    }
+    .blog-read-more {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--green);
+      margin-top: auto;
+    }
+    .blog-read-more:hover { color: var(--yellow-dark); }
+    .blog-empty {
+      grid-column: 1 / -1;
+      text-align: center;
+      padding: 60px 24px;
+      background: var(--white);
+      border-radius: 10px;
+      border: 1px solid var(--gray-mid);
+    }
+    .blog-empty p {
+      font-size: 16px;
+      color: var(--text-muted);
+    }
+    @media (max-width: 960px) {
+      .blog-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 600px) {
+      .blog-grid { grid-template-columns: 1fr; }
+    }
+  </style>
 </head>
 <body>
-  <main>
-    <h1>Blog</h1>
-    <div class="post-list">
+
+<div class="topbar">
+  <div class="inner">
+    <div class="topbar-left"><span>&#128205; Serving the Greater Toronto Area</span></div>
+    <div class="topbar-right">
+      <a href="mailto:info@topchoiceroofing.ca">&#9993; info@topchoiceroofing.ca</a>
+      <a href="tel:+14165550100">&#128222; (416) 555-0100</a>
+    </div>
+  </div>
+</div>
+
+<header id="top">
+  <div class="header-inner">
+    <div class="logo"><a href="/index.html"><img src="/Media/Top Choice Roofing Logo.png" alt="Top Choice Roofing and Siding"></a></div>
+    <nav>
+      <a href="/index.html">Home</a>
+      <div class="dropdown">
+        <a href="/roofing.html">Roofing</a>
+        <div class="dropdown-menu">
+          <span class="sub-label">Residential</span>
+          <a href="/roofing-asphalt-shingles.html">Asphalt Shingle Roofing</a>
+          <a href="/roofing-metal.html">Metal Roofing</a>
+          <a href="/roofing-cedar-shake.html">Cedar Shake Roofing</a>
+          <a href="/roofing-flat.html">Flat Roofing</a>
+          <a href="/roofing-synthetic-slate.html">Synthetic Slate Roofing</a>
+          <a href="/roofing-repair.html">Roof Repair &amp; Emergency</a>
+          <span class="sub-label">Commercial</span>
+          <a href="/roofing-commercial.html">Commercial Roofing</a>
+          <a href="/roofing-commercial.html">Commercial Flat Roofing</a>
+          <a href="/roofing-commercial.html">Commercial Metal Roofing</a>
+          <a href="/roofing-commercial.html">Commercial Shingles</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="/index.html#services">Siding</a>
+        <div class="dropdown-menu">
+          <a href="/index.html#services">Vinyl Siding</a>
+          <a href="/index.html#services">Engineered Wood Siding</a>
+          <a href="/index.html#services">Hardie Board Siding</a>
+          <a href="/index.html#services">Soffit &amp; Fascia</a>
+          <a href="/index.html#services">Eavestroughs</a>
+        </div>
+      </div>
+      <a href="/index.html#gallery">Gallery</a>
+      <a href="/index.html#why">About</a>
+      <a href="/index.html#contact">Contact</a>
+      <a href="/blog" class="active">Blog</a>
+      <a href="/index.html#contact" class="btn btn-yellow nav-cta">Free Estimate</a>
+    </nav>
+    <div class="hamburger" id="hamburger" onclick="this.closest('header').querySelector('.mobile-menu').classList.toggle('open')"><span></span><span></span><span></span></div>
+  </div>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="/index.html">Home</a>
+    <a href="/roofing.html">Roofing</a>
+    <a href="/roofing-asphalt-shingles.html" class="mobile-sub">Asphalt Shingle Roofing</a>
+    <a href="/roofing-metal.html" class="mobile-sub">Metal Roofing</a>
+    <a href="/roofing-cedar-shake.html" class="mobile-sub">Cedar Shake Roofing</a>
+    <a href="/roofing-flat.html" class="mobile-sub">Flat Roofing</a>
+    <a href="/roofing-synthetic-slate.html" class="mobile-sub">Synthetic Slate Roofing</a>
+    <a href="/roofing-commercial.html" class="mobile-sub">Commercial Roofing</a>
+    <a href="/index.html#services">Siding</a>
+    <a href="/index.html#gallery">Gallery</a>
+    <a href="/index.html#why">About</a>
+    <a href="/index.html#contact">Contact / Free Estimate</a>
+    <a href="/blog">Blog</a>
+  </div>
+</header>
+
+<!-- PAGE HERO -->
+<div class="page-hero" style="background: linear-gradient(rgba(30,55,10,.88),rgba(30,55,10,.65)), url('/Media/greenMetal09.jpg') center/cover no-repeat;">
+  <div class="page-hero-inner">
+    <div class="hero-badge">Tips &amp; Insights</div>
+    <h1>The Top Choice <span>Roofing Blog</span></h1>
+    <p>Expert advice, project spotlights, and seasonal tips to help Greater Toronto Area homeowners protect their biggest investment.</p>
+  </div>
+</div>
+
+<!-- BREADCRUMB -->
+<div class="breadcrumb">
+  <div class="inner">
+    <a href="/index.html">Home</a>
+    <span>&rsaquo;</span>
+    <span>Blog</span>
+  </div>
+</div>
+
+<!-- BLOG LISTING -->
+<section style="background: var(--gray);">
+  <div class="section-inner">
+    <div class="section-label">Latest Articles</div>
+    <h2 class="section-title">Roofing Tips &amp; News</h2>
+    <p class="section-sub">Stay informed with guides, seasonal advice, and behind-the-scenes looks at our work across the GTA.</p>
+    <div class="blog-grid">
       ${postCards}
     </div>
-  </main>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<div class="cta-banner">
+  <h2>Ready for a New Roof or Repair?</h2>
+  <p>Get a free, no-obligation estimate from our team. We respond within 24 hours.</p>
+  <div class="cta-actions">
+    <a href="/index.html#contact" class="btn btn-yellow">Get a Free Estimate</a>
+    <a href="tel:+14165550100" class="btn btn-outline">&#128222;&nbsp; (416) 555-0100</a>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <img src="/Media/Top Choice Roofing Logo.png" alt="Top Choice Roofing and Siding">
+      <p>Protecting homes and businesses across the Greater Toronto Area with quality roofing and siding solutions since 2005.</p>
+      <div class="social-links" style="margin-top:20px;">
+        <a href="#" aria-label="Facebook">f</a>
+        <a href="#" aria-label="Instagram">in</a>
+        <a href="#" aria-label="Google">G</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h5>Residential Roofing</h5>
+      <ul>
+        <li><a href="/roofing-asphalt-shingles.html">Asphalt Shingle Roofing</a></li>
+        <li><a href="/roofing-metal.html">Metal Roofing</a></li>
+        <li><a href="/roofing-cedar-shake.html">Cedar Shake Roofing</a></li>
+        <li><a href="/roofing-flat.html">Flat Roofing</a></li>
+        <li><a href="/roofing-synthetic-slate.html">Synthetic Slate Roofing</a></li>
+        <li><a href="/roofing-repair.html">Roof Repair</a></li>
+        <li><a href="/roofing-repair.html">Emergency Service</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Commercial Roofing</h5>
+      <ul>
+        <li><a href="/roofing-commercial.html">Flat Roofing</a></li>
+        <li><a href="/roofing-commercial.html">Metal Roofing</a></li>
+        <li><a href="/roofing-commercial.html">Shingles</a></li>
+        <li><a href="/roofing-repair.html">Roof Repair</a></li>
+        <li><a href="/roofing-repair.html">Emergency Service</a></li>
+      </ul>
+      <h5 style="margin-top:20px;">Siding</h5>
+      <ul>
+        <li><a href="/index.html#services">Vinyl Siding</a></li>
+        <li><a href="/index.html#services">Engineered Wood Siding</a></li>
+        <li><a href="/index.html#services">Hardie Board Siding</a></li>
+        <li><a href="/index.html#services">Soffit &amp; Fascia</a></li>
+        <li><a href="/index.html#services">Eavestroughs</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Company</h5>
+      <ul>
+        <li><a href="/index.html#why">About Us</a></li>
+        <li><a href="/index.html#gallery">Gallery</a></li>
+        <li><a href="/index.html#testimonials">Reviews</a></li>
+        <li><a href="/index.html#contact">Contact</a></li>
+        <li><a href="/index.html#contact">Free Estimate</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2026 Top Choice Roofing and Siding. All rights reserved.</span>
+    <span>Serving the Greater Toronto Area &nbsp;|&nbsp; Licensed &amp; Insured</span>
+  </div>
+</footer>
+
 </body>
 </html>`;
 
