@@ -283,9 +283,24 @@
       if (!res.ok) throw new Error('Not found');
 
       const payload = await res.json();
-      const post = Array.isArray(payload) ? payload[0] : payload;
 
-      if (!post) throw new Error('No post');
+      // Handle all common response shapes
+      let post = Array.isArray(payload) ? payload[0]
+        : payload?.post ?? payload?.data ?? payload;
+
+      if (!post || !post.title) throw new Error('No post');
+
+      // Convert plain text body to HTML paragraphs
+      function textToHtml(text) {
+        if (!text) return '';
+        // If it already contains HTML tags, use as-is
+        if (/<[a-z][\s\S]*>/i.test(text)) return text;
+        return text
+          .split(/\n{2,}/)
+          .map(p => `<p>${escHtml(p.trim()).replace(/\n/g, '<br>')}</p>`)
+          .filter(p => p !== '<p></p>')
+          .join('');
+      }
 
       // Update page title and meta
       document.title = `${post.title} — Top Choice Roofing and Siding`;
@@ -305,7 +320,7 @@
           </div>
           <h1 class="post-title">${escHtml(post.title)}</h1>
           ${post.excerpt ? `<p class="post-excerpt">${escHtml(post.excerpt)}</p>` : ''}
-          <div class="post-content">${post.body || ''}</div>
+          <div class="post-content">${textToHtml(post.body || post.content || '')}</div>
         </div>`;
 
     } catch (err) {
