@@ -253,7 +253,8 @@
 
 <script src="main.js"></script>
 <script>
-  const API = '/blog-api';
+  const API = 'https://usxheeuynoyifyczejfy.supabase.co/functions/v1/blog-posts-api';
+  const API_KEY = '%SMxk2WE8!NdGUWsYm^q';
 
   function escHtml(str) {
     return String(str || '')
@@ -273,7 +274,12 @@
     }
 
     try {
-      const res = await fetch(`${API}/${encodeURIComponent(slug)}`);
+      const res = await fetch(`${API}/${encodeURIComponent(slug)}`, {
+        headers: {
+          'x-api-key': API_KEY,
+          'Content-Type': 'application/json'
+        }
+      });
       if (!res.ok) throw new Error('Not found');
 
       const payload = await res.json();
