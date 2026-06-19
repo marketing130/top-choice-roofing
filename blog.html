@@ -272,18 +272,10 @@
 
 <script src="main.js"></script>
 <script>
-  const API_BASE = 'https://usxheeuynoyifyczejfy.supabase.co/functions/v1/blog-posts-api';
-  const API_KEY  = '%SMxk2WE8!NdGUWsYm^q';
-
   async function loadPosts() {
     const grid = document.getElementById('blog-grid');
     try {
-      const res = await fetch(API_BASE + '?published=true', {
-        headers: {
-          'x-api-key': API_KEY,
-          'Content-Type': 'application/json'
-        }
-      });
+      const res = await fetch('/blog-api?published=true');
 
       if (!res.ok) throw new Error('API returned ' + res.status);
 
