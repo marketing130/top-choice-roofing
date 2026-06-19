@@ -272,12 +272,10 @@
 
 <script src="main.js"></script>
 <script>
-  const API = 'https://usxheeuynoyifyczejfy.supabase.co/functions/v1/blog-posts-api';
-
   async function loadPosts() {
     const grid = document.getElementById('blog-grid');
     try {
-      const res = await fetch(API + '?published=true');
+      const res = await fetch('/blog-api?published=true');
 
       if (!res.ok) throw new Error('API returned ' + res.status);
 
