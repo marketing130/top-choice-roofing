@@ -90,13 +90,7 @@
     <div class="page-hero-form-card">
       <h3>Get Your Free Estimate</h3>
       <p>We'll be in touch within 24 hours.</p>
-      <div class="form-steps">
-        <div class="form-step-dot active" id="s-dot-1">1</div><div class="form-step-line"></div>
-        <div class="form-step-dot" id="s-dot-2">2</div><div class="form-step-line"></div>
-        <div class="form-step-dot" id="s-dot-3">3</div><div class="form-step-line"></div>
-        <div class="form-step-dot" id="s-dot-4">4</div>
-      </div>
-      <form id="s-form" onsubmit="handleSubmit(event,'s-dot-')">
+      <form id="s-form" onsubmit="handleSubmit(event)">
         <div class="form-page active" id="s-p1">
           <p style="font-size:13px;font-weight:600;color:var(--charcoal);margin-bottom:12px;">What are you looking for?</p>
           <div class="cat-options">
@@ -164,24 +158,24 @@
         </div>
         <div class="form-page" id="s-p3">
           <div class="form-row">
-            <div class="form-group"><label>First Name *</label><input type="text" placeholder="John" required></div>
-            <div class="form-group"><label>Last Name *</label><input type="text" placeholder="Smith" required></div>
+            <div class="form-group"><label>First Name *</label><input type="text" name="first_name" placeholder="John" required></div>
+            <div class="form-group"><label>Last Name *</label><input type="text" name="last_name" placeholder="Smith" required></div>
           </div>
           <div class="form-row">
-            <div class="form-group"><label>Phone *</label><input type="tel" placeholder="(416) 555-0100" required></div>
-            <div class="form-group"><label>Postal Code *</label><input type="text" placeholder="M5V 1A1" required></div>
+            <div class="form-group"><label>Phone *</label><input type="tel" name="phone" placeholder="(416) 555-0100" required></div>
+            <div class="form-group"><label>Postal Code *</label><input type="text" name="postal_zip" placeholder="M5V 1A1" required></div>
           </div>
-          <div class="form-group"><label>Email</label><input type="email" placeholder="john@email.com"></div>
+          <div class="form-group"><label>Email</label><input type="email" name="email" placeholder="john@email.com"></div>
           <div class="form-nav">
             <button type="button" class="btn-back" onclick="goToServicesBack('s-form','s-dot-')">&larr; Back</button>
             <button type="button" class="btn-next" onclick="goToDetails('s-form','s-dot-')">Next &rarr;</button>
           </div>
         </div>
         <div class="form-page" id="s-p4">
-          <div class="form-group"><label>Project Details</label><textarea placeholder="Tell us about your project — size, current condition, any specific concerns..."></textarea></div>
+          <div class="form-group"><label>Project Details</label><textarea name="notes" placeholder="Tell us about your project — size, current condition, any specific concerns..."></textarea></div>
           <div class="form-group">
             <label>Preferred Timeline</label>
-            <select><option value="">Select timeline...</option><option>As soon as possible</option><option>Within 1 month</option><option>1–3 months</option><option>3–6 months</option><option>Just planning / no rush</option></select>
+            <select name="timeline"><option value="">Select timeline...</option><option>As soon as possible</option><option>Within 1 month</option><option>1–3 months</option><option>3–6 months</option><option>Just planning / no rush</option></select>
           </div>
           <div class="form-nav">
             <button type="button" class="btn-back" onclick="goToContact('s-form','s-dot-')">&larr; Back</button>
