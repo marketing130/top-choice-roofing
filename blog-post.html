@@ -571,8 +571,7 @@
 
 <script src="main.js"></script>
 <script>
-  const API     = 'https://usxheeuynoyifyczejfy.supabase.co/functions/v1/blog-posts-api';
-  const API_KEY = '%SMxk2WE8!NdGUWsYm^q';
+  const API = 'https://usxheeuynoyifyczejfy.supabase.co/functions/v1/blog-posts-api';
 
   /* ── READING PROGRESS ── */
   const bar = document.getElementById('progress-bar');
@@ -612,9 +611,7 @@
     }
 
     try {
-      const res = await fetch(`${API}/${encodeURIComponent(slug)}`, {
-        headers: { 'x-api-key': API_KEY, 'Content-Type': 'application/json' }
-      });
+      const res = await fetch(`${API}/${encodeURIComponent(slug)}`);
       if (!res.ok) throw new Error('Not found');
 
       const payload = await res.json();
