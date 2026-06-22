@@ -166,13 +166,13 @@
         </div>
       </div>
       <div class="dropdown">
-        <a href="/index.html#services">Siding</a>
+        <a href="/siding.html">Siding</a>
         <div class="dropdown-menu">
-          <a href="/index.html#services">Vinyl Siding</a>
-          <a href="/index.html#services">Engineered Wood Siding</a>
-          <a href="/index.html#services">Hardie Board Siding</a>
-          <a href="/index.html#services">Soffit &amp; Fascia</a>
-          <a href="/index.html#services">Eavestroughs</a>
+          <a href="/siding-vinyl.html">Vinyl Siding</a>
+          <a href="/siding-engineered-wood.html">Engineered Wood Siding</a>
+          <a href="/siding-hardie-board.html">Hardie Board Siding</a>
+          <a href="/siding-soffit-fascia.html">Soffit &amp; Fascia</a>
+          <a href="/siding-eavestroughs.html">Eavestroughs</a>
         </div>
       </div>
       <a href="/gallery.html">Gallery</a>
@@ -194,7 +194,12 @@
     <a href="/roofing-commercial-flat.html" class="mobile-sub">Commercial Flat Roofing</a>
     <a href="/roofing-commercial-metal.html" class="mobile-sub">Commercial Metal Roofing</a>
     <a href="/roofing-commercial-shingles.html" class="mobile-sub">Commercial Shingles</a>
-    <a href="/index.html#services">Siding</a>
+    <a href="/siding.html">Siding</a>
+    <a href="/siding-vinyl.html" class="mobile-sub">Vinyl Siding</a>
+    <a href="/siding-engineered-wood.html" class="mobile-sub">Engineered Wood Siding</a>
+    <a href="/siding-hardie-board.html" class="mobile-sub">Hardie Board Siding</a>
+    <a href="/siding-soffit-fascia.html" class="mobile-sub">Soffit &amp; Fascia</a>
+    <a href="/siding-eavestroughs.html" class="mobile-sub">Eavestroughs</a>
     <a href="/gallery.html">Gallery</a>
     <a href="/about.html">About</a>
     <a href="/contact.html">Contact / Free Estimate</a>
@@ -274,11 +279,11 @@
       </ul>
       <h5 style="margin-top:20px;">Siding</h5>
       <ul>
-        <li><a href="/index.html#services">Vinyl Siding</a></li>
-        <li><a href="/index.html#services">Engineered Wood Siding</a></li>
-        <li><a href="/index.html#services">Hardie Board Siding</a></li>
-        <li><a href="/index.html#services">Soffit &amp; Fascia</a></li>
-        <li><a href="/index.html#services">Eavestroughs</a></li>
+        <li><a href="/siding-vinyl.html">Vinyl Siding</a></li>
+        <li><a href="/siding-engineered-wood.html">Engineered Wood Siding</a></li>
+        <li><a href="/siding-hardie-board.html">Hardie Board Siding</a></li>
+        <li><a href="/siding-soffit-fascia.html">Soffit &amp; Fascia</a></li>
+        <li><a href="/siding-eavestroughs.html">Eavestroughs</a></li>
       </ul>
     </div>
     <div class="footer-col">
@@ -290,7 +295,6 @@
         <li><a href="/contact.html">Contact</a></li>
         <li><a href="/contact.html">Free Estimate</a></li>
         <li><a href="/blog">Blog</a></li>
-        <li><a href="#">FAQ</a></li>
       </ul>
     </div>
   </div>
