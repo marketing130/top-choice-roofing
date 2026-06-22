@@ -7,6 +7,27 @@
 <meta name="description" content="Request a free roofing or siding estimate from Top Choice Roofing and Siding. Serving the Greater Toronto Area — we typically respond within a few hours.">
 <link rel="stylesheet" href="styles.css">
 <link rel="icon" type="image/png" href="Media/Top Choice Roofing Logo.png">
+<style>
+  .service-area-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 24px;
+  }
+  .area-tag {
+    background: var(--white);
+    border: 1px solid var(--gray-mid);
+    border-radius: 6px;
+    padding: 10px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--charcoal);
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    .service-area-list { grid-template-columns: 1fr 1fr; }
+  }
+</style>
 </head>
 <body>
 
@@ -284,6 +305,29 @@
 
         </form>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE AREA -->
+<section style="background: var(--gray);">
+  <div class="section-inner">
+    <div class="section-label">Where We Work</div>
+    <h2 class="section-title">Serving the Greater Toronto Area</h2>
+    <p class="section-sub">We serve homeowners and businesses throughout the GTA and surrounding regions. Not sure if we cover your area? Give us a call.</p>
+    <div class="service-area-list">
+      <div class="area-tag">Toronto</div>
+      <div class="area-tag">Mississauga</div>
+      <div class="area-tag">Brampton</div>
+      <div class="area-tag">Oakville</div>
+      <div class="area-tag">Burlington</div>
+      <div class="area-tag">Vaughan</div>
+      <div class="area-tag">Richmond Hill</div>
+      <div class="area-tag">Markham</div>
+      <div class="area-tag">Pickering</div>
+      <div class="area-tag">Ajax</div>
+      <div class="area-tag">Whitby</div>
+      <div class="area-tag">Oshawa</div>
     </div>
   </div>
 </section>
