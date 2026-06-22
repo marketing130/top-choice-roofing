@@ -536,26 +536,39 @@
     <div class="section-label">Our Work</div>
     <h2 class="section-title">Recent Projects</h2>
     <p class="section-sub">A look at some of the roofing and siding projects we've completed across the Greater Toronto Area.</p>
-    <div class="gallery-grid">
-      <div class="gallery-item">
-        <img src="Media/greenMetal06.jpg" alt="Metal roof aerial view" loading="lazy">
-        <div class="gallery-overlay"><span>Metal Roofing</span></div>
+    <div class="carousel-wrapper">
+      <div class="gallery-grid carousel-track" id="gallery-track">
+        <div class="gallery-item">
+          <img src="Media/greenMetal06.jpg" alt="Metal roof aerial view" loading="lazy">
+          <div class="gallery-overlay"><span>Metal Roofing</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="Media/greenMetal09.jpg" alt="Residential metal roof" loading="lazy">
+          <div class="gallery-overlay"><span>Standing Seam Metal</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="Media/greenMetal26.jpg" alt="Stone home with metal tile roof" loading="lazy">
+          <div class="gallery-overlay"><span>Metal Tile Roofing</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="Media/greenMetal13.jpg" alt="Home with dark metal tile roof" loading="lazy">
+          <div class="gallery-overlay"><span>Metal Tile Roofing</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="Media/profileRoofing8.jpg" alt="New roof installation" loading="lazy">
+          <div class="gallery-overlay"><span>New Installation</span></div>
+        </div>
       </div>
-      <div class="gallery-item">
-        <img src="Media/greenMetal09.jpg" alt="Residential metal roof" loading="lazy">
-        <div class="gallery-overlay"><span>Standing Seam Metal</span></div>
-      </div>
-      <div class="gallery-item">
-        <img src="Media/greenMetal26.jpg" alt="Stone home with metal tile roof" loading="lazy">
-        <div class="gallery-overlay"><span>Metal Tile Roofing</span></div>
-      </div>
-      <div class="gallery-item">
-        <img src="Media/greenMetal13.jpg" alt="Home with dark metal tile roof" loading="lazy">
-        <div class="gallery-overlay"><span>Metal Tile Roofing</span></div>
-      </div>
-      <div class="gallery-item">
-        <img src="Media/profileRoofing8.jpg" alt="New roof installation" loading="lazy">
-        <div class="gallery-overlay"><span>New Installation</span></div>
+      <div class="carousel-controls" id="gallery-controls">
+        <button class="carousel-btn" onclick="carouselPrev('gallery-track','gallery-dots')" aria-label="Previous">&#8249;</button>
+        <div class="carousel-dots" id="gallery-dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+        <button class="carousel-btn" onclick="carouselNext('gallery-track','gallery-dots')" aria-label="Next">&#8250;</button>
       </div>
     </div>
     <div class="gallery-cta">
@@ -570,39 +583,50 @@
     <div class="section-label">What Clients Say</div>
     <h2 class="section-title">Trusted by Homeowners Across the GTA</h2>
     <p class="section-sub">Don't take our word for it — here's what our customers have to say.</p>
-    <div class="testimonials-grid">
-      <div class="testimonial-card">
-        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-        <p>Top Choice replaced our 25-year-old roof in two days. The crew was professional, fast, and left the yard spotless. The quality of the shingles is outstanding. Highly recommend!</p>
-        <div class="reviewer">
-          <div class="reviewer-avatar">MK</div>
-          <div>
-            <div class="reviewer-name">Michael K.</div>
-            <div class="reviewer-loc">Mississauga, ON</div>
+    <div class="carousel-wrapper">
+      <div class="testimonials-grid carousel-track" id="testimonials-track">
+        <div class="testimonial-card">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>Top Choice replaced our 25-year-old roof in two days. The crew was professional, fast, and left the yard spotless. The quality of the shingles is outstanding. Highly recommend!</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">MK</div>
+            <div>
+              <div class="reviewer-name">Michael K.</div>
+              <div class="reviewer-loc">Mississauga, ON</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>We had storm damage and called Top Choice for an emergency repair. They were there the next morning, assessed the damage, and had it fixed within 48 hours. Incredible service.</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">SR</div>
+            <div>
+              <div class="reviewer-name">Sandra R.</div>
+              <div class="reviewer-loc">Brampton, ON</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>Had our siding and eavestroughs replaced at the same time. One crew, one invoice, no hassle. The Hardie board looks amazing and the whole process was seamless. Will use again.</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">DT</div>
+            <div>
+              <div class="reviewer-name">David T.</div>
+              <div class="reviewer-loc">Oakville, ON</div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="testimonial-card">
-        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-        <p>We had storm damage and called Top Choice for an emergency repair. They were there the next morning, assessed the damage, and had it fixed within 48 hours. Incredible service.</p>
-        <div class="reviewer">
-          <div class="reviewer-avatar">SR</div>
-          <div>
-            <div class="reviewer-name">Sandra R.</div>
-            <div class="reviewer-loc">Brampton, ON</div>
-          </div>
+      <div class="carousel-controls" id="testimonials-controls">
+        <button class="carousel-btn" onclick="carouselPrev('testimonials-track','testimonials-dots')" aria-label="Previous">&#8249;</button>
+        <div class="carousel-dots" id="testimonials-dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
         </div>
-      </div>
-      <div class="testimonial-card">
-        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-        <p>Had our siding and eavestroughs replaced at the same time. One crew, one invoice, no hassle. The Hardie board looks amazing and the whole process was seamless. Will use again.</p>
-        <div class="reviewer">
-          <div class="reviewer-avatar">DT</div>
-          <div>
-            <div class="reviewer-name">David T.</div>
-            <div class="reviewer-loc">Oakville, ON</div>
-          </div>
-        </div>
+        <button class="carousel-btn" onclick="carouselNext('testimonials-track','testimonials-dots')" aria-label="Next">&#8250;</button>
       </div>
     </div>
   </div>

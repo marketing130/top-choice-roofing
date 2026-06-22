@@ -133,6 +133,32 @@ function handleSubmit(e) {
   });
 }
 
+function carouselPrev(trackId, dotsId) {
+  var track = document.getElementById(trackId);
+  if (!track) return;
+  track.scrollBy({ left: -track.firstElementChild.offsetWidth, behavior: 'smooth' });
+  setTimeout(function() { updateCarouselDots(trackId, dotsId); }, 350);
+}
+
+function carouselNext(trackId, dotsId) {
+  var track = document.getElementById(trackId);
+  if (!track) return;
+  track.scrollBy({ left: track.firstElementChild.offsetWidth, behavior: 'smooth' });
+  setTimeout(function() { updateCarouselDots(trackId, dotsId); }, 350);
+}
+
+function updateCarouselDots(trackId, dotsId) {
+  var track = document.getElementById(trackId);
+  var dotsEl = document.getElementById(dotsId);
+  if (!track || !dotsEl) return;
+  var itemWidth = track.firstElementChild.offsetWidth;
+  if (!itemWidth) return;
+  var index = Math.round(track.scrollLeft / itemWidth);
+  dotsEl.querySelectorAll('.dot').forEach(function(d, i) {
+    d.classList.toggle('active', i === index);
+  });
+}
+
 function faqToggle(el) {
   var item = el.parentElement;
   var wasOpen = item.classList.contains('open');
@@ -141,6 +167,15 @@ function faqToggle(el) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
+  ['gallery-track', 'testimonials-track'].forEach(function(trackId) {
+    var track = document.getElementById(trackId);
+    if (!track) return;
+    var dotsId = trackId.replace('-track', '-dots');
+    track.addEventListener('scroll', function() {
+      updateCarouselDots(trackId, dotsId);
+    }, { passive: true });
+  });
+
   document.querySelectorAll('a[href^="#"]').forEach(function(a) {
     a.addEventListener('click', function(e) {
       var target = document.querySelector(a.getAttribute('href'));
