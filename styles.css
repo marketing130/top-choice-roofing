@@ -912,3 +912,29 @@ textarea.field-error {
   margin-top: 4px;
   font-weight: 600;
 }
+
+/* ── INLINE BODY LINK HIGHLIGHTING ── */
+.why-item p a,
+.process-step p a,
+.section-sub a,
+.service-card-body p a,
+.contact-info p a,
+article a,
+.blog-post-body a,
+.page-body a {
+  color: var(--green);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  font-weight: 600;
+  transition: color 0.15s;
+}
+.why-item p a:hover,
+.process-step p a:hover,
+.section-sub a:hover,
+.service-card-body p a:hover,
+.contact-info p a:hover,
+article a:hover,
+.blog-post-body a:hover,
+.page-body a:hover {
+  color: var(--green-dark);
+}
