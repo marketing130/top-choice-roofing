@@ -306,7 +306,8 @@
     <div class="section-label">Our Work</div>
     <h2 class="section-title">Roofing Projects Across the GTA</h2>
     <p class="section-sub">A sample of recent residential and commercial roofing projects completed by our team.</p>
-    <div class="gallery-grid">
+    <div class="carousel-wrapper">
+      <div class="gallery-grid carousel-track" id="roofing-gallery-track">
       <div class="gallery-item">
         <img src="Media/greenMetal06.jpg" alt="Metal roof aerial" loading="lazy">
         <div class="gallery-overlay"><span>Metal Roofing</span></div>
@@ -326,6 +327,18 @@
       <div class="gallery-item">
         <img src="Media/greenMetal57.jpg" alt="Commercial metal roofing" loading="lazy">
         <div class="gallery-overlay"><span>Commercial Metal Roofing</span></div>
+      </div>
+      </div>
+      <div class="carousel-controls">
+        <button class="carousel-btn" onclick="carouselPrev('roofing-gallery-track','roofing-gallery-dots')" aria-label="Previous">&#8249;</button>
+        <div class="carousel-dots" id="roofing-gallery-dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+        <button class="carousel-btn" onclick="carouselNext('roofing-gallery-track','roofing-gallery-dots')" aria-label="Next">&#8250;</button>
       </div>
     </div>
   </div>

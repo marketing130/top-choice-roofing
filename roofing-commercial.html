@@ -263,7 +263,8 @@
     <div class="section-label">Our Work</div>
     <h2 class="section-title">Commercial Projects Gallery</h2>
     <p class="section-sub">A selection of completed commercial roofing projects across the Greater Toronto Area.</p>
-    <div class="gallery-grid">
+    <div class="carousel-wrapper">
+      <div class="gallery-grid carousel-track" id="commercial-gallery-track">
       <div class="gallery-item">
         <img src="Media/greenMetal47.jpg" alt="Commercial metal roof" loading="lazy">
         <div class="gallery-overlay"><span>Commercial Metal Roof</span></div>
@@ -283,6 +284,18 @@
       <div class="gallery-item">
         <img src="Media/greenMetal06.jpg" alt="Standing seam metal" loading="lazy">
         <div class="gallery-overlay"><span>Standing Seam Metal</span></div>
+      </div>
+      </div>
+      <div class="carousel-controls">
+        <button class="carousel-btn" onclick="carouselPrev('commercial-gallery-track','commercial-gallery-dots')" aria-label="Previous">&#8249;</button>
+        <div class="carousel-dots" id="commercial-gallery-dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+        <button class="carousel-btn" onclick="carouselNext('commercial-gallery-track','commercial-gallery-dots')" aria-label="Next">&#8250;</button>
       </div>
     </div>
   </div>

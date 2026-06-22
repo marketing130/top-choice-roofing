@@ -260,7 +260,8 @@
     <div class="section-label">Our Work</div>
     <h2 class="section-title">Cedar Shake Projects</h2>
     <p class="section-sub">Completed cedar shake roofing installations from our team across the Greater Toronto Area.</p>
-    <div class="gallery-grid">
+    <div class="carousel-wrapper">
+      <div class="gallery-grid carousel-track" id="cedar-gallery-track">
       <div class="gallery-item">
         <img src="Media/profileRoofing6.jpg" alt="Cedar shake roof with skylight" loading="lazy">
         <div class="gallery-overlay"><span>Cedar Shake Roofing</span></div>
@@ -280,6 +281,18 @@
       <div class="gallery-item">
         <img src="Media/brenoRoofing4.jpg" alt="Roofing installation" loading="lazy">
         <div class="gallery-overlay"><span>Expert Installation</span></div>
+      </div>
+      </div>
+      <div class="carousel-controls">
+        <button class="carousel-btn" onclick="carouselPrev('cedar-gallery-track','cedar-gallery-dots')" aria-label="Previous">&#8249;</button>
+        <div class="carousel-dots" id="cedar-gallery-dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+        <button class="carousel-btn" onclick="carouselNext('cedar-gallery-track','cedar-gallery-dots')" aria-label="Next">&#8250;</button>
       </div>
     </div>
   </div>

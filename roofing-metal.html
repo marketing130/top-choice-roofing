@@ -260,7 +260,8 @@
     <div class="section-label">Our Work</div>
     <h2 class="section-title">Metal Roofing Projects</h2>
     <p class="section-sub">A selection of residential metal roofing installations completed across the GTA.</p>
-    <div class="gallery-grid">
+    <div class="carousel-wrapper">
+      <div class="gallery-grid carousel-track" id="metal-gallery-track">
       <div class="gallery-item">
         <img src="Media/greenMetal06.jpg" alt="Aerial metal roof" loading="lazy">
         <div class="gallery-overlay"><span>Standing Seam Metal</span></div>
@@ -280,6 +281,18 @@
       <div class="gallery-item">
         <img src="Media/greenMetal60.jpg" alt="Metal tile with siding" loading="lazy">
         <div class="gallery-overlay"><span>Metal Tile Roofing</span></div>
+      </div>
+      </div>
+      <div class="carousel-controls">
+        <button class="carousel-btn" onclick="carouselPrev('metal-gallery-track','metal-gallery-dots')" aria-label="Previous">&#8249;</button>
+        <div class="carousel-dots" id="metal-gallery-dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+        <button class="carousel-btn" onclick="carouselNext('metal-gallery-track','metal-gallery-dots')" aria-label="Next">&#8250;</button>
       </div>
     </div>
   </div>

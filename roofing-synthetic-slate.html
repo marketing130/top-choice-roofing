@@ -260,7 +260,8 @@
     <div class="section-label">Our Work</div>
     <h2 class="section-title">Synthetic Slate Projects</h2>
     <p class="section-sub">Premium synthetic slate roofing installations completed across the Greater Toronto Area.</p>
-    <div class="gallery-grid">
+    <div class="carousel-wrapper">
+      <div class="gallery-grid carousel-track" id="slate-gallery-track">
       <div class="gallery-item">
         <img src="Media/greenMetal19.jpg" alt="Synthetic slate on luxury home" loading="lazy">
         <div class="gallery-overlay"><span>Synthetic Slate Roofing</span></div>
@@ -280,6 +281,18 @@
       <div class="gallery-item">
         <img src="Media/profileRoofing8.jpg" alt="New construction" loading="lazy">
         <div class="gallery-overlay"><span>New Construction</span></div>
+      </div>
+      </div>
+      <div class="carousel-controls">
+        <button class="carousel-btn" onclick="carouselPrev('slate-gallery-track','slate-gallery-dots')" aria-label="Previous">&#8249;</button>
+        <div class="carousel-dots" id="slate-gallery-dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+        <button class="carousel-btn" onclick="carouselNext('slate-gallery-track','slate-gallery-dots')" aria-label="Next">&#8250;</button>
       </div>
     </div>
   </div>
