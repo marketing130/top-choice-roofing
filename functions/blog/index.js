@@ -3,7 +3,7 @@ export async function onRequest(context) {
   const SUPABASE_ANON_KEY = context.env.SUPABASE_ANON_KEY;
 
   const res = await fetch(
-    `${SUPABASE_URL}/rest/v1/blog_posts?published=eq.true&order=published_at.desc&select=title,slug,excerpt,cover_image_url,published_at`,
+    `${SUPABASE_URL}/rest/v1/blog_posts?client_id=eq.3f4633bb-5f51-4f31-bb81-4f97bd3899db&published=eq.true&order=published_at.desc&select=title,slug,excerpt,cover_image_url,published_at`,
     {
       headers: {
         apikey: SUPABASE_ANON_KEY,

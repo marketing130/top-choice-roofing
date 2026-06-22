@@ -5,7 +5,7 @@ export async function onRequest(context) {
 
   // Fetch the single post matching this slug
   const res = await fetch(
-    `${SUPABASE_URL}/rest/v1/blog_posts?slug=eq.${slug}&published=eq.true&select=*`,
+    `${SUPABASE_URL}/rest/v1/blog_posts?client_id=eq.3f4633bb-5f51-4f31-bb81-4f97bd3899db&slug=eq.${slug}&published=eq.true&select=*`,
     {
       headers: {
         apikey: SUPABASE_ANON_KEY,
