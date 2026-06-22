@@ -914,27 +914,13 @@ textarea.field-error {
 }
 
 /* ── INLINE BODY LINK HIGHLIGHTING ── */
-.why-item p a,
-.process-step p a,
-.section-sub a,
-.service-card-body p a,
-.contact-info p a,
-article a,
-.blog-post-body a,
-.page-body a {
+p a, li a, td a, blockquote a {
   color: var(--green);
   text-decoration: underline;
   text-underline-offset: 2px;
   font-weight: 600;
   transition: color 0.15s;
 }
-.why-item p a:hover,
-.process-step p a:hover,
-.section-sub a:hover,
-.service-card-body p a:hover,
-.contact-info p a:hover,
-article a:hover,
-.blog-post-body a:hover,
-.page-body a:hover {
+p a:hover, li a:hover, td a:hover, blockquote a:hover {
   color: var(--green-dark);
 }
