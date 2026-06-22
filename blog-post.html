@@ -602,8 +602,12 @@
 
   /* ── LOAD POST ── */
   async function loadPost() {
-    const body    = document.getElementById('article-body');
-    const slug    = new URLSearchParams(window.location.search).get('slug');
+    const body = document.getElementById('article-body');
+    let slug = new URLSearchParams(window.location.search).get('slug');
+    if (!slug) {
+      const m = window.location.pathname.match(/\/blog\/(.+)$/);
+      if (m) slug = decodeURIComponent(m[1]);
+    }
 
     if (!slug) {
       body.innerHTML = '<div class="post-state"><p>Post not found. <a href="blog.html" style="color:var(--green)">Back to Blog</a></p></div>';
