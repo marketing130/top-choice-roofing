@@ -212,12 +212,7 @@
     <div class="section-label">Latest Articles</div>
     <h2 class="section-title">Roofing Tips &amp; News</h2>
     <p class="section-sub">Stay informed with guides, seasonal advice, and behind-the-scenes looks at our work across the GTA.</p>
-    <div class="blog-grid" id="blog-grid">
-      <div class="blog-state">
-        <div class="spinner"></div>
-        <p>Loading posts&hellip;</p>
-      </div>
-    </div>
+    <div class="blog-grid" id="blog-grid"></div>
   </div>
 </section>
 
@@ -317,9 +312,9 @@
             <div class="blog-card-img">${imgHtml}</div>
             <div class="blog-card-body">
               ${date ? `<time class="blog-card-date">${date}</time>` : ''}
-              <h2 class="blog-card-title"><a href="blog-post.html?slug=${encodeURIComponent(p.slug)}">${escHtml(p.title)}</a></h2>
+              <h2 class="blog-card-title"><a href="/blog/${encodeURIComponent(p.slug)}">${escHtml(p.title)}</a></h2>
               ${p.excerpt ? `<p class="blog-card-excerpt">${escHtml(p.excerpt)}</p>` : ''}
-              <a href="blog-post.html?slug=${encodeURIComponent(p.slug)}" class="blog-read-more">Read more &rarr;</a>
+              <a href="/blog/${encodeURIComponent(p.slug)}" class="blog-read-more">Read more &rarr;</a>
             </div>
           </article>`;
       }).join('');
