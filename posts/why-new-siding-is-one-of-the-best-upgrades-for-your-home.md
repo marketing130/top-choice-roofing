@@ -3,7 +3,7 @@ title: "Why New Siding Is One of the Best Upgrades for Your Home"
 slug: "why-new-siding-is-one-of-the-best-upgrades-for-your-home"
 date: "2026-06-22"
 excerpt: "New siding is a smart investment that improves your home’s appearance, protects your property, and adds long-term value."
-cover_image: "https://usxheeuynoyifyczejfy.supabase.co/storage/v1/object/sign/blog-images/3f4633bb-5f51-4f31-bb81-4f97bd3899db/1782143952067-ojckly.jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8zMzg5ODA2NS1mOTFhLTRmNzktOGYxYS1lMzk3Njg3OTc5NTkiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJibG9nLWltYWdlcy8zZjQ2MzNiYi01ZjUxLTRmMzEtYmI4MS00Zjk3YmQzODk5ZGIvMTc4MjE0Mzk1MjA2Ny1vamNrbHkuanBnIiwic2NvcGUiOiJkb3dubG9hZCIsImlhdCI6MTc4MjE0NDU4NSwiZXhwIjoyMDk3NTA0NTg1fQ.pFWALx1DNBeghvDuBshuadl-edT6fMOan5kDcqQRVxk"
+cover_image: "https://usxheeuynoyifyczejfy.supabase.co/storage/v1/object/sign/blog-images/3f4633bb-5f51-4f31-bb81-4f97bd3899db/1782143952067-ojckly.jpg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8zMzg5ODA2NS1mOTFhLTRmNzktOGYxYS1lMzk3Njg3OTc5NTkiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJibG9nLWltYWdlcy8zZjQ2MzNiYi01ZjUxLTRmMzEtYmI4MS00Zjk3YmQzODk5ZGIvMTc4MjE0Mzk1MjA2Ny1vamNrbHkuanBnIiwic2NvcGUiOiJkb3dubG9hZCIsImlhdCI6MTc4MjE0NDU5NSwiZXhwIjoyMDk3NTA0NTk1fQ.NogqSkAGRYfqUqXH6b9tMCK9IKbu4yDGoY0tI2-YhQ4"
 ---
 Siding does more than make your home look good. It protects your property from rain, wind, snow, moisture, and everyday wear. When siding starts to crack, warp, fade, or pull away from the home, it can affect both the appearance and performance of your exterior.
 
