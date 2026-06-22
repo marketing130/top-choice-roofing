@@ -1,4 +1,4 @@
-export async function onRequest(context) {
+﻿export async function onRequest(context) {
   const SUPABASE_URL = context.env.SUPABASE_URL;
   const SUPABASE_ANON_KEY = context.env.SUPABASE_ANON_KEY;
 
@@ -175,11 +175,11 @@ export async function onRequest(context) {
           <a href="/index.html#services">Eavestroughs</a>
         </div>
       </div>
-      <a href="/index.html#gallery">Gallery</a>
-      <a href="/index.html#why">About</a>
-      <a href="/index.html#contact">Contact</a>
+      <a href="/gallery.html">Gallery</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
       <a href="/blog" class="active">Blog</a>
-      <a href="/index.html#contact" class="btn btn-yellow nav-cta">Free Estimate</a>
+      <a href="/contact.html" class="btn btn-yellow nav-cta">Free Estimate</a>
     </nav>
     <div class="hamburger" id="hamburger" onclick="this.closest('header').querySelector('.mobile-menu').classList.toggle('open')"><span></span><span></span><span></span></div>
   </div>
@@ -195,9 +195,9 @@ export async function onRequest(context) {
     <a href="/roofing-commercial-metal.html" class="mobile-sub">Commercial Metal Roofing</a>
     <a href="/roofing-commercial-shingles.html" class="mobile-sub">Commercial Shingles</a>
     <a href="/index.html#services">Siding</a>
-    <a href="/index.html#gallery">Gallery</a>
-    <a href="/index.html#why">About</a>
-    <a href="/index.html#contact">Contact / Free Estimate</a>
+    <a href="/gallery.html">Gallery</a>
+    <a href="/about.html">About</a>
+    <a href="/contact.html">Contact / Free Estimate</a>
     <a href="/blog">Blog</a>
   </div>
 </header>
@@ -237,7 +237,7 @@ export async function onRequest(context) {
   <h2>Ready for a New Roof or Repair?</h2>
   <p>Get a free, no-obligation estimate from our team. We respond within 24 hours.</p>
   <div class="cta-actions">
-    <a href="/index.html#contact" class="btn btn-yellow">Get a Free Estimate</a>
+    <a href="/contact.html" class="btn btn-yellow">Get a Free Estimate</a>
     <a href="tel:+14165550100" class="btn btn-outline">&#128222;&nbsp; (416) 555-0100</a>
   </div>
 </div>
@@ -286,11 +286,11 @@ export async function onRequest(context) {
     <div class="footer-col">
       <h5>Company</h5>
       <ul>
-        <li><a href="/index.html#why">About Us</a></li>
-        <li><a href="/index.html#gallery">Gallery</a></li>
+        <li><a href="/about.html">About Us</a></li>
+        <li><a href="/gallery.html">Gallery</a></li>
         <li><a href="/index.html#testimonials">Reviews</a></li>
-        <li><a href="/index.html#contact">Contact</a></li>
-        <li><a href="/index.html#contact">Free Estimate</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="/contact.html">Free Estimate</a></li>
         <li><a href="/blog">Blog</a></li>
         <li><a href="#">FAQ</a></li>
       </ul>
