@@ -262,7 +262,6 @@
         <li><a href="/roofing-flat.html">Flat Roofing</a></li>
         <li><a href="/roofing-synthetic-slate.html">Synthetic Slate Roofing</a></li>
         <li><a href="/roofing-repair.html">Roof Repair</a></li>
-        <li><a href="/roofing-repair.html">Emergency Service</a></li>
       </ul>
     </div>
     <div class="footer-col">
@@ -272,7 +271,6 @@
         <li><a href="/roofing-commercial-metal.html">Metal Roofing</a></li>
         <li><a href="/roofing-commercial-shingles.html">Shingles</a></li>
         <li><a href="/roofing-repair.html">Roof Repair</a></li>
-        <li><a href="/roofing-repair.html">Emergency Service</a></li>
       </ul>
       <h5 style="margin-top:20px;">Siding</h5>
       <ul>
