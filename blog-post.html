@@ -606,8 +606,12 @@
     const articleBody = document.getElementById('article-body');
     let slug = new URLSearchParams(window.location.search).get('slug');
     if (!slug) {
-      const m = window.location.pathname.match(/\/blog\/(.+)$/);
-      if (m) slug = decodeURIComponent(m[1]);
+      const blogMatch = window.location.pathname.match(/^\/blog\/(.+)$/);
+      if (blogMatch) slug = decodeURIComponent(blogMatch[1]);
+    }
+    if (!slug) {
+      const rootMatch = window.location.pathname.match(/^\/([^\/]+)$/);
+      if (rootMatch) slug = decodeURIComponent(rootMatch[1]);
     }
 
     if (!slug) {
