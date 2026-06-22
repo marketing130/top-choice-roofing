@@ -291,34 +291,27 @@
 
 <script src="main.js"></script>
 <script>
-  const API_BASE = 'https://usxheeuynoyifyczejfy.supabase.co/functions/v1/blog-posts-api';
-
   async function loadPosts() {
     const grid = document.getElementById('blog-grid');
     try {
-      const res = await fetch(API_BASE + '?published=true');
-
-      if (!res.ok) throw new Error('API returned ' + res.status);
-
-      const payload = await res.json();
-      // Handle both array response and {data:[...]} wrapper
-      const posts = Array.isArray(payload) ? payload : (payload.data || []);
+      const res = await fetch('posts.json');
+      if (!res.ok) throw new Error('posts.json not found');
+      const posts = await res.json();
 
       if (!posts.length) {
         grid.innerHTML = '<div class="blog-state"><p>No posts yet. Check back soon for tips, project spotlights, and roofing guides.</p></div>';
         return;
       }
 
-      // Sort newest first
-      posts.sort((a, b) => new Date(b.published_at) - new Date(a.published_at));
+      function escHtml(str) {
+        return String(str || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+      }
 
       grid.innerHTML = posts.map(p => {
-        const date = p.published_at
-          ? new Date(p.published_at).toLocaleDateString('en-CA', { year: 'numeric', month: 'long', day: 'numeric' })
+        const date = p.date
+          ? new Date(p.date).toLocaleDateString('en-CA', { year: 'numeric', month: 'long', day: 'numeric' })
           : '';
-        const imgHtml = p.cover_image_url
-          ? `<img src="${p.cover_image_url}" alt="${escHtml(p.title)}" loading="lazy">`
-          : '';
+        const imgHtml = p.cover_image ? `<img src="${escHtml(p.cover_image)}" alt="${escHtml(p.title)}" loading="lazy">` : '';
         return `
           <article class="blog-card">
             <div class="blog-card-img">${imgHtml}</div>
@@ -335,14 +328,6 @@
       grid.innerHTML = '<div class="blog-state"><p>Unable to load posts right now. Please try again shortly.</p></div>';
       console.error(err);
     }
-  }
-
-  function escHtml(str) {
-    return String(str)
-      .replace(/&/g, '&amp;')
-      .replace(/</g, '&lt;')
-      .replace(/>/g, '&gt;')
-      .replace(/"/g, '&quot;');
   }
 
   loadPosts();
