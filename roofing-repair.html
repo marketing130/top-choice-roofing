@@ -1,75 +1,89 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Roof Repair & Emergency Service | Top Choice Roofing and Siding</title>
-  <link rel="stylesheet" href="styles.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Roof Repair &amp; Emergency Service | Top Choice Roofing and Siding</title>
+<meta name="description" content="Fast, reliable roof repairs across the Greater Toronto Area — from minor leaks to storm damage, we're here when you need us most. 24/7 emergency service available.">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<!-- TOPBAR -->
 <div class="topbar">
-  <div class="topbar-inner">
-    <span>📞 (416) 555-0192</span>
-    <span>✉ info@topchoiceroofing.ca</span>
-    <span>Serving the Greater Toronto Area</span>
+  <div class="inner">
+    <div class="topbar-left"><span>&#128205; Serving the Greater Toronto Area</span></div>
+    <div class="topbar-right">
+      <a href="mailto:info@topchoiceroofing.ca">&#9993; info@topchoiceroofing.ca</a>
+      <a href="tel:+14165550100">&#128222; (416) 555-0100</a>
+    </div>
   </div>
 </div>
 
-<!-- HEADER -->
-<header class="site-header" id="site-header">
+<header id="top">
   <div class="header-inner">
-    <a href="index.html" class="logo">
-      <img src="Media/Top Choice Roofing Logo.png" alt="Top Choice Roofing and Siding" />
-    </a>
-    <nav class="main-nav" id="main-nav">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li class="has-dropdown active">
-          <a href="roofing.html">Roofing</a>
-          <ul class="dropdown">
-            <li><a href="roofing-asphalt-shingles.html">Asphalt Shingles</a></li>
-            <li><a href="roofing-metal.html">Metal Roofing</a></li>
-            <li><a href="roofing-cedar-shake.html">Cedar Shake</a></li>
-            <li><a href="roofing-flat.html">Flat Roofing</a></li>
-            <li><a href="roofing-synthetic-slate.html">Synthetic Slate</a></li>
-            <li><a href="roofing-repair.html">Roof Repair</a></li>
-            <li><a href="roofing-commercial.html">Commercial Roofing</a></li>
-            <li><a href="roofing-commercial.html">Commercial Flat Roofing</a></li>
-            <li><a href="roofing-commercial.html">Commercial Metal Roofing</a></li>
-            <li><a href="roofing-commercial.html">Commercial Shingles</a></li>
-          </ul>
-        </li>
-        <li class="has-dropdown">
-          <a href="index.html#services">Siding</a>
-          <ul class="dropdown">
-            <li><a href="index.html#services">Vinyl Siding</a></li>
-            <li><a href="index.html#services">Fiber Cement</a></li>
-            <li><a href="index.html#services">Wood Siding</a></li>
-            <li><a href="index.html#services">Metal Siding</a></li>
-            <li><a href="index.html#services">Siding Repair</a></li>
-          </ul>
-        </li>
-        <li><a href="index.html#why-us">About</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="index.html#contact">Contact</a></li>
-      </ul>
+    <div class="logo"><img src="Media/Top Choice Roofing Logo.png" alt="Top Choice Roofing and Siding"></div>
+    <nav>
+      <a href="index.html">Home</a>
+      <div class="dropdown">
+        <a href="roofing.html" class="active">Roofing</a>
+        <div class="dropdown-menu">
+          <span class="sub-label">Residential</span>
+          <a href="roofing-asphalt-shingles.html">Asphalt Shingle Roofing</a>
+          <a href="roofing-metal.html">Metal Roofing</a>
+          <a href="roofing-cedar-shake.html">Cedar Shake Roofing</a>
+          <a href="roofing-flat.html">Flat Roofing</a>
+          <a href="roofing-synthetic-slate.html">Synthetic Slate Roofing</a>
+          <a href="roofing-repair.html">Roof Repair &amp; Emergency</a>
+          <span class="sub-label">Commercial</span>
+          <a href="roofing-commercial.html">Commercial Roofing</a>
+          <a href="roofing-commercial.html">Commercial Flat Roofing</a>
+          <a href="roofing-commercial.html">Commercial Metal Roofing</a>
+          <a href="roofing-commercial.html">Commercial Shingles</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="index.html#services">Siding</a>
+        <div class="dropdown-menu">
+          <a href="index.html#services">Vinyl Siding</a>
+          <a href="index.html#services">Engineered Wood Siding</a>
+          <a href="index.html#services">Hardie Board Siding</a>
+          <a href="index.html#services">Soffit &amp; Fascia</a>
+          <a href="index.html#services">Eavestroughs</a>
+        </div>
+      </div>
+      <a href="index.html#gallery">Gallery</a>
+      <a href="index.html#why">About</a>
+      <a href="blog.html">Blog</a>
+      <a href="index.html#contact">Contact</a>
+      <a href="index.html#contact" class="btn btn-yellow nav-cta">Free Estimate</a>
     </nav>
-    <a href="index.html#contact" class="btn btn-primary nav-cta">Free Estimate</a>
-    <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">&#9776;</button>
+    <div class="hamburger" id="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+  </div>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="roofing.html">Roofing</a>
+    <a href="roofing-asphalt-shingles.html" class="mobile-sub">Asphalt Shingle Roofing</a>
+    <a href="roofing-metal.html" class="mobile-sub">Metal Roofing</a>
+    <a href="roofing-cedar-shake.html" class="mobile-sub">Cedar Shake Roofing</a>
+    <a href="roofing-flat.html" class="mobile-sub">Flat Roofing</a>
+    <a href="roofing-synthetic-slate.html" class="mobile-sub">Synthetic Slate Roofing</a>
+    <a href="roofing-commercial.html" class="mobile-sub">Commercial Roofing</a>
+    <a href="index.html#services">Siding</a>
+    <a href="index.html#gallery">Gallery</a>
+    <a href="index.html#why">About</a>
+    <a href="blog.html">Blog</a>
+    <a href="index.html#contact">Contact / Free Estimate</a>
   </div>
 </header>
 
-<!-- PAGE HERO -->
-<section class="page-hero page-hero-with-form" style="background-image:url('Media/brenoRoofing6.jpg');">
+<div class="page-hero page-hero-with-form" style="background: linear-gradient(rgba(30,55,10,.85),rgba(30,55,10,.7)), url('Media/brenoRoofing6.jpg') center/cover no-repeat;">
   <div class="page-hero-inner">
     <div class="page-hero-text">
-      <span class="hero-badge">24/7 Emergency Service Available</span>
-      <h1>Roof Repair &amp; Emergency Service</h1>
+      <div class="hero-badge">24/7 Emergency Service Available</div>
+      <h1>Roof Repair &amp; <span>Emergency Service</span></h1>
       <p>Fast, reliable roof repairs across the Greater Toronto Area — from minor leaks to storm damage, we're here when you need us most.</p>
       <div class="hero-actions">
-        <a href="tel:4165550192" class="btn btn-outline-white">&#128222;&nbsp; (416) 555-0192</a>
+        <a href="tel:+14165550100" class="btn btn-outline">&#128222;&nbsp; (416) 555-0100</a>
       </div>
     </div>
     <div class="page-hero-form-card">
@@ -170,32 +184,32 @@
       </form>
     </div>
   </div>
-</section>
+</div>
 
-<!-- BREADCRUMB -->
-<nav class="breadcrumb">
-  <div class="container">
-    <a href="index.html">Home</a> &rsaquo;
-    <a href="roofing.html">Roofing</a> &rsaquo;
+<div class="breadcrumb">
+  <div class="inner">
+    <a href="index.html">Home</a><span>&rsaquo;</span>
+    <a href="roofing.html">Roofing</a><span>&rsaquo;</span>
     <span>Roof Repair &amp; Emergency</span>
   </div>
-</nav>
+</div>
 
 <!-- SERVICE DETAIL -->
-<section class="section" style="background:#fff;">
-  <div class="container">
+<section>
+  <div class="section-inner">
     <div class="service-detail-grid">
-      <div class="service-detail-image">
-        <img src="Media/brenoRoofing5.jpg" alt="Roof repair in progress" />
+      <div class="service-detail-img">
+        <img src="Media/brenoRoofing5.jpg" alt="Roof repair in progress" loading="lazy">
       </div>
       <div class="service-detail-content">
+        <div class="section-label">What We Offer</div>
         <h2>Toronto's Trusted Roof Repair Specialists</h2>
         <p>A damaged roof can't wait. Water infiltration, missing shingles, or storm damage can escalate within hours — causing structural damage, mould growth, and costly interior repairs. At Top Choice Roofing, we respond fast and fix it right the first time.</p>
         <p>Our certified technicians are trained to diagnose roof problems quickly and accurately. Whether you're dealing with a small leak around a chimney flashing or extensive damage after a severe storm, we have the expertise and equipment to handle repairs on every roofing system — asphalt, metal, cedar, flat, and more.</p>
         <p>We don't believe in band-aid solutions. Every repair comes with a thorough inspection so you understand the full condition of your roof and can make informed decisions. Our work is backed by a workmanship warranty so you can have confidence in every repair we complete.</p>
-        <div class="hero-actions" style="margin-top:24px;">
+        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:24px;">
           <a href="index.html#contact" class="btn btn-primary">Request Emergency Service</a>
-          <a href="roofing.html" class="btn btn-outline">All Roofing Services</a>
+          <a href="roofing.html" class="btn btn-yellow">All Roofing Services</a>
         </div>
       </div>
     </div>
@@ -203,38 +217,39 @@
 </section>
 
 <!-- BENEFITS -->
-<section class="section benefits-section">
-  <div class="container">
-    <h2 class="section-title">Why Choose Top Choice for Roof Repairs</h2>
+<section class="benefits-section">
+  <div class="section-inner">
+    <div class="section-label">Why Choose Top Choice</div>
+    <h2 class="section-title">Reliable Repairs, Backed by Our Guarantee</h2>
     <p class="section-sub">Fast response, accurate diagnosis, and durable repairs — backed by our workmanship guarantee.</p>
     <div class="benefits-grid">
       <div class="benefit-card">
-        <div class="benefit-icon">⚡</div>
+        <div class="benefit-icon">&#9889;</div>
         <h4>24/7 Emergency Response</h4>
         <p>Storms don't keep business hours. Neither do we. Our emergency line is available around the clock for urgent roof damage situations.</p>
       </div>
       <div class="benefit-card">
-        <div class="benefit-icon">🔍</div>
+        <div class="benefit-icon">&#128269;</div>
         <h4>Accurate Diagnosis First</h4>
         <p>We find the real source of the problem — not just the symptoms. Our thorough inspection process pinpoints hidden damage before it spreads.</p>
       </div>
       <div class="benefit-card">
-        <div class="benefit-icon">🏠</div>
+        <div class="benefit-icon">&#127968;</div>
         <h4>All Roof Types Covered</h4>
         <p>From asphalt shingles and metal roofing to cedar shake and flat membrane systems — we repair every residential and commercial roofing type.</p>
       </div>
       <div class="benefit-card">
-        <div class="benefit-icon">✅</div>
+        <div class="benefit-icon">&#10003;</div>
         <h4>Workmanship Warranty</h4>
         <p>Every repair we complete is backed by our workmanship guarantee. If an issue recurs due to our work, we'll fix it — no charge.</p>
       </div>
       <div class="benefit-card">
-        <div class="benefit-icon">📋</div>
+        <div class="benefit-icon">&#128196;</div>
         <h4>Insurance Claim Assistance</h4>
         <p>Dealing with storm or hail damage? We'll document the damage thoroughly and can work directly with your insurance adjuster to support your claim.</p>
       </div>
       <div class="benefit-card">
-        <div class="benefit-icon">🌿</div>
+        <div class="benefit-icon">&#128176;</div>
         <h4>Transparent Pricing</h4>
         <p>We provide clear, itemized estimates before any work begins. No hidden fees, no surprise charges — just honest, straightforward pricing.</p>
       </div>
@@ -243,29 +258,30 @@
 </section>
 
 <!-- GALLERY -->
-<section class="section" style="background:#fff;">
-  <div class="container">
+<section style="background:var(--white);">
+  <div class="section-inner">
+    <div class="section-label">Our Work</div>
     <h2 class="section-title">Repair Projects We've Completed</h2>
     <p class="section-sub">From emergency tarping to full roof sections — see some of our recent repair work across the GTA.</p>
     <div class="gallery-grid">
       <div class="gallery-item">
-        <img src="Media/brenoRoofing6.jpg" alt="Storm damage repair" />
+        <img src="Media/brenoRoofing6.jpg" alt="Storm damage repair" loading="lazy">
         <div class="gallery-overlay"><span>Storm Damage Repair</span></div>
       </div>
       <div class="gallery-item">
-        <img src="Media/brenoRoofing5.jpg" alt="Shingle repair" />
+        <img src="Media/brenoRoofing5.jpg" alt="Shingle repair" loading="lazy">
         <div class="gallery-overlay"><span>Shingle Replacement</span></div>
       </div>
       <div class="gallery-item">
-        <img src="Media/brenoRoofing4.jpg" alt="Leak repair" />
+        <img src="Media/brenoRoofing4.jpg" alt="Leak repair" loading="lazy">
         <div class="gallery-overlay"><span>Leak Source Repair</span></div>
       </div>
       <div class="gallery-item">
-        <img src="Media/profileRoofing7.jpg" alt="Flashing repair" />
+        <img src="Media/profileRoofing7.jpg" alt="Flashing repair" loading="lazy">
         <div class="gallery-overlay"><span>Flashing Repair</span></div>
       </div>
       <div class="gallery-item">
-        <img src="Media/profileRoofing8.jpg" alt="Emergency tarping" />
+        <img src="Media/profileRoofing8.jpg" alt="Emergency tarping" loading="lazy">
         <div class="gallery-overlay"><span>Emergency Tarping</span></div>
       </div>
     </div>
@@ -274,167 +290,137 @@
 
 <!-- FAQ -->
 <section class="faq-section">
-  <div class="container">
+  <div class="section-inner">
+    <div class="section-label">Common Questions</div>
     <h2 class="section-title">Roof Repair FAQs</h2>
     <p class="section-sub">Common questions about our repair and emergency services.</p>
     <div class="faq-list">
-
       <div class="faq-item">
-        <button class="faq-question" onclick="faqToggle(this)">
-          How quickly can you respond to an emergency?
-          <span class="faq-toggle">+</span>
-        </button>
-        <div class="faq-answer">
-          <p>For genuine emergencies — active leaks, storm blow-offs, or structural damage — we aim to have a technician on-site within hours. We offer 24/7 emergency service and will provide temporary weatherproofing (tarping) to protect your home until a permanent repair can be completed.</p>
-        </div>
+        <button class="faq-question" onclick="faqToggle(this)">How quickly can you respond to an emergency? <span class="faq-toggle">+</span></button>
+        <div class="faq-answer">For genuine emergencies — active leaks, storm blow-offs, or structural damage — we aim to have a technician on-site within hours. We offer 24/7 emergency service and will provide temporary weatherproofing (tarping) to protect your home until a permanent repair can be completed.</div>
       </div>
-
       <div class="faq-item">
-        <button class="faq-question" onclick="faqToggle(this)">
-          How do I know if I need a repair or a full replacement?
-          <span class="faq-toggle">+</span>
-        </button>
-        <div class="faq-answer">
-          <p>This depends on the age of your roof, the extent of the damage, and the overall condition of the existing material. If your roof is under 15 years old and damage is localized, repair is almost always the right call. If it's older with widespread wear, a replacement may be more cost-effective long term. Our technicians will give you an honest assessment with no pressure to upsell.</p>
-        </div>
+        <button class="faq-question" onclick="faqToggle(this)">How do I know if I need a repair or a full replacement? <span class="faq-toggle">+</span></button>
+        <div class="faq-answer">This depends on the age of your roof, the extent of the damage, and the overall condition of the existing material. If your roof is under 15 years old and damage is localized, repair is almost always the right call. If it's older with widespread wear, a replacement may be more cost-effective long term. Our technicians will give you an honest assessment with no pressure to upsell.</div>
       </div>
-
       <div class="faq-item">
-        <button class="faq-question" onclick="faqToggle(this)">
-          Can you repair my roof in winter or rain?
-          <span class="faq-toggle">+</span>
-        </button>
-        <div class="faq-answer">
-          <p>We can perform emergency tarping and temporary repairs year-round. For permanent repairs, some materials (like asphalt shingles) require temperatures above 5°C to seal properly. Where conditions allow, we'll complete the permanent repair as soon as safely possible. We'll always be transparent about timing and what can be done immediately.</p>
-        </div>
+        <button class="faq-question" onclick="faqToggle(this)">Can you repair my roof in winter or rain? <span class="faq-toggle">+</span></button>
+        <div class="faq-answer">We can perform emergency tarping and temporary repairs year-round. For permanent repairs, some materials (like asphalt shingles) require temperatures above 5°C to seal properly. Where conditions allow, we'll complete the permanent repair as soon as safely possible. We'll always be transparent about timing and what can be done immediately.</div>
       </div>
-
       <div class="faq-item">
-        <button class="faq-question" onclick="faqToggle(this)">
-          Will you help with my insurance claim?
-          <span class="faq-toggle">+</span>
-        </button>
-        <div class="faq-answer">
-          <p>Yes. We have extensive experience working alongside homeowners and insurance adjusters for storm, hail, and wind damage claims. We'll provide detailed documentation of all damage found, itemized repair costs, and photographs to support your claim. We can also speak with your adjuster directly if needed.</p>
-        </div>
+        <button class="faq-question" onclick="faqToggle(this)">Will you help with my insurance claim? <span class="faq-toggle">+</span></button>
+        <div class="faq-answer">Yes. We have extensive experience working alongside homeowners and insurance adjusters for storm, hail, and wind damage claims. We'll provide detailed documentation of all damage found, itemized repair costs, and photographs to support your claim. We can also speak with your adjuster directly if needed.</div>
       </div>
-
       <div class="faq-item">
-        <button class="faq-question" onclick="faqToggle(this)">
-          What types of roof damage do you repair?
-          <span class="faq-toggle">+</span>
-        </button>
-        <div class="faq-answer">
-          <p>We repair all common types of roof damage including: missing or damaged shingles, leaks and water infiltration, storm and hail damage, flashing failures (around chimneys, skylights, vents), ice dam damage, flat roof membrane punctures or blisters, and fascia or soffit damage. If you're not sure what's wrong, we'll find it during our inspection.</p>
-        </div>
+        <button class="faq-question" onclick="faqToggle(this)">What types of roof damage do you repair? <span class="faq-toggle">+</span></button>
+        <div class="faq-answer">We repair all common types of roof damage including: missing or damaged shingles, leaks and water infiltration, storm and hail damage, flashing failures (around chimneys, skylights, vents), ice dam damage, flat roof membrane punctures or blisters, and fascia or soffit damage. If you're not sure what's wrong, we'll find it during our inspection.</div>
       </div>
-
       <div class="faq-item">
-        <button class="faq-question" onclick="faqToggle(this)">
-          How long does a typical roof repair take?
-          <span class="faq-toggle">+</span>
-        </button>
-        <div class="faq-answer">
-          <p>Minor repairs — replacing a few shingles, resealing flashing, patching a flat roof — can typically be completed in a few hours. Larger repairs involving damaged decking or extensive shingle replacement may take a full day or more. We'll give you a realistic timeline during your free estimate so you can plan accordingly.</p>
-        </div>
+        <button class="faq-question" onclick="faqToggle(this)">How long does a typical roof repair take? <span class="faq-toggle">+</span></button>
+        <div class="faq-answer">Minor repairs — replacing a few shingles, resealing flashing, patching a flat roof — can typically be completed in a few hours. Larger repairs involving damaged decking or extensive shingle replacement may take a full day or more. We'll give you a realistic timeline during your free estimate so you can plan accordingly.</div>
       </div>
-
     </div>
   </div>
 </section>
 
 <!-- CTA BANNER -->
-<section class="cta-banner">
-  <div class="container">
-    <h2>Don't Wait — A Small Leak Becomes a Big Problem</h2>
-    <p>Contact Top Choice Roofing today for fast, professional roof repair anywhere in the Greater Toronto Area.</p>
-    <div class="cta-actions">
-      <a href="index.html#contact" class="btn btn-yellow">Get a Free Estimate</a>
-      <a href="tel:4165550192" class="btn btn-outline-white">Call (416) 555-0192</a>
-    </div>
+<div class="cta-banner">
+  <h2>Don't Wait — A Small Leak Becomes a Big Problem</h2>
+  <p>Contact Top Choice Roofing today for fast, professional roof repair anywhere in the Greater Toronto Area.</p>
+  <div class="cta-actions">
+    <a href="index.html#contact" class="btn btn-yellow">Get a Free Estimate</a>
+    <a href="tel:+14165550100" class="btn btn-outline">&#128222;&nbsp; (416) 555-0100</a>
   </div>
-</section>
+</div>
 
 <!-- RELATED SERVICES -->
-<section class="section related-section">
-  <div class="container">
-    <h2 class="section-title">Related Services</h2>
+<section class="related-section">
+  <div class="section-inner">
+    <div class="section-label">Explore More</div>
+    <h2 class="section-title">Related Roofing Services</h2>
     <div class="related-grid">
       <div class="related-card">
-        <img src="Media/profileRoofing3.jpg" alt="Asphalt Shingles" />
+        <div class="related-card-img"><img src="Media/profileRoofing3.jpg" alt="Asphalt Shingles" loading="lazy"></div>
         <div class="related-card-body">
           <h4>Asphalt Shingles</h4>
-          <p>Canada's most popular roofing material — durable, affordable, and available in dozens of styles.</p>
-          <a href="roofing-asphalt-shingles.html" class="btn btn-outline">Learn More</a>
+          <a href="roofing-asphalt-shingles.html">Learn More &rarr;</a>
         </div>
       </div>
       <div class="related-card">
-        <img src="Media/greenMetal53.jpg" alt="Flat Roofing" />
+        <div class="related-card-img"><img src="Media/greenMetal53.jpg" alt="Flat Roofing" loading="lazy"></div>
         <div class="related-card-body">
           <h4>Flat Roofing</h4>
-          <p>TPO, EPDM, and modified bitumen systems for residential additions and commercial buildings.</p>
-          <a href="roofing-flat.html" class="btn btn-outline">Learn More</a>
+          <a href="roofing-flat.html">Learn More &rarr;</a>
         </div>
       </div>
       <div class="related-card">
-        <img src="Media/greenMetal06.jpg" alt="Commercial Roofing" />
+        <div class="related-card-img"><img src="Media/greenMetal06.jpg" alt="Commercial Roofing" loading="lazy"></div>
         <div class="related-card-body">
           <h4>Commercial Roofing</h4>
-          <p>Complete commercial roofing solutions for businesses, warehouses, and multi-unit properties across the GTA.</p>
-          <a href="roofing-commercial.html" class="btn btn-outline">Learn More</a>
+          <a href="roofing-commercial.html">Learn More &rarr;</a>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- FOOTER -->
-<footer class="site-footer">
-  <div class="footer-inner">
+<footer>
+  <div class="footer-top">
     <div class="footer-brand">
-      <img src="Media/Top Choice Roofing Logo.png" alt="Top Choice Roofing and Siding" />
-      <p>Quality roofing and siding solutions for homeowners and businesses across the Greater Toronto Area.</p>
-      <div class="footer-socials">
+      <img src="Media/Top Choice Roofing Logo.png" alt="Top Choice Roofing and Siding">
+      <p>Protecting homes and businesses across the Greater Toronto Area with quality roofing and siding solutions since 2005.</p>
+      <div class="social-links" style="margin-top:20px;">
         <a href="#" aria-label="Facebook">f</a>
         <a href="#" aria-label="Instagram">in</a>
         <a href="#" aria-label="Google">G</a>
       </div>
     </div>
     <div class="footer-col">
-      <h4>Residential Roofing</h4>
+      <h5>Residential Roofing</h5>
       <ul>
-        <li><a href="roofing-asphalt-shingles.html">Asphalt Shingles</a></li>
+        <li><a href="roofing-asphalt-shingles.html">Asphalt Shingle Roofing</a></li>
         <li><a href="roofing-metal.html">Metal Roofing</a></li>
-        <li><a href="roofing-cedar-shake.html">Cedar Shake</a></li>
+        <li><a href="roofing-cedar-shake.html">Cedar Shake Roofing</a></li>
         <li><a href="roofing-flat.html">Flat Roofing</a></li>
-        <li><a href="roofing-synthetic-slate.html">Synthetic Slate</a></li>
+        <li><a href="roofing-synthetic-slate.html">Synthetic Slate Roofing</a></li>
         <li><a href="roofing-repair.html">Roof Repair</a></li>
+        <li><a href="roofing-repair.html">Emergency Service</a></li>
       </ul>
     </div>
     <div class="footer-col">
-      <h4>Commercial &amp; Siding</h4>
+      <h5>Commercial Roofing</h5>
       <ul>
-        <li><a href="roofing-commercial.html">Commercial Roofing</a></li>
+        <li><a href="roofing-commercial.html">Flat Roofing</a></li>
+        <li><a href="roofing-commercial.html">Metal Roofing</a></li>
+        <li><a href="roofing-commercial.html">Shingles</a></li>
+        <li><a href="roofing-repair.html">Roof Repair</a></li>
+        <li><a href="roofing-repair.html">Emergency Service</a></li>
+      </ul>
+      <h5 style="margin-top:20px;">Siding</h5>
+      <ul>
         <li><a href="index.html#services">Vinyl Siding</a></li>
-        <li><a href="index.html#services">Fiber Cement</a></li>
-        <li><a href="index.html#services">Wood Siding</a></li>
-        <li><a href="index.html#services">Metal Siding</a></li>
-        <li><a href="index.html#services">Siding Repair</a></li>
+        <li><a href="index.html#services">Engineered Wood Siding</a></li>
+        <li><a href="index.html#services">Hardie Board Siding</a></li>
+        <li><a href="index.html#services">Soffit &amp; Fascia</a></li>
+        <li><a href="index.html#services">Eavestroughs</a></li>
       </ul>
     </div>
     <div class="footer-col">
-      <h4>Company</h4>
+      <h5>Company</h5>
       <ul>
-        <li><a href="index.html#why-us">About Us</a></li>
-        <li><a href="index.html#process">Our Process</a></li>
+        <li><a href="index.html#why">About Us</a></li>
         <li><a href="index.html#gallery">Gallery</a></li>
+        <li><a href="index.html#testimonials">Reviews</a></li>
         <li><a href="index.html#contact">Contact</a></li>
-        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="index.html#contact">Free Estimate</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="#">FAQ</a></li>
       </ul>
     </div>
   </div>
   <div class="footer-bottom">
-    <p>&copy; 2026 Top Choice Roofing and Siding. All rights reserved. | Greater Toronto Area</p>
+    <span>&copy; 2026 Top Choice Roofing and Siding. All rights reserved.</span>
+    <span>Serving the Greater Toronto Area &nbsp;|&nbsp; Licensed &amp; Insured</span>
   </div>
 </footer>
 

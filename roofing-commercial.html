@@ -1,75 +1,89 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Commercial Roofing | Top Choice Roofing and Siding</title>
-  <link rel="stylesheet" href="styles.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Commercial Roofing | Top Choice Roofing and Siding</title>
+<meta name="description" content="Flat, metal, and shingle roofing systems for businesses, warehouses, multi-unit buildings, and industrial properties across the Greater Toronto Area.">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<!-- TOPBAR -->
 <div class="topbar">
-  <div class="topbar-inner">
-    <span>📞 (416) 555-0192</span>
-    <span>✉ info@topchoiceroofing.ca</span>
-    <span>Serving the Greater Toronto Area</span>
+  <div class="inner">
+    <div class="topbar-left"><span>&#128205; Serving the Greater Toronto Area</span></div>
+    <div class="topbar-right">
+      <a href="mailto:info@topchoiceroofing.ca">&#9993; info@topchoiceroofing.ca</a>
+      <a href="tel:+14165550100">&#128222; (416) 555-0100</a>
+    </div>
   </div>
 </div>
 
-<!-- HEADER -->
-<header class="site-header" id="site-header">
+<header id="top">
   <div class="header-inner">
-    <a href="index.html" class="logo">
-      <img src="Media/Top Choice Roofing Logo.png" alt="Top Choice Roofing and Siding" />
-    </a>
-    <nav class="main-nav" id="main-nav">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li class="has-dropdown active">
-          <a href="roofing.html">Roofing</a>
-          <ul class="dropdown">
-            <li><a href="roofing-asphalt-shingles.html">Asphalt Shingles</a></li>
-            <li><a href="roofing-metal.html">Metal Roofing</a></li>
-            <li><a href="roofing-cedar-shake.html">Cedar Shake</a></li>
-            <li><a href="roofing-flat.html">Flat Roofing</a></li>
-            <li><a href="roofing-synthetic-slate.html">Synthetic Slate</a></li>
-            <li><a href="roofing-repair.html">Roof Repair</a></li>
-            <li><a href="roofing-commercial.html">Commercial Roofing</a></li>
-            <li><a href="roofing-commercial.html">Commercial Flat Roofing</a></li>
-            <li><a href="roofing-commercial.html">Commercial Metal Roofing</a></li>
-            <li><a href="roofing-commercial.html">Commercial Shingles</a></li>
-          </ul>
-        </li>
-        <li class="has-dropdown">
-          <a href="index.html#services">Siding</a>
-          <ul class="dropdown">
-            <li><a href="index.html#services">Vinyl Siding</a></li>
-            <li><a href="index.html#services">Fiber Cement</a></li>
-            <li><a href="index.html#services">Wood Siding</a></li>
-            <li><a href="index.html#services">Metal Siding</a></li>
-            <li><a href="index.html#services">Siding Repair</a></li>
-          </ul>
-        </li>
-        <li><a href="index.html#why-us">About</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="index.html#contact">Contact</a></li>
-      </ul>
+    <div class="logo"><img src="Media/Top Choice Roofing Logo.png" alt="Top Choice Roofing and Siding"></div>
+    <nav>
+      <a href="index.html">Home</a>
+      <div class="dropdown">
+        <a href="roofing.html" class="active">Roofing</a>
+        <div class="dropdown-menu">
+          <span class="sub-label">Residential</span>
+          <a href="roofing-asphalt-shingles.html">Asphalt Shingle Roofing</a>
+          <a href="roofing-metal.html">Metal Roofing</a>
+          <a href="roofing-cedar-shake.html">Cedar Shake Roofing</a>
+          <a href="roofing-flat.html">Flat Roofing</a>
+          <a href="roofing-synthetic-slate.html">Synthetic Slate Roofing</a>
+          <a href="roofing-repair.html">Roof Repair &amp; Emergency</a>
+          <span class="sub-label">Commercial</span>
+          <a href="roofing-commercial.html">Commercial Roofing</a>
+          <a href="roofing-commercial.html">Commercial Flat Roofing</a>
+          <a href="roofing-commercial.html">Commercial Metal Roofing</a>
+          <a href="roofing-commercial.html">Commercial Shingles</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="index.html#services">Siding</a>
+        <div class="dropdown-menu">
+          <a href="index.html#services">Vinyl Siding</a>
+          <a href="index.html#services">Engineered Wood Siding</a>
+          <a href="index.html#services">Hardie Board Siding</a>
+          <a href="index.html#services">Soffit &amp; Fascia</a>
+          <a href="index.html#services">Eavestroughs</a>
+        </div>
+      </div>
+      <a href="index.html#gallery">Gallery</a>
+      <a href="index.html#why">About</a>
+      <a href="blog.html">Blog</a>
+      <a href="index.html#contact">Contact</a>
+      <a href="index.html#contact" class="btn btn-yellow nav-cta">Free Estimate</a>
     </nav>
-    <a href="index.html#contact" class="btn btn-primary nav-cta">Free Estimate</a>
-    <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">&#9776;</button>
+    <div class="hamburger" id="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+  </div>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="roofing.html">Roofing</a>
+    <a href="roofing-asphalt-shingles.html" class="mobile-sub">Asphalt Shingle Roofing</a>
+    <a href="roofing-metal.html" class="mobile-sub">Metal Roofing</a>
+    <a href="roofing-cedar-shake.html" class="mobile-sub">Cedar Shake Roofing</a>
+    <a href="roofing-flat.html" class="mobile-sub">Flat Roofing</a>
+    <a href="roofing-synthetic-slate.html" class="mobile-sub">Synthetic Slate Roofing</a>
+    <a href="roofing-commercial.html" class="mobile-sub">Commercial Roofing</a>
+    <a href="index.html#services">Siding</a>
+    <a href="index.html#gallery">Gallery</a>
+    <a href="index.html#why">About</a>
+    <a href="blog.html">Blog</a>
+    <a href="index.html#contact">Contact / Free Estimate</a>
   </div>
 </header>
 
-<!-- PAGE HERO -->
-<section class="page-hero page-hero-with-form" style="background-image:url('Media/greenMetal47.jpg');">
+<div class="page-hero page-hero-with-form" style="background: linear-gradient(rgba(30,55,10,.85),rgba(30,55,10,.7)), url('Media/greenMetal47.jpg') center/cover no-repeat;">
   <div class="page-hero-inner">
     <div class="page-hero-text">
-      <span class="hero-badge">Commercial &amp; Industrial Roofing Specialists</span>
-      <h1>Commercial Roofing Solutions</h1>
+      <div class="hero-badge">Commercial &amp; Industrial Roofing Specialists</div>
+      <h1>Commercial <span>Roofing Solutions</span></h1>
       <p>Flat, metal, and shingle roofing systems for businesses, warehouses, multi-unit buildings, and industrial properties across the Greater Toronto Area.</p>
       <div class="hero-actions">
-        <a href="tel:4165550192" class="btn btn-outline-white">&#128222;&nbsp; (416) 555-0192</a>
+        <a href="tel:+14165550100" class="btn btn-outline">&#128222;&nbsp; (416) 555-0100</a>
       </div>
     </div>
     <div class="page-hero-form-card">
@@ -170,32 +184,32 @@
       </form>
     </div>
   </div>
-</section>
+</div>
 
-<!-- BREADCRUMB -->
-<nav class="breadcrumb">
-  <div class="container">
-    <a href="index.html">Home</a> &rsaquo;
-    <a href="roofing.html">Roofing</a> &rsaquo;
+<div class="breadcrumb">
+  <div class="inner">
+    <a href="index.html">Home</a><span>&rsaquo;</span>
+    <a href="roofing.html">Roofing</a><span>&rsaquo;</span>
     <span>Commercial Roofing</span>
   </div>
-</nav>
+</div>
 
 <!-- SERVICE DETAIL -->
-<section class="section" style="background:#fff;">
-  <div class="container">
+<section>
+  <div class="section-inner">
     <div class="service-detail-grid">
-      <div class="service-detail-image">
-        <img src="Media/greenMetal48.jpg" alt="Commercial roofing project" />
+      <div class="service-detail-img">
+        <img src="Media/greenMetal48.jpg" alt="Commercial roofing project" loading="lazy">
       </div>
       <div class="service-detail-content">
+        <div class="section-label">What We Offer</div>
         <h2>Complete Commercial Roofing for the GTA</h2>
         <p>Commercial roofing demands a different level of expertise, planning, and execution than residential work. Larger surface areas, complex drainage systems, rooftop equipment penetrations, and the need to minimize business disruption all require a contractor with the right experience and systems.</p>
         <p>Top Choice Roofing has completed commercial projects for retail plazas, office buildings, warehouses, multi-unit residential buildings, and industrial facilities across Toronto and the surrounding region. We work with the full range of commercial roofing systems — TPO and EPDM flat membranes, standing seam and exposed fastener metal, and commercial-grade asphalt shingles for low-slope applications.</p>
         <p>Every commercial project begins with a detailed site assessment, load calculations, and a written scope of work. We coordinate with property managers, building owners, and tenants to schedule work with minimal disruption, and all our commercial work meets Ontario Building Code requirements and manufacturer specifications.</p>
-        <div class="hero-actions" style="margin-top:24px;">
+        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:24px;">
           <a href="index.html#contact" class="btn btn-primary">Request a Commercial Estimate</a>
-          <a href="roofing.html" class="btn btn-outline">All Roofing Services</a>
+          <a href="roofing.html" class="btn btn-yellow">All Roofing Services</a>
         </div>
       </div>
     </div>
@@ -203,38 +217,39 @@
 </section>
 
 <!-- SYSTEMS WE INSTALL -->
-<section class="section benefits-section">
-  <div class="container">
+<section class="benefits-section">
+  <div class="section-inner">
+    <div class="section-label">Our Systems</div>
     <h2 class="section-title">Commercial Roofing Systems We Install</h2>
     <p class="section-sub">We offer the right system for every commercial application — from low-slope flat roofs to steep-slope metal and shingle systems.</p>
     <div class="benefits-grid">
       <div class="benefit-card">
-        <div class="benefit-icon">🏢</div>
+        <div class="benefit-icon">&#127970;</div>
         <h4>TPO Flat Roofing</h4>
         <p>Thermoplastic polyolefin (TPO) is the leading choice for commercial flat roofs — energy efficient, UV-resistant, and highly durable in Canadian climates. Ideal for retail, office, and warehouse buildings.</p>
       </div>
       <div class="benefit-card">
-        <div class="benefit-icon">🔩</div>
+        <div class="benefit-icon">&#128295;</div>
         <h4>EPDM Membrane</h4>
         <p>Ethylene propylene diene monomer (EPDM) offers outstanding flexibility and weather resistance, particularly in extreme cold. A proven system for low-slope commercial applications with 20+ year lifespans.</p>
       </div>
       <div class="benefit-card">
-        <div class="benefit-icon">⚡</div>
+        <div class="benefit-icon">&#9889;</div>
         <h4>Modified Bitumen</h4>
         <p>Two-ply modified bitumen systems offer excellent puncture resistance and redundancy. A reliable choice for high-traffic flat roofs and buildings with rooftop HVAC equipment.</p>
       </div>
       <div class="benefit-card">
-        <div class="benefit-icon">🏭</div>
+        <div class="benefit-icon">&#127981;</div>
         <h4>Commercial Metal Roofing</h4>
         <p>Standing seam and R-panel metal roofing for warehouses, industrial facilities, and commercial buildings. Exceptionally durable, low-maintenance, and available in a wide range of profiles and finishes.</p>
       </div>
       <div class="benefit-card">
-        <div class="benefit-icon">🏘️</div>
+        <div class="benefit-icon">&#127968;</div>
         <h4>Multi-Unit Residential</h4>
         <p>Complete roofing solutions for townhome complexes, condominiums, and multi-unit residential buildings. We work efficiently on large-scale projects with coordinated scheduling and site management.</p>
       </div>
       <div class="benefit-card">
-        <div class="benefit-icon">🔧</div>
+        <div class="benefit-icon">&#128296;</div>
         <h4>Commercial Roof Repair</h4>
         <p>Emergency and planned repairs for all commercial roofing systems. We respond quickly to leaks and damage to minimize business interruption, and provide detailed condition reports for maintenance planning.</p>
       </div>
@@ -243,29 +258,30 @@
 </section>
 
 <!-- GALLERY -->
-<section class="section" style="background:#fff;">
-  <div class="container">
+<section style="background:var(--white);">
+  <div class="section-inner">
+    <div class="section-label">Our Work</div>
     <h2 class="section-title">Commercial Projects Gallery</h2>
     <p class="section-sub">A selection of completed commercial roofing projects across the Greater Toronto Area.</p>
     <div class="gallery-grid">
       <div class="gallery-item">
-        <img src="Media/greenMetal47.jpg" alt="Commercial metal roof" />
+        <img src="Media/greenMetal47.jpg" alt="Commercial metal roof" loading="lazy">
         <div class="gallery-overlay"><span>Commercial Metal Roof</span></div>
       </div>
       <div class="gallery-item">
-        <img src="Media/greenMetal48.jpg" alt="Commercial flat roof" />
+        <img src="Media/greenMetal48.jpg" alt="Commercial flat roof" loading="lazy">
         <div class="gallery-overlay"><span>Commercial Flat Roof</span></div>
       </div>
       <div class="gallery-item">
-        <img src="Media/greenMetal53.jpg" alt="TPO membrane installation" />
+        <img src="Media/greenMetal53.jpg" alt="TPO membrane installation" loading="lazy">
         <div class="gallery-overlay"><span>TPO Membrane</span></div>
       </div>
       <div class="gallery-item">
-        <img src="Media/greenMetal57.jpg" alt="Industrial roofing" />
+        <img src="Media/greenMetal57.jpg" alt="Industrial roofing" loading="lazy">
         <div class="gallery-overlay"><span>Industrial Facility</span></div>
       </div>
       <div class="gallery-item">
-        <img src="Media/greenMetal06.jpg" alt="Standing seam metal" />
+        <img src="Media/greenMetal06.jpg" alt="Standing seam metal" loading="lazy">
         <div class="gallery-overlay"><span>Standing Seam Metal</span></div>
       </div>
     </div>
@@ -274,157 +290,133 @@
 
 <!-- FAQ -->
 <section class="faq-section">
-  <div class="container">
+  <div class="section-inner">
+    <div class="section-label">Common Questions</div>
     <h2 class="section-title">Commercial Roofing FAQs</h2>
     <p class="section-sub">Common questions from property managers, building owners, and business operators.</p>
     <div class="faq-list">
-
       <div class="faq-item">
-        <button class="faq-question" onclick="faqToggle(this)">
-          How long does a commercial roof replacement take?
-          <span class="faq-toggle">+</span>
-        </button>
-        <div class="faq-answer">
-          <p>Timeline depends on the size of the building, the system being installed, and weather conditions. A small retail building (under 5,000 sq ft) may take 2–4 days. Larger warehouses or multi-unit complexes can take 1–3 weeks. We provide a detailed project schedule before work begins and coordinate with your operations team to minimize disruption.</p>
-        </div>
+        <button class="faq-question" onclick="faqToggle(this)">How long does a commercial roof replacement take? <span class="faq-toggle">+</span></button>
+        <div class="faq-answer">Timeline depends on the size of the building, the system being installed, and weather conditions. A small retail building (under 5,000 sq ft) may take 2–4 days. Larger warehouses or multi-unit complexes can take 1–3 weeks. We provide a detailed project schedule before work begins and coordinate with your operations team to minimize disruption.</div>
       </div>
-
       <div class="faq-item">
-        <button class="faq-question" onclick="faqToggle(this)">
-          Can you work around our business operations?
-          <span class="faq-toggle">+</span>
-        </button>
-        <div class="faq-answer">
-          <p>Yes — this is a standard part of our commercial process. We can schedule work in sections, start early in the morning, or work during off-hours and weekends when needed. We'll discuss your operational requirements during the planning phase and build the schedule around your needs.</p>
-        </div>
+        <button class="faq-question" onclick="faqToggle(this)">Can you work around our business operations? <span class="faq-toggle">+</span></button>
+        <div class="faq-answer">Yes — this is a standard part of our commercial process. We can schedule work in sections, start early in the morning, or work during off-hours and weekends when needed. We'll discuss your operational requirements during the planning phase and build the schedule around your needs.</div>
       </div>
-
       <div class="faq-item">
-        <button class="faq-question" onclick="faqToggle(this)">
-          Which flat roofing system is best for my commercial building?
-          <span class="faq-toggle">+</span>
-        </button>
-        <div class="faq-answer">
-          <p>The right system depends on several factors: the slope of your roof, the amount of rooftop foot traffic, your budget, and the climate exposure of the building. TPO is currently the most popular for energy efficiency and cost. EPDM excels in extreme cold. Modified bitumen is ideal for high-traffic roofs. We'll recommend the best fit after assessing your building.</p>
-        </div>
+        <button class="faq-question" onclick="faqToggle(this)">Which flat roofing system is best for my commercial building? <span class="faq-toggle">+</span></button>
+        <div class="faq-answer">The right system depends on several factors: the slope of your roof, the amount of rooftop foot traffic, your budget, and the climate exposure of the building. TPO is currently the most popular for energy efficiency and cost. EPDM excels in extreme cold. Modified bitumen is ideal for high-traffic roofs. We'll recommend the best fit after assessing your building.</div>
       </div>
-
       <div class="faq-item">
-        <button class="faq-question" onclick="faqToggle(this)">
-          Do you offer maintenance programs for commercial roofs?
-          <span class="faq-toggle">+</span>
-        </button>
-        <div class="faq-answer">
-          <p>Yes. A proactive maintenance program is the most cost-effective way to extend the life of a commercial roof. We offer scheduled bi-annual inspections, minor repair programs, and written condition reports that property managers can use for capital planning. Ask us about our commercial maintenance packages during your estimate.</p>
-        </div>
+        <button class="faq-question" onclick="faqToggle(this)">Do you offer maintenance programs for commercial roofs? <span class="faq-toggle">+</span></button>
+        <div class="faq-answer">Yes. A proactive maintenance program is the most cost-effective way to extend the life of a commercial roof. We offer scheduled bi-annual inspections, minor repair programs, and written condition reports that property managers can use for capital planning. Ask us about our commercial maintenance packages during your estimate.</div>
       </div>
-
       <div class="faq-item">
-        <button class="faq-question" onclick="faqToggle(this)">
-          Are you licensed and insured for commercial work in Ontario?
-          <span class="faq-toggle">+</span>
-        </button>
-        <div class="faq-answer">
-          <p>Yes. Top Choice Roofing holds all required Ontario contractor licenses and carries commercial general liability insurance and WSIB coverage. We can provide certificates of insurance directly to property managers or building owners as required. All our commercial work meets Ontario Building Code requirements and manufacturer installation specifications.</p>
-        </div>
+        <button class="faq-question" onclick="faqToggle(this)">Are you licensed and insured for commercial work in Ontario? <span class="faq-toggle">+</span></button>
+        <div class="faq-answer">Yes. Top Choice Roofing holds all required Ontario contractor licenses and carries commercial general liability insurance and WSIB coverage. We can provide certificates of insurance directly to property managers or building owners as required. All our commercial work meets Ontario Building Code requirements and manufacturer installation specifications.</div>
       </div>
-
     </div>
   </div>
 </section>
 
 <!-- CTA BANNER -->
-<section class="cta-banner">
-  <div class="container">
-    <h2>Ready to Protect Your Commercial Property?</h2>
-    <p>Contact Top Choice Roofing for a detailed commercial roofing assessment and written estimate — no obligation, no pressure.</p>
-    <div class="cta-actions">
-      <a href="index.html#contact" class="btn btn-yellow">Request a Commercial Estimate</a>
-      <a href="tel:4165550192" class="btn btn-outline-white">Call (416) 555-0192</a>
-    </div>
+<div class="cta-banner">
+  <h2>Ready to Protect Your Commercial Property?</h2>
+  <p>Contact Top Choice Roofing for a detailed commercial roofing assessment and written estimate — no obligation, no pressure.</p>
+  <div class="cta-actions">
+    <a href="index.html#contact" class="btn btn-yellow">Request a Commercial Estimate</a>
+    <a href="tel:+14165550100" class="btn btn-outline">&#128222;&nbsp; (416) 555-0100</a>
   </div>
-</section>
+</div>
 
 <!-- RELATED SERVICES -->
-<section class="section related-section">
-  <div class="container">
-    <h2 class="section-title">Related Services</h2>
+<section class="related-section">
+  <div class="section-inner">
+    <div class="section-label">Explore More</div>
+    <h2 class="section-title">Related Roofing Services</h2>
     <div class="related-grid">
       <div class="related-card">
-        <img src="Media/greenMetal06.jpg" alt="Metal Roofing" />
+        <div class="related-card-img"><img src="Media/greenMetal06.jpg" alt="Metal Roofing" loading="lazy"></div>
         <div class="related-card-body">
           <h4>Metal Roofing</h4>
-          <p>50+ year lifespan, energy efficient, and virtually maintenance-free. An excellent investment for both residential and commercial properties.</p>
-          <a href="roofing-metal.html" class="btn btn-outline">Learn More</a>
+          <a href="roofing-metal.html">Learn More &rarr;</a>
         </div>
       </div>
       <div class="related-card">
-        <img src="Media/greenMetal53.jpg" alt="Flat Roofing" />
+        <div class="related-card-img"><img src="Media/greenMetal53.jpg" alt="Flat Roofing" loading="lazy"></div>
         <div class="related-card-body">
           <h4>Flat Roofing</h4>
-          <p>TPO, EPDM, and modified bitumen systems engineered for low-slope applications — durable, weatherproof, and built for Canadian winters.</p>
-          <a href="roofing-flat.html" class="btn btn-outline">Learn More</a>
+          <a href="roofing-flat.html">Learn More &rarr;</a>
         </div>
       </div>
       <div class="related-card">
-        <img src="Media/brenoRoofing6.jpg" alt="Roof Repair" />
+        <div class="related-card-img"><img src="Media/brenoRoofing6.jpg" alt="Roof Repair &amp; Emergency" loading="lazy"></div>
         <div class="related-card-body">
           <h4>Roof Repair &amp; Emergency</h4>
-          <p>Fast commercial roof repairs and 24/7 emergency response — minimizing damage and business disruption when it matters most.</p>
-          <a href="roofing-repair.html" class="btn btn-outline">Learn More</a>
+          <a href="roofing-repair.html">Learn More &rarr;</a>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- FOOTER -->
-<footer class="site-footer">
-  <div class="footer-inner">
+<footer>
+  <div class="footer-top">
     <div class="footer-brand">
-      <img src="Media/Top Choice Roofing Logo.png" alt="Top Choice Roofing and Siding" />
-      <p>Quality roofing and siding solutions for homeowners and businesses across the Greater Toronto Area.</p>
-      <div class="footer-socials">
+      <img src="Media/Top Choice Roofing Logo.png" alt="Top Choice Roofing and Siding">
+      <p>Protecting homes and businesses across the Greater Toronto Area with quality roofing and siding solutions since 2005.</p>
+      <div class="social-links" style="margin-top:20px;">
         <a href="#" aria-label="Facebook">f</a>
         <a href="#" aria-label="Instagram">in</a>
         <a href="#" aria-label="Google">G</a>
       </div>
     </div>
     <div class="footer-col">
-      <h4>Residential Roofing</h4>
+      <h5>Residential Roofing</h5>
       <ul>
-        <li><a href="roofing-asphalt-shingles.html">Asphalt Shingles</a></li>
+        <li><a href="roofing-asphalt-shingles.html">Asphalt Shingle Roofing</a></li>
         <li><a href="roofing-metal.html">Metal Roofing</a></li>
-        <li><a href="roofing-cedar-shake.html">Cedar Shake</a></li>
+        <li><a href="roofing-cedar-shake.html">Cedar Shake Roofing</a></li>
         <li><a href="roofing-flat.html">Flat Roofing</a></li>
-        <li><a href="roofing-synthetic-slate.html">Synthetic Slate</a></li>
+        <li><a href="roofing-synthetic-slate.html">Synthetic Slate Roofing</a></li>
         <li><a href="roofing-repair.html">Roof Repair</a></li>
+        <li><a href="roofing-repair.html">Emergency Service</a></li>
       </ul>
     </div>
     <div class="footer-col">
-      <h4>Commercial &amp; Siding</h4>
+      <h5>Commercial Roofing</h5>
       <ul>
-        <li><a href="roofing-commercial.html">Commercial Roofing</a></li>
+        <li><a href="roofing-commercial.html">Flat Roofing</a></li>
+        <li><a href="roofing-commercial.html">Metal Roofing</a></li>
+        <li><a href="roofing-commercial.html">Shingles</a></li>
+        <li><a href="roofing-repair.html">Roof Repair</a></li>
+        <li><a href="roofing-repair.html">Emergency Service</a></li>
+      </ul>
+      <h5 style="margin-top:20px;">Siding</h5>
+      <ul>
         <li><a href="index.html#services">Vinyl Siding</a></li>
-        <li><a href="index.html#services">Fiber Cement</a></li>
-        <li><a href="index.html#services">Wood Siding</a></li>
-        <li><a href="index.html#services">Metal Siding</a></li>
-        <li><a href="index.html#services">Siding Repair</a></li>
+        <li><a href="index.html#services">Engineered Wood Siding</a></li>
+        <li><a href="index.html#services">Hardie Board Siding</a></li>
+        <li><a href="index.html#services">Soffit &amp; Fascia</a></li>
+        <li><a href="index.html#services">Eavestroughs</a></li>
       </ul>
     </div>
     <div class="footer-col">
-      <h4>Company</h4>
+      <h5>Company</h5>
       <ul>
-        <li><a href="index.html#why-us">About Us</a></li>
-        <li><a href="index.html#process">Our Process</a></li>
+        <li><a href="index.html#why">About Us</a></li>
         <li><a href="index.html#gallery">Gallery</a></li>
+        <li><a href="index.html#testimonials">Reviews</a></li>
         <li><a href="index.html#contact">Contact</a></li>
-        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="index.html#contact">Free Estimate</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="#">FAQ</a></li>
       </ul>
     </div>
   </div>
   <div class="footer-bottom">
-    <p>&copy; 2026 Top Choice Roofing and Siding. All rights reserved. | Greater Toronto Area</p>
+    <span>&copy; 2026 Top Choice Roofing and Siding. All rights reserved.</span>
+    <span>Serving the Greater Toronto Area &nbsp;|&nbsp; Licensed &amp; Insured</span>
   </div>
 </footer>
 
