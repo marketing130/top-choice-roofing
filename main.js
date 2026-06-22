@@ -77,9 +77,33 @@ function goToServicesBack(formId, dotPrefix) {
   document.getElementById(prefix + suffix).classList.add('active');
 }
 
-// Step 3 → Step 4: go to project details
+// Step 3 → Step 4: validate required fields then go to project details
 function goToDetails(formId, dotPrefix) {
   var form = document.getElementById(formId);
+  var activePage = form.querySelector('.form-page.active');
+  var requiredFields = activePage.querySelectorAll('input[required], select[required], textarea[required]');
+  var valid = true;
+
+  requiredFields.forEach(function(field) {
+    var wrapper = field.closest('.form-group');
+    var existing = wrapper && wrapper.querySelector('.field-warning');
+    if (existing) existing.remove();
+    field.classList.remove('field-error');
+
+    if (!field.value.trim()) {
+      valid = false;
+      field.classList.add('field-error');
+      if (wrapper) {
+        var msg = document.createElement('span');
+        msg.className = 'field-warning';
+        msg.textContent = 'This field is required.';
+        wrapper.appendChild(msg);
+      }
+    }
+  });
+
+  if (!valid) return;
+
   var prefix = (dotPrefix || 's-dot-').replace('dot-', 'p');
   form.querySelectorAll('.form-page').forEach(function(p) { p.classList.remove('active'); });
   document.getElementById(prefix + '4').classList.add('active');
@@ -89,6 +113,28 @@ function handleSubmit(e) {
   e.preventDefault();
   var form = e.target;
   var btn = form.querySelector('button[type=submit]');
+
+  // Validate required fields on the active page
+  var activePage = form.querySelector('.form-page.active');
+  var requiredFields = (activePage || form).querySelectorAll('input[required], select[required], textarea[required]');
+  var valid = true;
+  requiredFields.forEach(function(field) {
+    var wrapper = field.closest('.form-group');
+    var existing = wrapper && wrapper.querySelector('.field-warning');
+    if (existing) existing.remove();
+    field.classList.remove('field-error');
+    if (!field.value.trim()) {
+      valid = false;
+      field.classList.add('field-error');
+      if (wrapper) {
+        var msg = document.createElement('span');
+        msg.className = 'field-warning';
+        msg.textContent = 'This field is required.';
+        wrapper.appendChild(msg);
+      }
+    }
+  });
+  if (!valid) return;
 
   var firstName = (form.querySelector('[name=first_name]') || {value:''}).value.trim();
   var lastName  = (form.querySelector('[name=last_name]')  || {value:''}).value.trim();
@@ -174,6 +220,15 @@ document.addEventListener('DOMContentLoaded', function() {
     track.addEventListener('scroll', function() {
       updateCarouselDots(trackId, dotsId);
     }, { passive: true });
+  });
+
+  document.addEventListener('input', function(e) {
+    if (e.target.classList.contains('field-error') && e.target.value.trim()) {
+      e.target.classList.remove('field-error');
+      var wrapper = e.target.closest('.form-group');
+      var msg = wrapper && wrapper.querySelector('.field-warning');
+      if (msg) msg.remove();
+    }
   });
 
   document.querySelectorAll('a[href^="#"]').forEach(function(a) {
