@@ -595,6 +595,9 @@ footer { background: var(--charcoal); color: rgba(255,255,255,.75); }
   border-top: 2px solid var(--gray-mid);
   padding: 16px 24px;
   gap: 4px;
+  max-height: calc(100vh - 120px);
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 .mobile-menu.open { display: flex; }
 .mobile-menu a { padding: 10px 0; font-size: 15px; font-weight: 600; border-bottom: 1px solid var(--gray-mid); color: var(--charcoal); }
@@ -726,6 +729,7 @@ footer { background: var(--charcoal); color: rgba(255,255,255,.75); }
   .related-grid { grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 600px) {
+  .topbar-left { display: none; }
   .services-grid { grid-template-columns: 1fr; }
   .process-steps { grid-template-columns: 1fr; }
   .gallery-grid { grid-template-columns: 1fr; }
