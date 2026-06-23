@@ -561,7 +561,7 @@ footer { background: var(--charcoal); color: rgba(255,255,255,.75); }
   letter-spacing: .06em;
 }
 .footer-col ul li { margin-bottom: 10px; }
-.footer-col ul li a { font-size: 14px; color: rgba(255,255,255,.7); transition: color .2s; }
+.footer-col ul li a { font-size: 14px; color: rgba(255,255,255,.7); transition: color .2s; text-decoration: none; }
 .footer-col ul li a:hover { color: var(--yellow); }
 .footer-bottom {
   border-top: 1px solid rgba(255,255,255,.1);
