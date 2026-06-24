@@ -1,5 +1,5 @@
 ---
-title: "Roofing 4 Why Your Home’s Exterior Matters More Than You Think"
+title: "Roofing vs. Siding: Why Your Home’s Exterior Matters More Than You Think"
 slug: "roofing-vs-siding-why-your-home-s-exterior-matters-more-than-you-think"
 date: "2026-06-22"
 excerpt: "Siding does more than make your home look good. It protects your property from rain, wind, snow, moisture, and everyday wear. When siding starts to..."
